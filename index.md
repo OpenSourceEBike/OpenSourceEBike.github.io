@@ -28,8 +28,14 @@ You will need to acquire the following components:
 
 ## Schematic
 
-[![Foo](TSDZ2_wireless-schematic.png)](TSDZ2_wireless-schematic.png)
+[![](TSDZ2_wireless-schematic.png)](TSDZ2_wireless-schematic.png)
 
 ## Firmware
 
 Download the firmware from here: https://github.com/OpenSourceEBike/TSDZ2_wireless/releases
+
+# Wireless remote
+
+## Schematic
+
+[![](ebike_remote_wireless-schematic.png)](ebike_remote_wireless-schematic.png)
