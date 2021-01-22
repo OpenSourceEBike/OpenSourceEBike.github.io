@@ -19,7 +19,7 @@ This wireles remote costs only 20€ and the battery will work for about 2.5 yea
 You will need to acquire the following components:
 * **[Wireless board - nRF52840 Nordic USB Dongle](https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52840-Dongle)**: costs 10€ and can be bought in many online shops.<br>
 ![](NRF52840.png)<br><br>
-* **60V -> 5V power board - LM2596 60V DC-DC step-down adjustable**: costs 2€, this is a very popular board for DIY with Arduino. Can be bought in many online shops like EBay, just search for "Arduino DC DC 60V LM2596".<br>
+* **60V -> 5V power board - EBike buck dd7818ta 80V -> 5V 1A**: costs 4€ and can be bought in many online shops like EBay, just search for "EBike buck dd7818ta 80". Other DC-DC converters can be used, they need to have as input at least 60V and as output 5V.<br><br>
 ![](60V_DC_DC.png)<br><br>
 * **Power switch BTS4140N**: costs 2€, can be bought on EBay or other shops.<br>
 * **Transistor BSP296**: costs 2€, can be bought on EBay or other shops.<br>
@@ -32,10 +32,18 @@ You will need to acquire the following components:
 
 ## Firmware
 
-Download the firmware from here: https://github.com/OpenSourceEBike/TSDZ2_wireless/releases
+Download the firmware from here: [https://github.com/OpenSourceEBike/TSDZ2_wireless/releases](https://github.com/OpenSourceEBike/TSDZ2_wireless/releases)
 
 # Wireless remote
 
 ## Schematic
 
 [![](ebike_remote_wireless-schematic.png)](ebike_remote_wireless-schematic.png)
+
+## How to build wireless remote
+You will need to acquire the following components:
+* **[Wireless board - nRF52840 Nordic USB Dongle](https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52840-Dongle)**: costs 10€ and can be bought in many online shops.<br>
+![](NRF52840.png)<br><br>
+* **VLCD5 Keypad**: costs 10€, this is the keypad from the TSDZ2 original display. Can be bought in many online shops like EBay".<br>
+![](VLCD5_keypad.png)<br><br>
+* **CR2032 coin cell**: costs 1€, can be bought in any local shop or on EBay or other online shops.<br>
