@@ -1,8 +1,8 @@
 # TSDZ2 Wireless Project Objectives
 
-This project aims to make TSDZ2 mid drive motor support wireless displays, mobile app and wireless remote control buttons, just like the commercial ebikes do, ie see: [Specialized Turbo Levo Ebike](https://www.youtube.com/watch?v=F43oqj1Zlww).
+This project objective is to provide wireless TSDZ2 mid drive motor support for multiple displays, a mobile android app and a wireless remote control, just like the commercial ebikes do, for example, see: [Specialized Turbo Levo Ebike](https://www.youtube.com/watch?v=F43oqj1Zlww).
 
-We developed [a DIY wireless board](https://github.com/OpenSourceEBike/TSDZ2_wireless/tree/master/EBike_wireless_TSDZ2) to connect to the motor, rather than using a display. The board is small, easy to build and costs only 25€.
+We have developed [a DIY wireless board](https://github.com/OpenSourceEBike/TSDZ2_wireless/tree/master/EBike_wireless_TSDZ2) to connect to the motor, rather than using a display. The board is small, easy to build and costs only 25€.
 
 With this wireless board alone, you can power on/off the TSDZ2 motor and increase/decrease the assist levels. If you use our mobile app, you will be able to accomplish the same actions and also change the motor configuration.
 
