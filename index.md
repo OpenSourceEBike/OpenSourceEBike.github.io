@@ -8,7 +8,11 @@ With this wireless controller alone, you can power on/off the TSDZ2 motor and in
 
 We have also developed [our own DIY wireless remote](https://github.com/OpenSourceEBike/TSDZ2_wireless/tree/master/EBike_wireless_remote), that makes it possible to power on/off the motor, increase/decrease  assist levels, display motor battety levels and more. In addition, it can also connect to a GPS display like a Garmin Edge to change data pages.<br> 
 This wireless remote costs only 20€ and the battery will work for about 2.5 years.
+
+
+----
 ## Getting Started
+
 To get started with this project, you need to first replace the bootloader that comes with a new  Nordic nrf52840 Dongle with a bluetooth enabled wireless bootloader.
 
 ### See: [How to Flash the Wireless Bootloader on a Nordic Dongle](getting_started.md)
@@ -21,14 +25,14 @@ With the nrf52840 dongle programmed and ready to be used, you will need to assen
 ### See: [How to Assemble the Wireless remote control](build_remote.md)
 
 ### See: [How to Assemble the TSDZ2 Wireless Controller](build_tsdz2_board.md)
-
+----
 ## Operating Instructions
 You are now ready to enjoy your new wirelessly controlled ebike.
 
 ### [Wireless Remote operating instructions](operation.md)
 
 ### Wireless Motor Controller Operating Instructions (TBD)
-
+-----
 ## Community help
 
 - Forum message: [EBike wireless standard (like Specialized Turbo Levo) - OpenSource](https://endless-sphere.com/forums/viewtopic.php?t=106346)

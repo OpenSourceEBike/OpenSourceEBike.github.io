@@ -38,4 +38,4 @@ The LED will continue a visual cycle spanning 2 seconds when the button is held 
 - __ALL LEDs OFF__ for 0.5 seconds
 - (__repeat__ while button is pressed)
 
-## [back](../README.md)
+## [back](./operation.md)
