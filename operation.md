@@ -46,4 +46,4 @@ See changing the ANT+ LEV Device Number (to connect to only one specific eBike) 
 nRFConnect is available on the play store here:
 (https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en_CA&gl=US)
 
-## [back](../README.md)
+## [back](./index.md)
