@@ -20,7 +20,7 @@ Once you have the wireless bootloader installed, you need to load the firmware f
 With the nrf52840 dongle programmed and ready to be used, you will need to assenble the components needed for both the remote control and the wireless motor controller
 ### See: [How to Assemble the Wireless remote control](build_remote.md)
 
-## See: [How to Assemble the TSDZ2 Wireless Controller](build_tsdz2_board.md)
+### See: [How to Assemble the TSDZ2 Wireless Controller](build_tsdz2_board.md)
 
 ## Operating Instructions
 You are now ready to enjoy your new wirelessly controlled ebike.
