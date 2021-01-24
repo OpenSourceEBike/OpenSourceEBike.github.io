@@ -19,7 +19,9 @@ Once the firmware is flashed, the stlink  connection will not longer be required
   The firmware HEX file to flash is  TSDZ2_bootloader_with_sd.hex" 
   [located in github releases](https://github.com/OpenSourceEBike/TSDZ2_wireless-bootloader/releases).
 
-----
+<br>
+-----
+-----
 [Flashing Instructions for Windows](windows.md)
 ----
 -----
