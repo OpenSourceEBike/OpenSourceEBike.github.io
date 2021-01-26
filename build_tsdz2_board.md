@@ -13,6 +13,15 @@ You will need the following components:
 * **TSDZ2 display extension cable**: costs 6€, can be bought on EBay or other shops.<br>
 ![](TSDZ2_cable.png)<br><br>
 
+To get started, you need to first replace the bootloader that comes with a new  Nordic nrf52840 Dongle with a bluetooth enabled wireless bootloader.
+
+### See: [How to Flash the Wireless Bootloader on a Nordic Dongle](getting_started.md)
+
+Once you have the wireless bootloader installed, you need to load the firmware for both the remote control and the motor controller. The firmware can be uploaded using bluetooth wirelessly to the nrf52840 dongle, a process that makes future firmware updates a breeze!
+
+### See: [How to Flash the Wireless Remote and Motor Controller Firmware](firmware.md)
+
+With the nrf52840 dongle programmed and ready to be used, you will need to assenble the components needed for both the remote control and the wireless motor controller
 ## Schematic
 Solder the board as shown in the schematic below:
 [![](TSDZ2_wireless-schematic.png)](TSDZ2_wireless-schematic.png)
