@@ -14,8 +14,8 @@ LED Operation Signalling
 
 Short Press buttons
 ----
-* Short Press the [ENTER] button to switch pages (pageup) on an ANT+ CONTROLS device (ie: garmin bike computer) 
-  (You can also use the long press of PLUS and MINUS to pageup/pagedown - see below)
+* Short Press the [STANDBY] button to display the motor battery state of charge. 
+* Short Press the [ENTER] button to display the current assist level by flashing the GREEN LED. ie: 3 flashes indicated that the motor is in assist level 3 
 * Short press the [PLUS] button to increase the motor assist level (ANT+ LEV control)
 * Short press the [MINUS] button to decrease the motor assist level (ANT+ LEV control)
   
