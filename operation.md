@@ -3,12 +3,13 @@ LED Operation Signalling
 ------
 1. ANT Searching/Connection
    When the remote is searching for either an ANT+ LEV or an ANT+ Controls connection, the RED LED will slowly flash. When a connection is made, the RED LED will quickly flash and then go out.
-2. The RED LED will briefly flash to indicate a    long press has been made
-3. The RED LED will turn on for 2 seconds to indicated that the remote is entering DFU mode.
-4. The Blue LED will turn on for 2 seconds to indicated bluetooth mode is active.
-5. A long press of the ENTER key can be used to determine the configuration options. [See Configuration Options](configuration.md)
-6. A long press of the STANDBY key will turn the motor ON or OFF. When the motor is initializing, the leds will flash white. When the motor is on, the white led will rapidly flash, followed 2 seconds later by a display of the motor battery state. If the motor is turning off, the battery state will also be displayed. Battery state is indicated by flashing the GREEN LED. The number of flashes will indicate battery charge state from from 1 flash (10% charge) to 10 flashes (100% charge).
-7. Motor error states are indicated by the green power LED on thee other side of the Nordic board. motor initialization errors are indicated by a slowly flashing LED, firmware mismatch errors are indicated by a fast flashing LED, and configuration errors are indicated by a steady on LED.
+2.  The GREEN LED will flash once briefly when the PLUS or MINUS keys are pressed to indicate the assist level is changing. if the assist level has reached either 0 or 7, pressing the PLUS or MINUS keys key will cause the led to briefly flash multiple times to indicate the limit has been reached. If the motor is on, the color of the LED will be RED.
+3. The RED LED will briefly flash to indicate a    long press has been made
+4. The RED LED will turn on for 2 seconds to indicated that the remote is entering DFU mode.
+5. The Blue LED will turn on for 2 seconds to indicated bluetooth mode is active.
+6. A long press of the ENTER key can be used to determine the configuration options. [See Configuration Options](configuration.md)
+7. A long press of the STANDBY key will turn the motor ON or OFF. When the motor is initializing, the leds will flash white. When the motor is on, the white led will rapidly flash, followed 2 seconds later by a display of the motor battery state. If the motor is turning off, the battery state will also be displayed. Battery state is indicated by flashing the GREEN LED. The number of flashes will indicate battery charge state from from 1 flash (10% charge) to 10 flashes (100% charge).
+8. Motor error states are indicated by the green power LED on thee other side of the Nordic board. motor initialization errors are indicated by a slowly flashing LED, firmware mismatch errors are indicated by a fast flashing LED, and configuration errors are indicated by a steady on LED.
 
 
 Short Press buttons
