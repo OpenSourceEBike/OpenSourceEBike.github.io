@@ -25,7 +25,7 @@ Long Press Buttons
 * Long Press the [PLUS] button to pageup on a garmin bike computer
 * Long Press the [MINUS] button to pagedown on a garmin bike computer
 * Long press the [ENTER] button to cycle through the configuration LED display.     [See Configuration Options](configuration.md)
-* Long Press both the [ENTER] + [STANDBY] buttons at the same time to initate Device Firmware Update (DFU) mode.  Either the remote or bootloader firmware can be updated to a new version using a provided upgrade packet zip file in DFU mode. For more information click [here](dfu.md).
+* Long Press both the [ENTER] + [STANDBY] buttons at the same time for 10 seconds or longer to initate Device Firmware Update (DFU) mode.  Either the remote or bootloader firmware can be updated to a new version using a provided upgrade packet zip file in DFU mode. For more information click [here](dfu.md).
 * Long press the [PLUS] + [STANDBY] buttons to start bluetooth to allow the [Configuration Options](configuration.md)  to be set. 
 * Long press the [MINUS] + [STANDBY] buttons to stop bluetooth to save power. 
 * Long press the [MINUS] + [PLUS] buttons to put the remote control in 'deep sleep' low power mode
