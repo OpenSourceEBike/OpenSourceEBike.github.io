@@ -35,6 +35,6 @@ You are now ready to enjoy your new wirelessly controlled ebike.
 ## Community help
 
 * Forum message: [EBike wireless standard (like Specialized Turbo Levo) - OpenSource](https://endless-sphere.com/forums/viewtopic.php?t=106346)
-* Developers: see [documentation](https://github.com/OpenSourceEBike/TSDZ2_wireless/blob/master/documentation/README.md)
+* Developers: see [documentation](https://github.com/OpenSourceEBike/TSDZ2_wireless/blob/master/EBike_wireless_remote/documentation/README.md)
 
 

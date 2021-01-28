@@ -23,10 +23,11 @@ Once the firmware is flashed, the stlink  connection will not longer be required
 -----
 -----
 [Flashing Instructions for Windows](windows.md) <br>
-----
 -----
-[Flashing Instructions for Ubuntu](ubuntu.md)
-----
-----
+-----
+<br>
+[Flashing Instructions for Ubuntu](ubuntu.md) <br>
+-----
+-----
   
 ## [back](./index.md)
