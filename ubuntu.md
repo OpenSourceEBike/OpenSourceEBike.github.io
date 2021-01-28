@@ -42,6 +42,6 @@ Congratulations!
 -------
 * You now have the bootloader installed on the Nordic board.
 * Future firmware upgrades can be done wirelessly.
-* For more information on how to use the bootloader's Device Firmware Update (DFU) process to install a bootloader update or the remote control firmware or the wireless controller firmware, see [Understanding The Bootloader DFU Process](../documentation/dfu.md).
+* For more information on how to use the bootloader's Device Firmware Update (DFU) process to install a bootloader update or the remote control firmware or the wireless controller firmware, see [Understanding The Bootloader DFU Process](./dfu.md).
 
 ## [back](getting_started.md)
