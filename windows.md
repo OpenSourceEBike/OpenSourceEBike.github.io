@@ -10,7 +10,7 @@
     This will flash and verify the write.
     If you see ** Verified OK **, the flashing has been successful.
 
-###Congratulations!
+### Congratulations!
 
  You now have the bootloader installed on the Nordic board.
  All future firmware upgrades can now be done wirelessly.
