@@ -1,8 +1,8 @@
 # Installing the Bootloader on the Nordic USB Dongle
 **Components you will need:**
 * [nRF52840 Nordic USB Dongle](https://www.digikey.com/en/products/detail/nordic-semiconductor-asa/NRF52840-DONGLE/9491124): (costs $10) this is this wireless board
-*  [STLINK V2](https://www.ebay.com/c/896036216): (costs $3)
-  ![stlink](stlinkv2.png)
+*  [STLINK V2 (read before buying)](stlinkv2.md): (costs $3)
+![stlink](stlinkv2.png)
   
   ## Pinout
 
