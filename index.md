@@ -27,9 +27,9 @@ The steps for building the wireless motor controller and the remote control are 
 
 You are now ready to enjoy your new wirelessly controlled ebike.
 
-* [Wireless Remote operating instructions](operation.md)
-* [Wireless Motor Controller Operating Instructions](wireless_motor_operation.md)
+* [Wireless motor controller operating instructions](wireless_motor_operation.md)
 * [Android app operating instructions](android_app_operation.md)
+* [Wireless remote operating instructions](operation.md)
 
 -----
 ## Community help
