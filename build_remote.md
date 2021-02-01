@@ -15,13 +15,15 @@ You will need the following components:
 
 2. **Build your board** - solder all the components following the next schematic. For instance, you can use a [perfboard](https://en.wikipedia.org/wiki/Perfboard) to solder the components and the wires.
 
-Note that you MUST cut the small trace SB2 and solder the SB1, on the back of the nrf52840 board.
-
 Schematic:
 [![](ebike_remote_wireless-schematic.png)](ebike_remote_wireless-schematic.png)
 
 nrf52840 board pinout:
 ![Pinout](nordic_pinout.png)
+
+You MUST cut the SB2 and solder the SB1 pads on the bottom of the board:
+
+![](external_power.png)
 
 3. **Flash firmware on the nrf52840 board** - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](firmware.md)
 
