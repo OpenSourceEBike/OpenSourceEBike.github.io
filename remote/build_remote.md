@@ -34,6 +34,10 @@ Optional components:
 
 2 - **Build your board** - solder all the wires following the next schematic.
 
+2.1 - Cut your nRF52840 board with a metal saw by hand, this way the board will be smaller and ready to be placed on the 3D printed box - here a picture as example:
+
+![](../nrf52_board_cut.png)
+
 Do not solder any wires to the battery, it would be dangerous. Simple use the wires against the battery and use same tape to get them in place. In the end you can use some little sponge to make pressure on so they will have a good contact with the battery.
 
 Schematic:

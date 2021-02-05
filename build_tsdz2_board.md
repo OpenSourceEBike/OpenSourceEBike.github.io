@@ -17,9 +17,13 @@ EBike buck dd7818ta 80V:<br>
 
 ## Step by step instructions
 
-1. **Flash bootloader on the nrf52840 board** - see the page: [How to Flash the Wireless Bootloader on a Nordic Dongle](getting_started.md)
+1 - **Flash bootloader on the nrf52840 board** - see the page: [How to Flash the Wireless Bootloader on a Nordic Dongle](getting_started.md)
 
-2. **Build your board** - solder all the components following the next schematic. For instance, you can use a [perfboard](https://en.wikipedia.org/wiki/Perfboard) to solder the components and the wires.
+2 - **Build your board** - solder all the components following the next schematic. For instance, you can use a [perfboard](https://en.wikipedia.org/wiki/Perfboard) to solder the components and the wires.
+
+2.1 - You can cut your nRF52840 board with a metal saw by hand and this way it will be smaller - here a picture as example:
+
+![](nrf52_board_cut.png)
 
 Schematic:
 [![](TSDZ2_wireless-schematic.png)](TSDZ2_wireless-schematic.png)
@@ -27,8 +31,28 @@ Schematic:
 nrf52840 board pinout:
 ![Pinout](nordic_pinout.png)
 
-3. **Flash firmware on the nrf52840 board** - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](firmware.md)
+Pictures of a board that you can take as example - note that the nrf52840 board on the pictures were a different version as also one of the mosfets:
 
-4. **Test** - when the board is powered up and running the firmware, you should see the "TSDZ2" Bluetooth device on your mobile phone.
+A perfboard were used to keep the nrf52840 board in place as also the mosfets and wires:<br>
+![](TSDZ2-wireless-board-02.jpg)
 
-## [back](./index.md)
+Here the mosfets soldered (note the smaller one is now a different one, with the size of the other):<br>
+![](TSDZ2-wireless-board-03.jpg)
+
+And on the other side the DC-DC converter (this is one on the picture is one that need to be adjusted for 5V output - not recommended):<br>
+![](TSDZ2-wireless-board-01.jpg)
+
+Now with all the wires and the cable to connect on the TSDZ2 display connector:<br>
+![](TSDZ2-wireless-board-04.jpg)
+
+Final assembly:<br>
+![](TSDZ2-wireless-board-05.jpg)
+
+And inside of a 3D printed box:<br>
+![](TSDZ2-wireless-board-box.jpg)
+
+![](3d_printed_box.png)
+
+3 - **Flash firmware on the nrf52840 board** - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](firmware.md)
+
+4 - **Test** - when the board is powered up and running the firmware, you should see the "TSDZ2" Bluetooth device on your mobile phone.

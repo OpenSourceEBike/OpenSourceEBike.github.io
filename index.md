@@ -2,7 +2,7 @@
 ## Background
 The project objective is to provide wireless TSDZ2 mid drive motor support for bike computers (and other wireless displays), a mobile android app for configuration and control, and a wireless remote control for assist level changing, power control and more. The goal is to emulate and improve upon commercially available wirelessly controlled ebikes like the  [Specialized Turbo Levo Ebike](https://www.youtube.com/watch?v=F43oqj1Zlww).
 
-The project utilizes the proven and popular [Open Source firmware which has been developed for the TSDZ2 mid drive motor](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki) using the [SW102](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki/SW102) or [850C/860C](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki/860C-850C-displays) displays.
+The project utilizes the proven and popular [Open Source firmware which has been developed for the TSDZ2 mid drive motor](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki) using the SW102 or 850C/860C displays.
 
 Using this firmware, we have developed [a DIY wireless motor controller](https://github.com/OpenSourceEBike/TSDZ2_wireless/tree/master/EBike_wireless_TSDZ2) to connect to the motor, instead of using a wired display. This board supports multiple wireless formats, is easy to solder and costs only 25€.
 
