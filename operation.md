@@ -1,30 +1,42 @@
-
 # **Remote operation**
 ## Getting started with your new remote 
 
-**To get started with the remote, follow this 4 step process:**
+**To get started , follow this simple four step process:**
 
 1. Ensure that the second wireless board is powered up and connected to the TSDZ2 motor controller.
-2. To turn on the motor, press and hold the **POWER** key on the remote control.
-A **RED** LED will briefly flash, followed by a flashing **RED+BLUE** LED. This LED will continue flashing until a connected is established with the wireless controller.
-3. press the **PLUS/MINUS** keys briefly to increase/decrease the motor assist level
+2. To turn on the motor from the remote control, press and hold the **POWER** key on the remote control. A **RED** LED will briefly flash, followed by a flashing **RED+BLUE** LED. This LED will continue flashing until a connection is established with the wireless controller.
+3. press the **PLUS/MINUS** keys briefly to increase/decrease the motor assist level. The **GREEN** LED wil briefly flash on every press of the key. There are 7 levels of assist. When you reach level 7 (maximum assist) or level 0 (motor off) the **RED** LED will rapidly flash.
 4. To turn off the motor, press and hold the **POWER** key on the remote control.
-A **RED** LED will briefly flash, followed by a flashing **GREEN** LED. This LED will indicate the current state of charge of the battery by one flash for every 10% of charge.
+A **RED** LED will briefly flash, followed by a flashing **GREEN** LED. This LED will indicate the current state of charge of the battery by one flash for every 10% of charge. When the motor is off, pressing the PLUS or MINUS keys will do nothing and they will briefly flash **RED** when pressed.
 
-That's basically all you need to use the remote for basic operation. 
+**That's basically all you need to use the remote for basic operation**.
+
 Read the "**Button Operation**" section below for more details on the remote's operation.
+
 If you would like to configure the remote, please read the "**Remote Operating Modes**" section next. 
+
 Enjoy!!
 
 ## Remote Operating Modes
+The remote has two modes of operation; **CONFIGURATION MODE** and **NORMAL MODE**, for configuration and normal operation, respectively.
 
-The remote has a 2 configuration options, namely specifying a specific ANT ID for the ebike and setting ANT LEV control options 
+----
 
-1. The ANT ID allows you to pair the remote to a specific TSDZ2 motor. The default ANT ID of 0 will allow the remote to pair with any TSDZ2 motor within range. This is a useful option if you have multiple ebikes. The ANT ID can be changed by a bluetooth connection to the remote.
-2. The ANT LEV control options allow you to pair the remote to an ebike and/or a garmin bike computer simultaneously.
-The remote has two operating modes, **NORMAL** **MODE** which is the usual mode of operation, and **CONFIGURATION** **MODE**, which is used to set the remote operating options described above. Pressing the **ENTER** key for a long press of more than 5 seconds will toggle between **NORMAL MODE** and **CONFIGURATION MODE**.<br>
+## Button Operation (CONFIGURATION MODE)
 
-In either mode, if a key is pressed while inactive the **RED LED** will briefly flash.
+----
+In **CONFIGURATION MODE**, the remote has a 2 configuration options, namely specifying a specific ANT ID for use with the ebike and setting up ANT LEV control options. Both of these settings are optional as the remote will default to control the TSDZ2 wireless controller without the need to set anything.
+
+* The ANT ID allows you to pair the remote to a specific TSDZ2 motor. The default ANT ID of 0 allows the remote to pair with any TSDZ2 motor within range. Any other number will cause the remote to ONLY pair with a motor with the same ANT ID. This is a useful option if you have multiple ebikes. The ANT ID can be changed by a bluetooth connection to the remote.
+* The ANT LEV control options allow you to pair the remote to an ebike alone, (the default option) , a bike computer (like the Garmin Edge series) , or any combination of these devices.
+to enter and exit **CONFIGURATION MODE**, Press the **ENTER** key for a more than 5 seconds. The BLUE LED will light for 3 seconds followed by a visual display of ANT  options. The RED LED will light for 3 seconds to indicate TSDZ2 motor control is active, followed by the GREEN LED to indicate that control of Garmin bike computers is active <br>
+Button control:
+* Short press the **PLUS/MINUS** keys to enable/disable garmin control. (The **GREEN** LED will light for 3 seconds to indicate that garmin control is active)
+* Long Press PLUS/MINUS keys\ will enable/disable TSDZ2 motor control(The **RED** LED will light for 3 seconds to indicate that motor control is active)
+* Short press the ENTER key to display configuration options.The **GREEN** LED will light for 3 seconds to indicate that garmin control is active and the **RED** LED will light for 3 seconds to indicate that motor control is active
+* * A Long Press the [**POWER**] button will initate Device Firmware Update (DFU) mode.  Either the remote or bootloader firmware can be updated to a new version using a provided upgrade packet zip file in DFU mode. For more information click [here](dfu.md).
+* Long press the ENTER key to leave **CONFIGURATION**  mode. The **BLUE** LED will light for 3 seconds to indicate you are entering **NORMAL** mode
+
 
 ----
 
@@ -45,20 +57,7 @@ In either mode, if a key is pressed while inactive the **RED LED** will briefly 
   
 ----
 
-## Button Operation (CONFIGURATION MODE)
-
 ----
-
-* A short press of the [**ENTER**] key will cycle through the configuration LED display. A **RED LED** indicates support for ANT LEV ebikes, while a BLUE LED indicated support for Garmin bike computers. [See Configuration Options](configuration.md)
-* A Long press the [**ENTER**] button will exit **CONFIGURATION MODE** and return to **NORMAL MODE** . **CONFIGURATION MODE** will also automatically turn off if no keys are pressed for 5 minutes. 
-* A Long Press the [**POWER**] button will initate Device Firmware Update (DFU) mode.  Either the remote or bootloader firmware can be updated to a new version using a provided upgrade packet zip file in DFU mode. For more information click [here](dfu.md).
-* A Short press of the [**PLUS**] button will enable support for Garmin bike computers.(disabled by default)
-* A Short press of the [**MINUS**] button will disable support for Garmin bike computers.
-* A Long press of the [**PLUS**] button will enable support for either a Wireless TSDZ2 or an ANT LEV enabled ebike. (enabled by default)
-* A Long press of the [**MINUS**] button will disable support for either a Wireless TSDZ2 or an ANT LEV enabled ebike.
-
-----
-
 ## LED Signalling (NORMAL MODE)
 
 ----
@@ -74,13 +73,6 @@ In either mode, if a key is pressed while inactive the **RED LED** will briefly 
 
 ----
 
-## LED Signalling (CONFIGURATION MODE)
-
-----
-
-1. The **BLUE LED** will flash for 2 seconds to indicated configuration mode is active.
-2. The **OFF-WHITE LED** will turn on for 2 seconds to indicated that the remote is entering DFU mode.
-3. A short press of the ENTER key will display the current remote configuration[See Configuration Options](configuration.md)
 
 ----
 
