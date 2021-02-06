@@ -1,19 +1,29 @@
-STLinkV2 is the programmer to use to flash the TSDZ2 motor firmware as also the NRF52840 boards bootloader.
+STLinkV2 is the programmer to use to flash the TSDZ2 motor firmware and the NRF52840 board bootloader.
 
 ![stlink](stlinkv2.png)
 
-You can buy STLinkV2 on EBay or Aliexpress for very cheap price like 2€ (shipping included) but unfortunately there are different versions of them and some simple do not work well (at least for flashing the TSDZ2 motor firmware).
+You can buy STLinkV2 clones on EBay or Aliexpress for very cheap price like 2€ (shipping included)
 
-From the outside, all of the versions are equal but if you open them you will clearly see differences:
-* the microcontroller is different (the version that works well has the STM32F103)
-* the board is different (the version that works well has 2 LEDs only at bottom)
-
-See two version side by side, where the version at left is the one that works well:
-
-![stlink](stlinkv2_versions.jpg)
+Whilst the cases look the same, there appear to be several different designs of boards inside with different microcontrollers. A few users have reported problems. If you buy one that has issues - you may be able to fix it by updating the firmware - see Troubleshooting below.
 
 Some suggestions to buy STLinkV2:
 * you can buy from EBay or Aliexpress and search for "STLinkV2"
 * since they are really cheap, buy a few units
-  * buy from different sellers and only 1 unit from each seller
-  
+  * buy from different sellers and only 1 unit from each seller in case one doesn't work.
+
+## Troubleshooting
+
+If you have issues using your STLinkV2 clone adapter - try updating the firmware to the latest version.
+
+You can get firmware from STMicroelectronics' website. Note - if you are using a clone this is not supported by the manufacturer. **Use at your own risk.**
+
+https://www.st.com/en/development-tools/stsw-link007.html
+
+The update tool will show you the current firmware version of your adapter:
+
+![firmware](stlink_fwupdate.png)
+
+### Known issues using STLinkV2 clones to update OpenSourceEBike firmware.
+If openocd throws the below error when trying to flash any of the EBike firmware then update the firmware to the latest version using the instructions above.
+
+`Error: ST-Link version does not support DAP direct transport`
