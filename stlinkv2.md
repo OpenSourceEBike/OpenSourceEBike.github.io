@@ -23,7 +23,7 @@ The update tool will show you the current firmware version of your adapter:
 
 ![firmware](stlink_fwupdate.png)
 
-### Known issues using STLinkV2 clones to update OpenSourceEBike firmware.
+## Known issues using STLinkV2 clones to update OpenSourceEBike firmware.
 If openocd throws the below error when trying to flash any of the EBike firmware then update the STlinkv2 firmware to the latest version using the instructions above.
 
 `Error: ST-Link version does not support DAP direct transport`
@@ -33,3 +33,12 @@ If you get the below error when running openocd to update EBike firmware - make 
 `Error: invalid command name "dap"`
 
 See the following link for more information and other solutions for the above error : https://stackoverflow.com/questions/53714503/openocd-error-invalid-command-name-dap-cant-connect-blue-pill-via-st-link
+
+
+## Easy OpenOCD Update Script
+
+* Copy this [config file](openocd.cfg) into the same folder as openocd binary - name it openocd.cfg
+* Copy fw into same folder
+* Update filename in script if necessary - default is TSDZ2_bootloader_with_sd.hex
+* Run openocd to flash the firmware
+
