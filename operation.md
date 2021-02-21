@@ -79,6 +79,17 @@ to enter and exit **CONFIGURATION MODE** press and hold the [ENTER]() button for
 
 ----
 
+## Wireless Remote CR2032 Battery Life Estimation
+
+----
+
+The wireless remote control is designed for operation with a 3V CR2032 button battery.<br>
+So, what is the expected battery life in normal use with this battery?<br>
+For a typical commuter  that rides their bike 5 days a week for 1.5 hrs a day, and twice on the  weekend for another 4 hrs in total, (11.5 total hrs/week) the answer would be approximately 2 yrs.<br>
+However, battery life is affected by aa number of factors, including ambient temperature.<br>To avoid any potential battery issues, It is recommended that a user replace the wireless remote battery annually.
+For details on how this estimate is arrived at, please see the [Detailed Power Analysis](Power_Analysis.md)
+
+----
 See controlling a Garmin 1030 bike computer for assist levels and page control using a simulated ANT+ LEV Ebike in this video:
 
 [![video]()(https://img.youtube.com/vi/s7URIMVzcwc/hqdefault.jpg)]()(https://www.youtube.com/watch?v=s7URIMVzcwc)
@@ -94,4 +105,3 @@ See changing the ANT+ LEV Device Number (to connect to only one specific eBike) 
 nRFConnect is available on the play store [here]()(https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en_CA&gl=US)
 
 ----
-## [back]()(./index.md)
