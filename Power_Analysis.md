@@ -46,6 +46,7 @@ In **POWER IDLE** mode, the remote is powered on and ready to immediately proces
   ![figure 12](duration_of_button_click.png)
    -  The ebike is ridden 14 hrs/week
    -  The remote control spends virtually no time in bluetooth mode. (bluetooth is used only when setting up the remote)
+   -  low brightness is used on the led
    
      Feeding these assumptions into the  [Battery Life Calculator](./Battery_Life_Calculator.xls) spreadsheet, the battery life is estimated to be **22 months!**. 
   ![figure 13](battery_life.png)
