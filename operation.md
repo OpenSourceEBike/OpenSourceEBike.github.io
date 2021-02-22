@@ -5,7 +5,7 @@
 **To get started , follow this simple four step process (or five steps if you have connected the e-brakes):**
 (Please note that buttons will briefly flash **RED** if they are inactive)
 
-1. Ensure that the second wireless board is powered up and connected to the TSDZ2 motor controller. Ensure that the remote has a battery connected and press any button to start the pairing process with the motor controller. When the remote is searching for an ANT connection, the RED LED will slowly flash. When a connection is made with the motor, the GREEN LED will short flash twice followed by one long flash to indicate connection.
+1. Ensure that the second wireless board is powered up and connected to the TSDZ2 motor controller. Ensure that the remote has a battery connected.Tje board will short flash **RED**, **YELLOW** and **GREEN** LEDS when initially powered on. Shortly after this, the board will begin searching for an ANT connection. When the remote is searching for an ANT connection, the **RED** LED will slowly flash. When a connection is made with the motor, the **GREEN** LED will short flash twice followed by one long flash to indicate connection.
 2. To turn on the motor from the remote control, press and hold the [POWER]() key on the remote control. A  **YELLOW** LED will start flashing, and will continue flashing until the motor is on, at which time a **GREEN** LED will short flash twice followed by one long flash to indicate that the motor is on.
 3. press the [PLUS/MINUS]() keys briefly to increase/decrease the motor assist level. The **GREEN** LED will briefly flash on every [PLUS]() press of the button, while the **YELLOW** LED will briefly flash on every [MINUS]() press of the button. There are 7 levels of assist. When you reach level 7 (maximum assist) or level 0 (motor off) the **RED** LED will briefly flash.
 4. (Optional step needed you have connected the e-brakes) Depress either the right or left brake lever. The **RED** LED will flash quickly and the motor assist will stop. Release the brake lever and the **RED** led will turn off and the motor assist will resume.
@@ -39,7 +39,7 @@ The remote has two modes of operation; **CONFIGURATION MODE** and **NORMAL MODE*
 
 * Short Press the [PLUS]() (**GREEN** LED) /[MINUS]() (**YELLOW** LED) buttons to increase/decrease the assist level. If the assist level has reached either 0 or 7, pressing the [PLUS]() or [MINUS]() keys key will cause the led to briefly flash **RED** to indicate the limit has been reached. 
 * When the motor is on, short Press the [POWER]() button to display the motor battery state of charge. Battery state is indicated by flashing. The number of flashes will indicate battery charge state from from 1 flash (10% charge) to 10 flashes (100% charge). The flashes will be **RED** from 0%-40%, **YELLOW** from 40%-70%, and **GREEN** from 70% to 100% of charge.(Motor On **ONLY**.)  
-* When the motor is off, double click on the [POWER]() button to put the remote control in 'deep sleep' low power mode. The **RED** and **YELLOW** LEDS will short flash followed by a long flash of the **GREEN** LED to indicated initiation of low power mode.
+* When the motor is off, double click on the [POWER]() button to put the remote control in 'deep sleep' low power mode. The **RED** and **YELLOW** LEDS will short flash followed by a long flash of the **GREEN** LED followed by a **RED** short flash to indicated initiation of low power mode.
  * Short Press the [ENTER]() button to **PAGE UP** on a connected garmin bike computer. (Works **ONLY** if garmin control is activated)
  * Double click on the [ENTER]() button to set one of 3 levels for LED intensity. Every  double click will set a new LED intensity. The RED, GREEN, and BLUE LEDs will long flash once so the effect of the new setting can clearly be seen.
 
@@ -50,7 +50,7 @@ The remote has two modes of operation; **CONFIGURATION MODE** and **NORMAL MODE*
 * A long press of the [POWER]() key will turn the motor ON or OFF. A  **YELLOW** LED will start flashing, and will continue flashing until the motor is on, at which time a **GREEN** LED will short flash twice followed by one long flash to indicate that the motor is on. If the motor is turning off, The **RED** LED will short flash twice, followed by one long flash to indicate the motor is off. The LED will then flash one flash for every 10% of charge remaining in the battery.(ie:5 flashes=50% charge remaining). The flashes will be **RED** from 0%-40%, **YELLOW** from 40%-70%, and **GREEN** from 70% to 100% of charge.
 * Long press the [PLUS]() button to toggle the lights on/off 
 * Long press and hold the [MINUS]() button to start the motor walk assist. When walk mode is active the **GREEN**  LED** will flash slowly.Releasing the [MINUS]() button stops walk assist.
-* A very long press (more than 5 seconds) of the [ENTER]() button will enter **CONFIGURATION MODE**. The **BLUE** LED will flash rapidly 10 times to indicate thay configuration mode is active.
+* A very long press (more than 10 seconds) of the [ENTER]() button will enter **CONFIGURATION MODE**. The power on LEDs will activate followed by The **BLUE** LED flashing rapidly 10 times to indicate thay configuration mode is active.
   
 ----
 
