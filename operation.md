@@ -39,9 +39,9 @@ The remote has two modes of operation; **CONFIGURATION MODE** and **NORMAL MODE*
 
 * Short Press the [PLUS]() (**GREEN** LED) /[MINUS]() (**YELLOW** LED) buttons to increase/decrease the assist level. If the assist level has reached either 0 or 7, pressing the [PLUS]() or [MINUS]() keys key will cause the led to briefly flash **RED** to indicate the limit has been reached. 
 * When the motor is on, short Press the [POWER]() button to display the motor battery state of charge. Battery state is indicated by flashing. The number of flashes will indicate battery charge state from from 1 flash (10% charge) to 10 flashes (100% charge). The flashes will be **RED** from 0%-40%, **YELLOW** from 40%-70%, and **GREEN** from 70% to 100% of charge.(Motor On **ONLY**.)  
-* When the motor is off, double click on the [POWER]() button to put the remote control in 'deep sleep' low power mode. The **RED** and **YELLOW** LEDS will short flash followed by a long flash of the **GREEN** LED followed by a **RED** short flash to indicated initiation of low power mode.
+* When the motor is off, double click on the [POWER]() button to put the remote control in 'deep sleep' power off mode. The **RED**, **GREEN**, **BLUE**, **YELLOW**, and **RED** LEDS will short flash  to indicate initiation of power off mode.
  * Short Press the [ENTER]() button to **PAGE UP** on a connected garmin bike computer. (Works **ONLY** if garmin control is activated)
- * Double click on the [ENTER]() button to set one of 3 levels for LED intensity. Every  double click will set a new LED intensity. The RED, GREEN, and BLUE LEDs will long flash once so the effect of the new setting can clearly be seen.
+ * Double click on the [ENTER]() button to set one of 3 levels for LED intensity. Every  double click will set a new LED intensity. The **RED**, **GREEN**, and **BLUE** LEDs will long flash followed by a short flash of either **RED** or **GREEN** (depending on whether a garmin is connected) so the effect of the new setting can clearly be seen.
 
   
 **Long Press Button Actions:**
@@ -50,7 +50,7 @@ The remote has two modes of operation; **CONFIGURATION MODE** and **NORMAL MODE*
 * A long press of the [POWER]() key will turn the motor ON or OFF. A  **YELLOW** LED will start flashing, and will continue flashing until the motor is on, at which time a **GREEN** LED will short flash twice followed by one long flash to indicate that the motor is on. If the motor is turning off, The **RED** LED will short flash twice, followed by one long flash to indicate the motor is off. The LED will then flash one flash for every 10% of charge remaining in the battery.(ie:5 flashes=50% charge remaining). The flashes will be **RED** from 0%-40%, **YELLOW** from 40%-70%, and **GREEN** from 70% to 100% of charge.
 * Long press the [PLUS]() button to toggle the lights on/off 
 * Long press and hold the [MINUS]() button to start the motor walk assist. When walk mode is active the **GREEN**  LED** will flash slowly.Releasing the [MINUS]() button stops walk assist.
-* A very long press (more than 10 seconds) of the [ENTER]() button will enter **CONFIGURATION MODE**. The power on LEDs will activate followed by The **BLUE** LED flashing rapidly 10 times to indicate thay configuration mode is active.
+* A very long press (more than 10 seconds) of the [ENTER]() button will enter **CONFIGURATION MODE**. The e **BLUE** LED will flash rapidly 10 times to indicate thay configuration mode is active.
   
 ----
 
@@ -71,9 +71,9 @@ to enter and exit **CONFIGURATION MODE** press and hold the [ENTER]() button for
 
 * Short press the [ENTER]() key to display configuration options. The **RED** LED will flash 5 times to indicate TSDZ2 motor control is active, followed by the **GREEN** LED flashing 5 times to indicate that control of Garmin bike computers is active
 * Long press the [ENTER]() key to leave **CONFIGURATION**  mode. The **BLUE** LED will flash 5 times to indicate you are entering **NORMAL** mode
-* Short press the [PLUS/MINUS]() keys to enable/disable garmin control. (The **GREEN** LED will flash 5 times to indicate that garmin control is active)
-* Long Press [PLUS/MINUS]() keys simultaneously will enable/disable TSDZ2 motor control(The **RED** LED will flash 5 times to indicate that motor control is active)
-* A Long Press of the [POWER]() button will initate Device Firmware Update (DFU) mode.  The **BLUE** LED will flash rapidly 10 times, and the board will enter DFU mode.Either the remote or bootloader firmware can be updated to a new version using a provided upgrade packet zip file in DFU mode. For more information click [here]()(dfu.md).
+* Short press the [PLUS/MINUS]() keys to enable/disable garmin control. (The **BLUE** LED will rapidly flash to indicate that the setting has changed)
+* Long Press [PLUS/MINUS]() keys to enable/disable TSDZ2 motor control(The **BLUE** LED will rapidly flash to indicate that the setting has changed)
+* A Long Press of the [POWER]() button will initate Device Firmware Update (DFU) mode.  The **BLUE** LED will flash rapidly, wait 1 second, and the **BLUE** LED will then flash rapidly again, and the board will enter DFU mode. Either the remote or bootloader firmware can be updated to a new version using a provided upgrade packet zip file in DFU mode. For more information click [here]()(dfu.md).
 
 
 
