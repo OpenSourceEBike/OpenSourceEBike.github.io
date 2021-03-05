@@ -17,6 +17,7 @@ This wireless remote costs only 20€ and the battery will work for more than 2 
 
 Pictures of our DIY wireless remote button with connection for brake sensors:<br>
 ![](remote/ebike_wireless_remote-01-350x.jpg)<br>
+<br>
 ![](remote/ebike_wireless_remote-03-350x.jpg)<br>
 
 ----

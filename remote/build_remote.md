@@ -75,7 +75,9 @@ You MUST cut the SB2 and solder the SB1 pads on the bottom of the board:
   * [clamp_part.stl](clamp_part.stl)<br>
   ![clamp_part](clamp_part.png)<br>
 
-Assembly:screws. There is other screw not visible but is a screw from the VLCconstant pressure between the wires and the battery:<br>
+Assembly:
+
+Use thin wires to make contact with the CRC2032 battery. Use tape to keep the wires in place - the contact will be guaranteed when in the final you put a little sponge to keep constant pressure between the wires and the battery:<br>
 ![](ebike_wireless_remote-04.jpg)<br>
 
 The tape here is crucial to also isolate the bottom of the wireless board from making contact with the battery:<br>
@@ -94,7 +96,6 @@ There is 1mm gap or more to accommodate the wires:<br>
 
 Now the 4 M2x12mm screws. There is other screw not visible but is a screw from the VLCD5 remote:
 ![](ebike_wireless_remote-11.jpg)<br>
-
 
 ![](ebike_wireless_remote-02.jpg)<br>
 
