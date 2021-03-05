@@ -88,18 +88,28 @@ You can block the brake wire with a small zip tie, so it will be hard to pull it
 
 ![](ebike_wireless_remote-07.jpg)<br>
 
-Here is hard to see but the battery thin wires are already soldered to the wireless board. The brake wires were placed under the board so they are not visible. All the wires are soldered:<br>
+Here is hard to see but the battery thin wires are already soldered to the wireless board. The brake wires were placed under the board so they are not visible. All the wires are soldered.<br>
+
+Please note: the wires of VLCD5 remote are:<br>
+  * white -> UP
+  * white -> DOWN
+  * white -> ENTER
+  * white -> POWER
+<br>
+
+As the remote on the left side of the handle bar will up side down, you should exchange the UP and DOWN wires (in the next image they are not exchanged).
+
 ![](ebike_wireless_remote-08.jpg)<br>
 
 There is 1mm gap or more to accommodate the wires:<br>
 ![](ebike_wireless_remote-10.jpg)<br>
 
-Now the 4 M2x12mm screws. There is other screw not visible but is a screw from the VLCD5 remote:
+Now the 4 M2x12mm screws. There is other screw not visible but is a screw from the VLCD5 remote:<br>
 ![](ebike_wireless_remote-11.jpg)<br>
 
 ![](ebike_wireless_remote-02.jpg)<br>
 
-And the final result. I used translucent silicone to close the LED hole and on all parts where the water could get inside so my remote is water prof:
+And the final result. I used translucent silicone to close the LED hole and on all parts where the water could get inside so my remote is water prof:<br>
 ![](ebike_wireless_remote-01.jpg)<br>
 
 4 - **Flash firmware on the nrf52840 board** - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](../firmware.md)
