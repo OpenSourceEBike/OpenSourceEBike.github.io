@@ -6,14 +6,18 @@ The project utilizes the proven and popular [Open Source firmware which has been
 
 Using this firmware, we have developed [a DIY wireless motor controller](https://github.com/OpenSourceEBike/TSDZ2_wireless/tree/master/EBike_wireless_TSDZ2) to connect to the motor, instead of using a wired display. This board supports multiple wireless formats, is easy to solder and costs only 25€.
 
-Picture of our DIY wireless motor controller, inside a 3D printed box:
+Picture of our DIY wireless motor controller:<br>
 ![](3d_printed_box.png)<br>
 
 With this wireless controller alone, you can power on/off the TSDZ2 motor and increase/decrease assist levels. If you use our mobile app, you will be able to accomplish the same actions and also change the motor configuration.
 There are over 100 configuration options that can be customized to fit any user's particular requirements!
 
-We have also developed [our own DIY wireless remote](remote/build_remote), that makes it possible to power on/off the motor, increase/decrease  assist levels, display motor battety levels and more. In addition, it can also connect to a GPS display like a Garmin Edge to change data pages.<br> 
-This wireless remote costs only 20€ and the battery will work for about 2.5 years.
+We have also developed [our own DIY wireless remote](remote/build_remote), that makes it possible to power on/off the motor, increase/decrease assist levels, display motor battety levels and more. In addition, it can also connect to a GPS display like a Garmin Edge to change data pages.<br> 
+This wireless remote costs only 20€ and the battery will work for more than 2 years.
+
+Pictures of our DIY wireless remote button with connection for brake sensors:<br>
+![](remote/ebike_wireless_remote-01-350x.jpg)<br>
+![](remote/ebike_wireless_remote-03-350x.jpg)<br>
 
 ----
 ## Getting Started

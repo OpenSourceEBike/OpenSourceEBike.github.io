@@ -1,16 +1,29 @@
 # Wireless remote
 
-This is our wireless remote button for EBikes and/or GPS bike computers like the Garmin Edge. If you do not want to build your own, you can purchase on the market ebike remote controls. ie: the Garmin EBike Remote for about 80€.
+This is our wireless remote button for EBikes and/or GPS bike computers like the Garmin Edge. If you do not want to build your own, you can purchase on the market EBike remote controls. ie: the Garmin EBike Remote for about 80€.
 
-However, our wireless remote control is considerably less expensive and offers several additional features for ebike control.
+However, our wireless remote control is considerably less expensive (costs 20€ in materials) and offers several additional features for EBike control.
 
-Example of a remote using the 860C display keypad, a 3D printed box and a cable with connector for the brake sensor: 
-![](wireless_remote_2.jpg)
+Features:
+* turn on/off the motor
+* increase/decrease assist level
+* turn on/off walk assist
+* turn on/off lights
+* show battery level
+* send the brake signal
+* RGB LED to provide visual feedback
+* battery should last for more than 2 years
+* Garmin Edge page change 
 
-Installed on the handle bard:
-![](wireless_remote_1.jpg)
+<br>Pictures of our remote that reuses the VLCD5 keypad and also includes and a cable with connector for the brake sensor:<br>
+![](ebike_wireless_remote-02.jpg)
 
-# How to build wireless remote
+Installed on the handle bard:<br>
+![](ebike_wireless_remote-03.jpg)
+
+<br>
+
+# How to build the wireless remote
 
 You will need the following components:
 * **nRF52840 Nordic USB Dongle**<br>
@@ -21,12 +34,14 @@ You will need the following components:
 <br>
 ![](cr2032.png)<br><br>
 
-Optional components:
-* **Cable with 2 pins and water prof connector**: costs 2.5€, with a good connector used on EBikes, to connect to the brake sensors. Can be bought in many online shops like EBay - search for "julet mini connector" or "higo connector" and choose the 2 pin male and female, red color.<br>
-![](cable_julet.png)
+* **screw M2x12mm**: six screws M2x12mm 0.79mm pitch. You can buy on EBay, search for "Phillips Pan Head Thread Cutting Self Tapping Screw M2"<br>
+![](screw.png)
 
-* **3D printed box**: you can simple use some black to protect the board, wires and the battery and make the remote water prof, or you can 3D print this box - costs 1€.
-![](remote_3d.png)
+* **3D printed enclosure**: NOTE that if you do not have a 3D printer, you can improvise by simple use some black tape to protect the board, wires and the battery. If you 3D print this enclosure, it should costs about 1€.<br>
+
+Optional components:
+* **Cable with 2 pins and water prof connector**: costs 4.5€, with a good connector used on EBikes, to connect to the brake sensors. Can be bought in many online shops like EBay - search for "julet mini connector" or "higo connector" and choose the 2 pin male and female, red color.<br>
+![](cable_julet.png)
 
 ## Step by step instructions
 
@@ -34,7 +49,7 @@ Optional components:
 
 2 - **Build your board** - solder all the wires following the next schematic.
 
-2.1 - Cut your nRF52840 board with a metal saw by hand, this way the board will be smaller and ready to be placed on the 3D printed box - here a picture as example:
+Cut your nRF52840 board with a metal saw by hand, this way the board will be smaller and ready to be placed on the 3D printed box - here a picture as example:
 
 ![](../nrf52_board_cut.png)
 
@@ -50,17 +65,42 @@ You MUST cut the SB2 and solder the SB1 pads on the bottom of the board:
 
 ![](../external_power.png)
 
+3 - **Build your enclosure** - 3D print the enclosure and assembly.
 
-Example of a remote using the 860C display keypad, a 3D printed box and a cable with connector for the brake sensor: 
+3D print the following 3 STL files (can be printed in PLA and at 0.2mm layer height):
+  * [top_part.stl](top_part.stl)<br>
+  ![top_part](top_part.png)<br>
+  * [lower_part.stl](lower_part.stl)<br>
+  ![lower_part](lower_part.png)<br>
+  * [clamp_part.stl](clamp_part.stl)<br>
+  ![clamp_part](clamp_part.png)<br>
 
-![](wireless_remote_0.jpg)
+Assembly:screws. There is other screw not visible but is a screw from the VLCconstant pressure between the wires and the battery:<br>
+![](ebike_wireless_remote-04.jpg)<br>
 
-3 - **Flash firmware on the nrf52840 board** - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](../firmware.md)
+The tape here is crucial to also isolate the bottom of the wireless board from making contact with the battery:<br>
+![](ebike_wireless_remote-05.jpg)<br>
 
-4 - **Test** - Make sure the TSDZ2 wireless board if off. Power up the remote board and the firmware will blink the LED (LD2) with red color.
+You can block the brake wire with a small zip tie, so it will be hard to pull it out:<br>
+![](ebike_wireless_remote-06.jpg)<br>
 
-Optional:
+![](ebike_wireless_remote-07.jpg)<br>
 
-* **3D print the box and cover** - here the STL files as also the source files for [FreeCAD](https://www.freecadweb.org/):
-  * [remote.stl](remote.stl) - [remote.FCStd](remote.FCStd)
-  * [remote_cover.stl](remote_cover.stl) - [remote_cover.FCStd](remote_cover.FCStd)
+Here is hard to see but the battery thin wires are already soldered to the wireless board. The brake wires were placed under the board so they are not visible. All the wires are soldered:<br>
+![](ebike_wireless_remote-08.jpg)<br>
+
+There is 1mm gap or more to accommodate the wires:<br>
+![](ebike_wireless_remote-10.jpg)<br>
+
+Now the 4 M2x12mm screws. There is other screw not visible but is a screw from the VLCD5 remote:
+![](ebike_wireless_remote-11.jpg)<br>
+
+
+![](ebike_wireless_remote-02.jpg)<br>
+
+And the final result. I used translucent silicone to close the LED hole and on all parts where the water could get inside so my remote is water prof:
+![](ebike_wireless_remote-01.jpg)<br>
+
+4 - **Flash firmware on the nrf52840 board** - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](../firmware.md)
+
+5 - **Test** - Make sure the TSDZ2 wireless board if off. Power up the remote board and the firmware will blink the LED (LD2) with red color.
