@@ -1,5 +1,21 @@
 # How to build the TSDZ2 wireless board
 
+Before you start you need to decide how you want to attach buttons and brake sensors and whether you want the option to have fewer wires on your ebike.
+
+Both options require the use of the Android app to configure the bike. Android app connection is not required to control the bike when riding - but can be used to provide real-time statistics; speed/motor current etc.
+
+* Wireless Controller & Wired Remote - this option you build one board:
+    * Button keypad connects to the board directly.
+    * Brake sensors connect direct to the motor.
+    * Board connects to the motor via 6/8 pin cable.
+    * You can mount the board either on the handlebars (so you can see LED signals easily) or you can mount closer to the motor if preferred.
+
+* Wireless Controller & Wireless Remote - this option you build two boards:
+    * Button keypad and Brake sensors connect to the Wireless Remote.
+    * Wireless Remote is battery powered so can be mounted on the handlebars with no cables.
+    * Wireless Controller connects to the motor via the 6/8 pin cable.
+    * Wireless Controller is mounted close to the motor. 
+
 You will need the following components:
 * **nRF52840 Nordic USB Dongle**<br>
 ![](NRF52840.png)<br><br>
@@ -25,8 +41,13 @@ EBike buck dd7818ta 80V:<br>
 
 ![](nrf52_board_cut.png)
 
-Schematic:
+Schematic: Standard Controller (also need to build Wireless Remote)
 [![](TSDZ2_wireless-schematic.png)](TSDZ2_wireless-schematic.png)
+
+Schematic: Wireless Controller with Wired Buttons (Wired Remote)
+[![](TSDZ2_wired-schematic.png)](TSDZ2_wired-schematic.png)
+
+Wire multiple brake sensors in parallel.
 
 nrf52840 board pinout:
 ![Pinout](nordic_pinout.png)
