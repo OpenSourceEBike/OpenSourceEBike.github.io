@@ -1,6 +1,6 @@
-# Wireless remote
+# Alternative Wireless remote design
 
-This is our wireless remote button for EBikes and/or GPS bike computers like the Garmin Edge. If you do not want to build your own, you can purchase on the market EBike remote controls. ie: the Garmin EBike Remote for about 80€.
+This is an alternative wireless remote design for EBikes and/or GPS bike computers like the Garmin Edge. If you do not want to build your own, you can purchase on the market EBike remote controls. ie: the Garmin EBike Remote for about 80€.
 
 However, our wireless remote control is considerably less expensive (costs 20€ in materials) and offers several additional features for EBike control.
 
@@ -18,28 +18,27 @@ Features:
 Although the original 3D printed case design has a number of very good features, (ie: it is very compact on the handlebar!), I wanted to redesign the enclosure to add a number of features that I find useful.
 Note, this design choice was made for my use of the remote with my e-bike and you may find the original design more to your liking. Please choose the design that works for you.
 
-So, my thoughts on the re-design are:
+The thoughts that went into the re-design are as follows:
 
-* In the original design I find the keypad to be hard to reach with my thumb due to design choice to stack everything vertically. This re-design allows for a very low keypad in two ways, first by extending the remote along the bar length , and second by using tie wraps to clamp the remote to the handlebar which reduces the need for some plastic height needed to screw in the clamping ring in the older design. (see next bullet below)  
+* In the original design I find the keypad to be quite high and thus hard to reach with my thumb. The keypad ended up high due to design choice to stack all the components vertically. This re-design allows for a very low keypad in two ways, first by extending the remote along the bar length , and second by using tie wraps to clamp the remote to the handlebar which reduces the need for some plastic height needed to screw in the clamping ring in the older design. (see next bullet below)  
   
-* Add a tie-wrap clamping method to the handlebar. The reason for this is because the original design used a u-shaped clamp that screws on. Unfortunately, I have found that screws used for this purpose in PLA plastic will loosen with time. I have had good success with tie wraps as they can be very neat and tidy and provide a strong clamp to the handlebar.
+* Removed the clamping u bolt and associated screws and replaced with a tie-wrap clamping method for the handlebar. The reason for this is because I have found that screws used for this purpose in PLA plastic may loosen with time, leading to potential slippage on the handlebar. I have had good success with tie wraps for bicycle accessories as they can be very neat and tidy while providing a strong clamp to the handlebar.
 
-* Eliminate the need the saw the nrf52840 to reduce it's length. The re-deign allows for the nrf52840 to be dropped into the case without modification
+* Eliminated the need the cut the end off the nrf52840 to reduce it's length. The re-deign allows for the nrf52840 to be dropped into the case without modification
 
-* Add LED light pipes to the case for the leds. This avoids the use of clear silicone or epoxy and allows for brighter displays.  I also added support in the case for both board leds. Note that at present we do not use the green led for any display information. However, this design will allow for that possibility in the future. (ie: display of motor error codes)
+* Added LED light pipes to the case to transmit lights from the leds. This avoids the use of clear silicone or epoxy and allows for brighter displays.  I also added support in the case for both board leds. Note that at present we do not use the green led for any display information. However, this design will allow for that possibility in the future. (ie: display of motor error codes)
 
-*Add support for both the 25.4 mm and 31.8 mm bicycle handlebar standards.  The design can also be mirrored to satisfy the needs of left handed cyclists.
+*Added design options for both the 25.4 mm and 31.8 mm bicycle handlebar standards.  The design can also be mirrored to satisfy the needs of left handed cyclists.
 
-* Although the battery life with a cr2032 coin cell is well over 1 year, the re-design allows for the addition of a MUCH larger battery, namely the CR123A. This lithium battery has a capacity of 1500 mah, vs the 230 mah of a typical cr2032 coin cell. This is a improvement in battery life of over 6.5 times! This effectively eliminates any concerns that a user may have around battery life.
+* Although the battery life with a cr2032 coin cell with tthe original design is well over 1 year, the re-design allows for the addition of a MUCH larger battery, namely the CR123A. This lithium battery has a capacity of 1500 mah, vs the 230 mah of a typical cr2032 coin cell. This is a improvement in battery life of over 6.5 times! This effectively eliminates any concerns that a user may have around battery life. The battery is also positioned to allow for easy replacement.
   
-* reuse the hardware from the original remote control. The same screws are used to attach the remote to the re-designed enclosure.
+* Reused the hardware from the original remote control. The same screws are used to attach the remote to the re-designed enclosure.
   
-* Eliminate the use of screws anywhere else in the design. The enclosure uses a snap on lid.
+* Eliminated the use of screws anywhere else in the design. The enclosure uses a snap on lid.
 
 
-
-
-<br>Pictures of our remote that reuses the VLCD5 keypad and also includes and a cable with connector for the brake sensor:<br>
+<br> I designed the remote using Fusion 360. The design files are located in the 3d_design_files folder. I have also included .step files to allow importing into other 3d design packages like Freecad.
+The resulting design looks like [this](https://tinyurl.com/7b3r8s2r) <br>
 ![](ebike_wireless_remote-02.jpg)
 
 Installed on the handle bard:<br>
