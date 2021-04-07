@@ -30,11 +30,11 @@ The thoughts that went into the re-design are as follows:
 
 * Added LED light pipes to the case to transmit lights from the leds. This avoids the use of clear silicone or epoxy and allows for brighter displays.  I also added support in the case for both board leds. Note that at present we do not use the green led for any display information. However, this design will allow for that possibility in the future. (ie: display of motor error codes)
 
-*Added design options for both the 25.4 mm and 31.8 mm bicycle handlebar standards. Many new mountain bike frames are moving to a 31.8mm diameter.<br>
+* Added design options for both the 25.4 mm and 31.8 mm bicycle handlebar standards. Many new mountain bike frames are moving to a 31.8mm diameter.<br>
 
 * The design can also be mirrored to satisfy the needs of left handed cyclists.
 
-* Added a button recess to prevent the button on the board from being accidentally pressed when installed in the remote case.
+* Added a button recess in the 3d design to prevent the button on the board from being accidentally pressed when installed in the remote case.
  
 * Although the battery life with a cr2032 coin cell with the original design is well over 1 year, the re-design allows for the addition of a MUCH larger battery, namely the CR123A. This lithium battery has a capacity of 1500 mah, vs the 230 mah of a typical cr2032 coin cell. This is a improvement in battery life of over 6.5 times! This effectively eliminates any concerns that a user may have around battery life. The battery is also positioned to allow for easy replacement.
   
@@ -42,7 +42,7 @@ The thoughts that went into the re-design are as follows:
   
 * Eliminated the use of screws anywhere else in the design. The enclosure uses a snap on lid.
 
-* The main disadvantage of this design approach is that the design is much bigger. ie: See the new 3d design beside the original design:
+* The main disadvantage of this design approach is that the design is MUCH bigger. ie: See the new 3d design beside the original design:
 ![](./compare.jpg)
 * 
 <br> I designed the remote using Fusion 360. The design files are located in the 3d_design_files folder. I have also included .step files to allow importing into other 3d design packages like Freecad.
@@ -127,7 +127,6 @@ Solder a breadboard jumper cable to the end of the brake wires to allow for remo
 
 Solder all connections to the nrf52840 board: <br> ![](remote_wired.jpg)<br>
 
- **Flash firmware on the nrf52840 board** using the wired connections - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](../../firmware.md)
 
 Snap the top remote cover on the bottom case: <br>
 ![](remote_box_on.jpg)<br>
@@ -146,4 +145,13 @@ The final result mounted to the handlebar:<br)>
 ![](on_bike.jpg)<br>
 
 
-4 - **Test** - Make sure the TSDZ2 wireless board if off. Power up the remote board and the firmware will blink the LED (LD2) with red color attempting to connect to the TSDZ2 wireless controller.
+4  **Flash firmware on the nrf52840 board** using the wired connections - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](../../firmware.md)
+
+5- **Test** - Make sure the TSDZ2 wireless board if off. Power up the remote board and the firmware will blink the LED (LD2) with red color attempting to connect to the TSDZ2 wireless controller.
+
+## Yet another possible re-design of the 3d enclosure
+As a final note, I have been considering another redesign which would seperate the VLCD5 remote and the wireless electronics box.
+This would have the advantage of reducing handlebar space and simplifying assembly.<br>
+In this approach, the original VLCD5 remote would be mounted as usual, and the wire from this remote as well as the brake wires would be fed into a box containing the nrrf52840 and battery. This box would then be mounted to a garmin forward mount system like this:
+![](forward_mount.jpg)<br>
+Please comment on the [forum](https://endless-sphere.com/forums/viewtopic.php?f=28&t=106346&start=500) if you would like to see this implemented.
