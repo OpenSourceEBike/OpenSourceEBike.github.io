@@ -25,7 +25,8 @@ Pictures of our DIY wireless remote button with connection for brake sensors:<br
 
 The steps for building the wireless motor controller and the remote control are described below:
 * [How to Assemble the TSDZ2 Wireless Controller](build_tsdz2_board.md)
-* [How to Assemble the Wireless remote control](remote/build_remote.md)
+* [How to Assemble the Wireless remote control with the original 3d printed case](remote/build_remote.md)
+* [How to assemble the wireless remote control with an alternative 3d printed case](remote/alt/build_remote.md)
 
 ----
 ## Operating Instructions
