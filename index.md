@@ -35,6 +35,7 @@ Pictures of our DIY fully wireless remote button with connection for brake senso
 The steps for building the wireless motor controller and the remote control are described below:
 * [How to build the TSDZ2 EBike Wireless Controller](build_tsdz2_board.md)
 * [How to build a remote](remote/build_remotes.md)
+
 ----
 ## Operating Instructions
 
