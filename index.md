@@ -21,7 +21,7 @@ Screenshots of our mobile app:<br>
 
 ## Fully wireless and wired remotes
 
-We have also developed a **[DIY fully wireless remote](remote/build_remote)**. There is also more simple wired remote if you prefer.<br>
+We have also developed a **[DIY fully wireless remote](remote/build_remotes)**. There is also more simple wired remote if you prefer.<br>
 With this remotes, is possible to power on/off the TSDZ2 motor, increase/decrease assist levels, display Ebike battery level and more.<br>
 
 The wireless remote can also connect to a GPS display like a Garmin Edge to change data pages. It costs only 20€ in materials and uses a coin battery that will work for more than 2 years.
