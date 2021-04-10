@@ -9,7 +9,7 @@ The project utilizes the proven and popular **[TSDZ2 Flexible Open Source firmwa
 We have developed a **[DIY EBike wireless controller](https://github.com/OpenSourceEBike/TSDZ2_wireless/tree/master/EBike_wireless_TSDZ2)** to connect to the motor controller, on the display connector. With it alone, you can power on/off the TSDZ2 motor, increase/decrease assist levels and see the Ebike battery level.<br>
 This wireless controller implements Bluetooth and ANT, is easy to build and costs only 25€ in materials.
 
-Picture of our DIY wireless controller:<br>
+Picture of our DIY EBike wireless controller:<br>
 ![](3d_printed_box.png)<br>
 
 ## Mobile app
@@ -49,5 +49,3 @@ You are now ready to enjoy your new wirelessly controlled ebike.
 
 * Forum message: [EBike wireless standard (like Specialized Turbo Levo) - OpenSource](https://endless-sphere.com/forums/viewtopic.php?t=106346)
 * Developers: see [documentation](https://github.com/OpenSourceEBike/TSDZ2_wireless/blob/master/EBike_wireless_remote/documentation/README.md)
-
-

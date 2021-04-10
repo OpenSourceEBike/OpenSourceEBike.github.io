@@ -9,7 +9,7 @@ Features:
 * increase/decrease assist level
 * turn on/off walk assist
 * turn on/off lights
-* show battery level
+* show EBike battery level
 * send the brake signal
 * RGB LED to provide visual feedback
 * battery should last for more than 2 years
