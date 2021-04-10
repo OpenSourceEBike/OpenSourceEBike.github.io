@@ -1,41 +1,48 @@
 # TSDZ2 Wireless Project 
 ## Background
-The project objective is to provide wireless TSDZ2 mid drive motor support for bike computers (and other wireless displays), a mobile android app for configuration and control, and a wireless remote control for assist level changing, power control and more. The goal is to emulate and improve upon commercially available wirelessly controlled ebikes like the  [Specialized Turbo Levo Ebike](https://www.youtube.com/watch?v=F43oqj1Zlww).
+The project objective is to provide wireless to the TSDZ2 mid drive motor, free and OpenSource, making it support GPS bike computers, a mobile app and a wireless remote. The goal is to emulate and improve upon commercially available wirelessly controlled ebikes like the  [Specialized Turbo Levo Ebike](https://www.youtube.com/watch?v=F43oqj1Zlww).
 
-The project utilizes the proven and popular [Open Source firmware which has been developed for the TSDZ2 mid drive motor](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki) using the SW102 or 850C/860C displays.
+The project utilizes the proven and popular **[TSDZ2 Flexible Open Source firmware](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki)** (original developed to be used with the SW102 or 850C/860C displays running our OpenSource firmware).
 
-Using this firmware, we have developed [a DIY wireless motor controller](https://github.com/OpenSourceEBike/TSDZ2_wireless/tree/master/EBike_wireless_TSDZ2) to connect to the motor, instead of using a wired display. This board supports multiple wireless formats, is easy to solder and costs only 25€.
+## EBike wireless controller
 
-Picture of our DIY wireless motor controller:<br>
+We have developed a **[DIY EBike wireless controller](https://github.com/OpenSourceEBike/TSDZ2_wireless/tree/master/EBike_wireless_TSDZ2)** to connect to the motor controller, on the display connector. With it alone, you can power on/off the TSDZ2 motor, increase/decrease assist levels and see the Ebike battery level.<br>
+This wireless controller implements Bluetooth and ANT, is easy to build and costs only 25€ in materials.
+
+Picture of our DIY wireless controller:<br>
 ![](3d_printed_box.png)<br>
 
-With this wireless controller alone, you can power on/off the TSDZ2 motor and increase/decrease assist levels. If you use our mobile app, you will be able to accomplish the same actions and also change the motor configuration.
-There are over 100 configuration options that can be customized to fit any user's particular requirements!
+## Mobile app
 
-We have also developed [our own DIY wireless remote](remote/build_remote), that makes it possible to power on/off the motor, increase/decrease assist levels, display motor battety levels and more. In addition, it can also connect to a GPS display like a Garmin Edge to change data pages.<br> 
-This wireless remote costs only 20€ and the battery will work for more than 2 years.
+We also developed a **[mobile app](android_app_operation.md)** and with that you can control the TSDZ2 motor as also change his configurations - there are over 100 configuration options that can be customized to fit any user's particular requirements!
 
-Pictures of our DIY wireless remote button with connection for brake sensors:<br>
-![](remote/ebike_wireless_remote-01-350x.jpg)<br>
-<br>
-![](remote/ebike_wireless_remote-03-350x.jpg)<br>
+Screenshots of our mobile app:<br>
+![android](android1-small.jpg) ![android](android2-small.jpg)
+
+## Fully wireless and wired remotes
+
+We have also developed a **[DIY fully wireless remote](remote/build_remote)**. There is also more simple wired remote if you prefer.<br>
+With this remotes, is possible to power on/off the TSDZ2 motor, increase/decrease assist levels, display Ebike battery level and more.<br>
+
+The wireless remote can also connect to a GPS display like a Garmin Edge to change data pages. It costs only 20€ in materials and uses a coin battery that will work for more than 2 years.
+
+Pictures of our DIY fully wireless remote button with connection for brake sensors:<br>
+![](remote/ebike_wireless_remote-01-350x.jpg) ![](remote/ebike_wireless_remote-03-350x.jpg)<br>
 
 ----
 ## Getting Started
 
 The steps for building the wireless motor controller and the remote control are described below:
-* [How to Assemble the TSDZ2 Wireless Controller](build_tsdz2_board.md)
-* [How to Assemble the Wireless remote control with the original 3d printed case](remote/build_remote.md)
-* [How to assemble the wireless remote control with an alternative 3d printed case](remote/alt/build_remote.md)
-
+* [How to build the TSDZ2 EBike Wireless Controller](build_tsdz2_board.md)
+* [How to build a remote](remote/build_remotes.md)
 ----
 ## Operating Instructions
 
 You are now ready to enjoy your new wirelessly controlled ebike.
 
-* [Wireless motor controller operating instructions](wireless_motor_operation.md)
-* [Android app operating instructions](android_app_operation.md)
-* [Wireless remote operating instructions](operation.md)
+* [EBike wireless controller operating instructions](wireless_motor_operation.md)
+* [Mobile app operating instructions](android_app_operation.md)
+* [Remote operating instructions](operation.md)
 
 -----
 ## Community help
