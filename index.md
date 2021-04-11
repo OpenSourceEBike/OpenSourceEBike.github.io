@@ -6,7 +6,7 @@ The project utilizes the proven and popular **[TSDZ2 Flexible Open Source firmwa
 
 ## EBike wireless controller
 
-We have developed a **[DIY EBike wireless controller](https://github.com/OpenSourceEBike/TSDZ2_wireless/tree/master/EBike_wireless_TSDZ2)** to connect to the motor controller, on the display connector. With it alone, you can power on/off the TSDZ2 motor, increase/decrease assist levels and see the Ebike battery level.<br>
+We have developed a **[DIY EBike wireless controller](ebike_wireless_controller.md)** to connect to the motor controller, on the display connector. With it alone, you can power on/off the TSDZ2 motor, increase/decrease assist levels and see the Ebike battery level.<br>
 This wireless controller implements Bluetooth and ANT, is easy to build and costs only 25€ in materials.
 
 Picture of our DIY EBike wireless controller:<br>
@@ -33,7 +33,7 @@ Pictures of our DIY fully wireless remote button with connection for brake senso
 ## Getting Started
 
 The steps for building the wireless motor controller and the remote control are described below:
-* [How to build the TSDZ2 EBike Wireless Controller](build_tsdz2_board.md)
+* [How to build the TSDZ2 EBike Wireless Controller](ebike_wireless_controller.md)
 * [How to build a remote](remote/build_remotes.md)
 
 ----
