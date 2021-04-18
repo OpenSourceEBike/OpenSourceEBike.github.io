@@ -68,12 +68,12 @@ You MUST cut the SB2 and solder the SB1 pads on the bottom of the board:
 3 - **Build your enclosure** - 3D print the enclosure and assembly.
 
 3D print the following 3 STL files (can be printed in PLA and at 0.2mm layer height):
-  * [top_part.amf](top_part.amf)<br>
-  ![top_part](top_part.png)<br>
-  * [lower_part.amf](lower_part.amf)<br>
-  ![lower_part](lower_part.png)<br>
-  * [clamp_part.amf](clamp_part.amf)<br>
-  ![clamp_part](clamp_part.png)<br>
+  * [keypad.amf](keypad.amf)<br>
+  ![keypad.amf](top_part.png)<br>
+  * [lower.amf](lower.amf)<br>
+  ![lower](lower_part.png)<br>
+  * [clamp.amf](clamp.amf)<br>
+  ![clamp](clamp_part.png)<br>
 
 Assembly:
 
