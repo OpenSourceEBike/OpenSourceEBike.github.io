@@ -1,20 +1,20 @@
-# How to build the TSDZ2 wireless board
+# How to build the TSDZ2 EBike wireless controller
 
-Before you start you need to decide how you want to attach buttons and brake sensors and whether you want the option to have fewer wires on your ebike.
+Before you start you need to decide how you want to attach buttons and brake sensors and whether you want the option to have fewer wires on your EBike.
 
-Both options require the use of the Android app to configure the bike. Android app connection is not required to control the bike when riding - but can be used to provide real-time statistics; speed/motor current etc.
+Both options require the use of the mobile app to configure the EBike. The mobile app connection is not required to control the EBike when riding - but can be used to provide real-time statistics; speed/motor current etc.
 
-* Wireless Controller & Wired Remote - this option you build one board:
+* **Wireless Controller** and **Wired Remote**:
+    * You will need to build only one board and it connects to the motor via 6/8 pin cable.
     * Button keypad connects to the board directly.
     * Brake sensors connect direct to the motor.
-    * Board connects to the motor via 6/8 pin cable.
     * You can mount the board either on the handlebars (so you can see LED signals easily) or you can mount closer to the motor if preferred.
 
-* Wireless Controller & Wireless Remote - this option you build two boards:
+* **Wireless Controller** and **Wireless Remote**:
+    * You will need to build two boards. The first one for the EBike wireless controller and it connects to the motor via 6/8 pin cable. The second board will be for the wireless remote.
     * Button keypad and Brake sensors connect to the Wireless Remote.
     * Wireless Remote is battery powered so can be mounted on the handlebars with no cables.
-    * Wireless Controller connects to the motor via the 6/8 pin cable.
-    * Wireless Controller is mounted close to the motor. 
+    * EBike wireless controller is mounted close to the motor. 
 
 You will need the following components:
 * **nRF52840 Nordic USB Dongle**<br>
