@@ -29,6 +29,17 @@ The wireless remote can also connect to a GPS display like a Garmin Edge to chan
 Pictures of our DIY fully wireless remote button with connection for brake sensors:<br>
 ![](remote/ebike_wireless_remote-01-350x.jpg) ![](remote/ebike_wireless_remote-03-350x.jpg)<br>
 
+## Garmin Edge / cycling GPS displays
+
+The [EBike wireless controller](ebike_wireless_controller.md) implements the ANT+ LEV (ANT+ EBike) protocol standard and with that, the Garmin Edge or other cycling GPS displays that support this standard, support natively the EBike. We tested on Garmin Edge 830 and Edge 1000 and you can:
+* see and change the assist level using the touch screen
+* see other EBike information like the battery SOC, speed, etc
+
+The [wireless remote](remote/build_remotes) implements ANT+ CONTROLS protocol standard and a click on the menu button will change the Garmin Edge page.<br>
+
+The following image shows a page on Garmin Edge 830, showing EBike battery SOC, assist level and speed. It also shows other information like the graph of the rider heart rate:<br>
+![](garmin_edge_830-01-350x.jpg)<br>
+
 ----
 ## Getting Started
 
