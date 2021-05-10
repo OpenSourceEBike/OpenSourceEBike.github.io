@@ -10,7 +10,8 @@ We have developed a **[DIY EBike wireless controller](ebike_wireless_controller.
 This wireless controller implements Bluetooth and ANT, is easy to build and costs only 25€ in materials.
 
 Picture of our DIY EBike wireless controller:<br>
-![](3d_printed_box.png) ![](3d_printed_box-2.png)<br>
+![](3d_printed_box.png)<br>
+![](3d_printed_box-2.png)<br>
 
 ## Mobile app
 
