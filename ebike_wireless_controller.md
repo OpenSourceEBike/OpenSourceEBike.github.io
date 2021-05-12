@@ -79,18 +79,29 @@ See that other than the TSDZ2 display connector wires, there is only need for mo
 There is a red LED on the DC-DC board that is always on, to save that power, I simple removed the resistor R4 nard the LED:<br>
 ![](TSDZ2_wireless_board_small-06.jpg)
 
-Final assembly. The holes are for the RGB LED and the button:<br>
+Assembly. The holes are for the RGB LED and the button:<br>
 ![](TSDZ2_wireless_board_small-08.jpg)
 
 ![](TSDZ2_wireless_board_small-09.jpg)
 
-Finally I did fill be box with translucid silicone and inserted the board - my objective is to have a robust and water prof device. Although not seen on the image, after I put the box cover and I did fully cover the holes with the silicone and it works very well to see the LED light and also to be able to click on the button as the silicone is flexible:<br>
-![](TSDZ2_wireless_board_small-10.jpg)
-
 Download here the files for 3D print the box:
-* [TSDZ2_wireless_small_box.amf](TSDZ2_wireless_small_box.amf)
-* [TSDZ2_wireless_small_box_cover.amf](TSDZ2_wireless_small_box_cover.amf)
+* [TSDZ2_wireless_small_box.amf](https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/raw/main/TSDZ2_wireless_small_box.amf)
+* [TSDZ2_wireless_small_box_cover.amf](https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/raw/main/TSDZ2_wireless_small_box_cover.amf)
 
 3 - **Flash firmware on the nrf52840 board** - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](firmware.md)
 
 4 - **Test** - when the board is powered up and running the firmware, you should see the "TSDZ2" Bluetooth device on your mobile phone.
+
+5 - **Making water prof and install on EBike**
+
+I did fill be box with translucid silicone and inserted the board - my objective is to have a robust and water prof device:<br>
+![](TSDZ2_wireless_board_small-10.jpg)
+
+After 24 hours waiting for silicone to dry. I did fully cover the holes with the silicone and it works very well to see the LED light and also to be able to click on the button as the silicone is flexible:<br>
+![](TSDZ2_wireless_board_small-11.jpg)
+
+Checking to see if it still works:<br>
+![](TSDZ2_wireless_board_small-12.jpg)
+
+Final instalation on the frame of my EBike:<br>
+![](TSDZ2_wireless_board_small-13.jpg)

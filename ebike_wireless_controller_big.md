@@ -25,6 +25,6 @@ And inside of a 3D printed box. Note that I used a small zip tie to block the ca
 ![](TSDZ2-wireless-board-08.jpg)
 
 Download here the files for 3D print the box:
-* [TSDZ2_wireless_box.amf](TSDZ2_wireless_box.amf)
-* [TSDZ2_wireless_box_cover.amf](TSDZ2_wireless_box_cover.amf)
+* [TSDZ2_wireless_box.amf](https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/raw/main/TSDZ2_wireless_box.amf)
+* [TSDZ2_wireless_box_cover.amf](https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/raw/main/TSDZ2_wireless_box_cover.amf)
 
