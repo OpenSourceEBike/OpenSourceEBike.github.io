@@ -11,6 +11,7 @@ This wireless controller implements Bluetooth and ANT, is easy to build and cost
 
 Picture of our DIY EBike wireless controller:<br>
 ![](3d_printed_box.png)<br>
+
 ![](3d_printed_box-2.png)<br>
 
 ## Mobile app
