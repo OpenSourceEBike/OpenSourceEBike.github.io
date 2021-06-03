@@ -83,8 +83,6 @@ Optional components:
 
 2 - **Build your board** - solder all the wires following this schematic. (use cr123 battery where it shows cr2032 battery)
 
-![](./ebike_remote_wireless-schematic.png)
-
 Do not solder any wires to the battery, it would be dangerous. Simple solder to the battery clips and insert them into the case
 
 Schematic:

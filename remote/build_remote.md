@@ -9,7 +9,7 @@ Features:
 * increase/decrease assist level
 * turn on/off walk assist
 * turn on/off lights
-* show battery level
+* show EBike battery level
 * send the brake signal
 * RGB LED to provide visual feedback
 * battery should last for more than 2 years
@@ -68,12 +68,12 @@ You MUST cut the SB2 and solder the SB1 pads on the bottom of the board:
 3 - **Build your enclosure** - 3D print the enclosure and assembly.
 
 3D print the following 3 STL files (can be printed in PLA and at 0.2mm layer height):
-  * [top_part.stl](top_part.stl)<br>
-  ![top_part](top_part.png)<br>
-  * [lower_part.stl](lower_part.stl)<br>
-  ![lower_part](lower_part.png)<br>
-  * [clamp_part.stl](clamp_part.stl)<br>
-  ![clamp_part](clamp_part.png)<br>
+  * [keypad.amf](keypad.amf)<br>
+  ![keypad.amf](top_part.png)<br>
+  * [lower.amf](lower.amf)<br>
+  ![lower](lower_part.png)<br>
+  * [clamp.amf](clamp.amf)<br>
+  ![clamp](clamp_part.png)<br>
 
 Assembly:
 

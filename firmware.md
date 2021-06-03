@@ -4,5 +4,3 @@ With the bootloader installed you can now program the Over the Air (OTA) updates
 * TSDZ2_wireless_remote_ota_update-xxx.zip - for the TSDZ2 wireless remote
 
 To install please follow the update instructions located [here](dfu.md).
-
-## [back](./index.md)
