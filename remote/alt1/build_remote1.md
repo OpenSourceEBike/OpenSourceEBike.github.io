@@ -54,7 +54,8 @@ ie:  the garmin forward mounting system
   
 * Eliminated the use of screws anywhere else in the design. The wireless enclosure uses a snap on lid.![lid](./brake_splitter_connection.jpg)
 * I designed the remote using Fusion 360. The design files are located in the 3d_design_files folder. I have also included .step files to allow importing into other 3d design packages like Freecad.
-The resulting design looks like [this](https://tinyurl.com/7b3r8s2r)
+The resulting design looks like [this](https://a360.co/34ONn2u
+)
 
 ## How to build the wireless enclosure
 
@@ -78,9 +79,9 @@ Alternatively, you can use a drop of clear silicone, although the light transmis
 
 * **Brake Splitter Wire** This can be purchased from ali express or other online shops, and will usually be part of an ebike brake assembly.![splitter](./brake_splitter_wire.jpg)
 
-* **5 pin extension cable** This can be purchased from online retailers like ali express, and is used to make a connection to the VLCD5 button remote. Alternatively, you can use the connector that cam with the cable harness on the TSDZ2 ebike by cutting the cable.
+* **5 pin extension cable** This can be purchased from online retailers like [ali express](https://tinyurl.com/28p22mkj), and is used to make a connection to the VLCD5 button remote. Alternatively, you can use the connector that cam with the cable harness on the TSDZ2 ebike by cutting the cable.![ext](./ext_cable.png)
 
-* **3D printed enclosure**: NOTE that if you do not have a 3D printer, you can improvise by simple use some black tape to protect the board, wires and the battery. If you 3D print this enclosure, it should costs about 1€.
+* **3D printed enclosure**: NOTE that if you do not have a 3D printer, you can improvise by simple use some black tape to protect the board, wires and the battery. If you 3D print this enclosure, it should costs about 1€.![enclosure](./light_pipes_installed.jpg)
 
 ## Step by step instructions
 
@@ -104,7 +105,9 @@ You MUST cut the SB2 and solder the SB1 pads on the bottom of the board:
 
 3 - **3d print the wireless enclosure** - 3D print the wireless enclosure, the quarter turn mount and up front garmin mounts(if needed). ![plastic](./all_plastic_comps.jpg)
 The stl files for 3d printing are located in the [stl_files](./stl_files) directory.
-please note that the garmin mount is licensed under creative commons by timangus and is located on thingiverse [here](https://www.thingiverse.com/thing:4483267).
+The wireless enclosure has the opensource hardware logo, and a stylized e-bike figure on the top of the box.
+It can be printed in two colors to emphasized these design components as shown in the figure.
+Please note that the garmin mount is licensed under creative commons by timangus and is located on thingiverse [here](https://www.thingiverse.com/thing:4483267).
 Similarly, the garmin quarter turn mount is licensed under creative commons  by Whereswaldo and is located on thingiverse [here](http://www.thingiverse.com/thing:656833)
 
 3D print the STL files (can be printed in PLA, but PETG will have better sun tolerance and at 0.2mm layer height) All files are located in the stl_files directory
