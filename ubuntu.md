@@ -26,12 +26,17 @@
 6. Start another terminal session to access the openocd server, and enter the following command:
     ```
     $ telnet localhost 4444
+    ```
+    Next enter the following commands on the telnet terminal:
+
+    ```
     $ reset init
     $ halt
+    $ nrf52.dap apreg 1 0x04 0x01
     $ nrf5 mass_erase
     $ program (path to hex)/TSDZ2_bootloader_with_sd.hex verify
     $ reset exit 
-    ```  
+    ``` 
 
     ![](openocd2.png)
 
