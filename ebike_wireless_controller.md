@@ -19,7 +19,9 @@ Both options require the use of the mobile app to configure the EBike. The mobil
 You will need the following components:
 * **nRF52840 Nordic USB Dongle**<br>
 ![](NRF52840.png)<br><br>
-* **(80V -> 5V power board**: costs 6€ and can be bought in many online shops like EBay, just search for "EBike buck dd7818ta 80". Alternatively you can use the [XP Power STH0548S05](https://export.rsdelivers.com/product/xp-power/sth0548s05/xp-power-surface-mount-dc-dc-switching-regulator/1883365) that is smaller but a bit more expensive. Please note that any DC-DC converter that you choose must have a voltage input of at least 60V and a 5V output.<br><br>
+* **Step down 80V -> 5V power board**: costs 6€ and can be bought in many online shops like EBay, just search for "EBike buck dd7818ta 80". Alternatively you can use the [XP Power STH0548S05](https://export.rsdelivers.com/product/xp-power/sth0548s05/xp-power-surface-mount-dc-dc-switching-regulator/1883365) that is smaller but a bit more expensive. Please note that any DC-DC converter that you choose must have a voltage input of at least 60V and a 5V output.<br><br>
+WARNING: the step down power boards based on LM2576HV, although very popular, they did work initially but later that did burn sudendly and result also in burned nRF52840 board!
+<br><br>
 
 * **Perf board**: costs 1€, can be bought on EBay or other shops.<br>
 ![](perfboard.jpg)<br><br>
@@ -29,6 +31,12 @@ You will need the following components:
 ![](bsp296.png)<br><br>
 * **TSDZ2 display extension cable**: costs 6€, can be bought on EBay or other shops.<br>
 ![](TSDZ2_cable.png)<br><br>
+
+* **Four screws M2x6**: costs 1€, can be bought on EBay or other shops. This screws can be M2x4 up to M2x8. Buy them in black color if you plan to 3D print the enclose in black color.<br>
+![](screw.jpg)<br><br>
+
+* **Silicone**: costs 4€, can be bought on EBay or other shops. The silicone will be used to seal the enclosure and make it water prof. There are silicone that is fast to cure like in two hours but this can not work very well, for not gluing well to the 3D printed plastic PLA. There are small tubes of silicone at shops, that you can use just a few pieces at a time.<br>
+![](silicone.jpg)<br><br>
 
 ## Step by step instructions
 
@@ -55,10 +63,8 @@ nrf52840 board pinout:
 
 **Next steps considers you are using the small DC-DC [XP Power STH0548S05](https://export.rsdelivers.com/product/xp-power/sth0548s05/xp-power-surface-mount-dc-dc-switching-regulator/1883365). If you decided to use the "EBike buck dd7818ta 80", the see instead here: [build using the EBike buck dd7818ta 80](ebike_wireless_controller_big.md)**
 
-A perfboard were cut in a way that is has almost the same are as the power DC-DC board. See here all the boards, perfboard on the left, nRF52840 board at center and DC-DC power board at right:<br>
+A perfboard were cut in a way that is has almost the same area as the 3D printed box:<br>
 ![](TSDZ2_wireless_board_small-01.jpg)
-
-Note that perfboard must have that exact dimensions / number of holes, so it will fit inside the 3D printed box.<br>
 
 The nrf52840 board were soldered to the perfboard using six small wires, to connect the needed six pads as you can see on the schematic:<br>
 ![](TSDZ2_wireless_board_small-02.jpg)
@@ -69,20 +75,18 @@ Here we can see the perford on the other side and the six small wires soldered:<
 Next step were to solder the DC-DC board and the mosfets. Only that three connections of DC-DC are used, the GND on one side and Vin and Vout on the other side. Also I did not have with me the BSP296 mosfet and used another equivalent but smaller. (I also did cut a bit more the perfboard but was a mistake):<br>
 ![](TSDZ2_wireless_board_small-04.jpg)
 
-Next, I tested to see if the board did fit on the case:<br>
+Next, I tested to see if the board did fit on the case (image from old design):<br>
 ![](TSDZ2_wireless_board_small-07.jpg)
 
 Next I soldered all the wires including the ones of the cable to connect on the TSDZ2 display connector.<br>
 See that other than the TSDZ2 display connector wires, there is only need for more five wires. And I could use for sure thinner wires, but I used the ones I had at hand:<br>
 ![](TSDZ2_wireless_board_small-05.jpg)
 
-There is a red LED on the DC-DC board that is always on, to save that power, I simple removed the resistor R4 nard the LED:<br>
-![](TSDZ2_wireless_board_small-06.jpg)
-
-Assembly. The holes are for the RGB LED and the button:<br>
-![](TSDZ2_wireless_board_small-08.jpg)
-
+Assembly:<br>
 ![](TSDZ2_wireless_board_small-09.jpg)
+
+Use the four M2x6 screws to fix the cover. The hole is for the RGB LED but you can verify you can still click on the board button:<br>
+![](TSDZ2_wireless_board_small-08.jpg)
 
 Download here the files for 3D print the box:
 * [TSDZ2_wireless_small_box.amf](https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/raw/main/TSDZ2_wireless_small_box.amf)
@@ -94,14 +98,13 @@ Download here the files for 3D print the box:
 
 5 - **Making water prof and install on EBike**
 
-I did fill be box with translucid silicone and inserted the board - my objective is to have a robust and water prof device:<br>
-![](TSDZ2_wireless_board_small-10.jpg)
+I did fill be box holes with translucid silicone and inserted the board - my objective is to have a water prof device. But I do not put to much silicone because I may need to repair the board later. I put silicone on the cables, to avoid the vibrations on the bicycle to break the wires over the time.
 
-After 24 hours waiting for silicone to dry. I did fully cover the holes with the silicone and it works very well to see the LED light and also to be able to click on the button as the silicone is flexible:<br>
+After 24 hours waiting for silicone to dry. I did fully cover the hole and it works very well to see the LED light(image from old design):<br>
 ![](TSDZ2_wireless_board_small-11.jpg)
 
-Checking to see if it still works:<br>
+Checking to see if it still works (image from old design):<br>
 ![](TSDZ2_wireless_board_small-12.jpg)
 
-Final instalation on the frame of my EBike:<br>
+Final installation on the frame of my EBike (image from old design):<br>
 ![](TSDZ2_wireless_board_small-13.jpg)
