@@ -94,7 +94,13 @@ Download here the files for 3D print the box:
 
 3 - **Flash firmware on the nrf52840 board** - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](firmware.md)
 
-4 - **Test** - when the board is powered up and running the firmware, you should see the "TSDZ2" Bluetooth device on your mobile phone.
+4 - **Test** -
+To avoid damaging your board or/and the TSDZ2 controller, follow the following steps to plug your board on the TSDZ2:
+   1. Disconnect the battery to the TSDZ2,
+   2. Wait few seconds to discharge the capacitors in the TSDZ2,
+   3. Connect your wireless controller to the TSDZ2,
+   4. Plug the battery back. 
+when the board is powered up and running the firmware, you should see the "TSDZ2" Bluetooth device on your mobile phone.
 
 5 - **Making water prof and install on EBike**
 
