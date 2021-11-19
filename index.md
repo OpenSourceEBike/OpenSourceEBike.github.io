@@ -1,67 +1,42 @@
-# TSDZ2 Wireless Project 
-## Background
-The project objective is to provide wireless to the TSDZ2 mid drive motor, free and OpenSource, making it support GPS bike computers, a mobile app and a wireless remote. The goal is to emulate and improve upon commercially available wirelessly controlled ebikes like the  [Specialized Turbo Levo Ebike](https://www.youtube.com/watch?v=F43oqj1Zlww).
+# TSDZ2 DIY and OpenSource EV display
 
-The project utilizes the proven and popular **[TSDZ2 Flexible Open Source firmware](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki)** (original developed to be used with the SW102 or 850C/860C displays running our OpenSource firmware).
+This display is OpenSource and easy to DIY, and was tested with EBike TSDZ2 mid drive running our OpenSource firmware.<br>
 
-## EBike wireless controller
+Main screen showing battery SOC, speed, motor power and battery power used:<br>
+![](display-1-small.jpg)
 
-We have developed a **[DIY EBike wireless controller](ebike_wireless_controller.md)** to connect to the motor controller, on the display connector. With it alone, you can power on/off the TSDZ2 motor, increase/decrease assist levels and see the Ebike battery level.<br>
-This wireless controller implements Bluetooth and ANT, is easy to build and costs only 25€ in materials.
+Configurations screen, showing some battery configuration options:<br>
+![](display-2-small.jpg)
 
-Picture of our DIY EBike wireless controller:<br>
-![](3d_printed_box.png)<br>
 
-![](3d_printed_box-2.png)<br>
+## Main advantages of this display
 
-## Mobile app
+* easy to build as DIY
+* all the advanced configurations for the motor and battery are done directly on the display
+* supports Bluetooth and ANT wireless communications
+* supports 0.96 and 1.3 inches 128x64 OLED displays
+* easy to install our firmware, includes OTA wireless updates
+* easy to repair, can be opened easily and the electronic components are popular ones available worldwide
+* easy to customize with some extra electronics so it can be reused on other devices, like adding CANBUS communication so it can work with more recent Bafang motors
+* if you decide to stop using it, you can dismantle and reuse the electronic components on other projects
 
-We also developed a **[mobile app](android_app_operation.md)** and with that you can control the TSDZ2 motor as also change his configurations - there are over 100 configuration options that can be customized to fit any user's particular requirements!
+## Motivation
 
-Screenshots of our mobile app:<br>
-![android](android1-small.jpg) ![android](android2-small.jpg)
+On the last years we developed OpenSource firmware for popular cheap EBike displays and we found some hard limitations:
+* some displays stop to work suddenly, are expensive and can not be repaired because they are sealed and are not meant to be opened
+* manufacturers makes different versions over the time of the same display and the firmware need to be developed again (at least partially)
+* on some displays is almost impossible to install our advanced firmware
+* it is impossible to use the same display for different devices because sometimes there are small electronics differences on the communications, like some devices using UART, other CANBUS and other UART one wire
 
-## Fully wireless and wired remotes
+## How to build
 
-We have also developed a **[DIY fully wireless remote](remote/build_remotes)**. There is also more simple wired remote if you prefer.<br>
-With this remotes, is possible to power on/off the TSDZ2 motor, increase/decrease assist levels, display Ebike battery level and more.<br>
+See here [How to build the display](build_display.md).
 
-The wireless remote can also connect to a GPS display like a Garmin Edge to change data pages. It costs only 20€ in materials and uses a coin battery that will work for more than 2 years.
-
-Pictures of our DIY fully wireless remote button with connection for brake sensors:<br>
-![](remote/ebike_wireless_remote-01-350x.jpg)<br>
-
-![](remote/ebike_wireless_remote-03-350x.jpg)<br>
-
-## Garmin Edge / cycling GPS displays
-
-The [EBike wireless controller](ebike_wireless_controller.md) implements the ANT+ LEV (ANT+ EBike) protocol standard and with that, the Garmin Edge or other cycling GPS displays that support this standard, support natively the EBike. We tested on Garmin Edge 830 and Edge 1000 and you can:
-* see and change the assist level using the touch screen
-* see other EBike information like the battery SOC, speed, etc
-
-The [wireless remote](remote/build_remotes) implements ANT+ CONTROLS protocol standard and a click on the menu button will change the Garmin Edge page.<br>
-
-The following image shows a page on Garmin Edge 830, showing EBike battery SOC, assist level and speed. It also shows other information like the graph of the rider heart rate:<br>
-![](garmin_edge_830-01-350x.jpg)<br>
-
-----
-## Getting Started
-
-The steps for building the wireless motor controller and the remote control are described below:
-* [How to build the TSDZ2 EBike Wireless Controller](ebike_wireless_controller.md)
-* [How to build a remote](remote/build_remotes.md)
-
-----
 ## Operating Instructions
 
-You are now ready to enjoy your new wirelessly controlled ebike.
+See here [How to use the display](use_display.md)
 
-* [EBike wireless controller operating instructions](wireless_motor_operation.md)
-* [Mobile app operating instructions](android_app_operation.md)
-* [Remote operating instructions](operation.md)
-
------
 ## Community help
 
-* Forum message: [EBike wireless standard (like Specialized Turbo Levo) - OpenSource](https://endless-sphere.com/forums/viewtopic.php?t=106346)
+* Forum message: [DIY OpenSource display for EVs, TSDZ2 EBike motor and Xiaomi scooter](https://endless-sphere.com/forums/viewtopic.php?f=7&t=113971)
 * Developers: see [documentation](https://github.com/OpenSourceEBike/TSDZ2_wireless/blob/master/EBike_wireless_remote/documentation/README.md)
