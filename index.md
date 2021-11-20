@@ -1,6 +1,6 @@
 # TSDZ2 DIY and OpenSource EV display
 
-This display is OpenSource and easy to DIY, and was tested with EBike TSDZ2 mid drive running our OpenSource firmware.<br>
+[This display is OpenSource](https://github.com/OpenSourceEBike/ev_display_bluetooth_ant) and easy to DIY, and was tested with [EBike TSDZ2 mid drive running our OpenSource firmware](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki).<br>
 
 Main screen showing battery SOC, speed, motor power and battery power used:<br>
 ![](display-1-small.jpg)
@@ -34,7 +34,7 @@ See here [How to build the display](build_display.md).
 
 ## Operating Instructions
 
-See here [How to use the display](use_display.md)
+See here How to use the display (TODO)
 
 ## Community help
 

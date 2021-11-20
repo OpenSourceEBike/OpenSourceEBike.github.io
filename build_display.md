@@ -3,21 +3,25 @@
 Some of the following components can bought on online shops like Aliexpress, Ebay or at specialized electronics shops like [www.mouser.com](https://mouser.com/) or [www.farnell.com](https://www.farnell.com/).
 
 You will need the following components:
+* **OLED display I2C 128x64 pixels 1.3 inches or 0.96 inches**: costs 3€. You need to choose the smaller or the bigger version. It is recommended the bigger 1.3 inches version. The smaller version makes impossible to see the numbers on display while riding, you need to stop to be able to read.<br>
+It must be the I2C version, that has 4 pins only. There are SPI version which uses more than 4 pins.<br>
+![](oled_display_1.3.png)<br>
 * **nRF52840 Nordic USB Dongle**: costs 11€.<br>
 ![](NRF52840.png)<br>
 * **Step down 80V -> 5V power board [XP Power STH0548S05](https://export.rsdelivers.com/product/xp-power/sth0548s05/xp-power-surface-mount-dc-dc-switching-regulator/1883365)**: costs 11€.
 ![](dcdc.png)<br>
 * **Power switch BTS4140N**: costs 2€.<br>
 ![](4140.png)<br>
-* **Transistor BSP296**: costs 2€.<br>
+* **Transistor BSP296 or BSS123**: costs 2€.<br>
 ![](bsp296.png)<br>
 * **3 buttons remote**: costs 8€. This remote is from the EBike 850C display, that can be bought as a spare part - search on Aliexpress for "850c extension".<br>
 ![](850c_keypad.png)<br>
 * **Perf board**: costs 1€.<br>
 ![](perfboard.jpg)<br>
-* **TSDZ2 display extension cable**: costs 6€.<br>
+* **TSDZ2 display extension cable**: costs 6€. This extension will work for TSDZ2 with 6 pin display connector - if you have the 8 pin instead, you need to figure out a way to do the extension.<br>
+Buy two units in the case you damage one unit.<br>
 ![](TSDZ2_cable.png)<br>
-* **Four screws M2x6**: costs 1€. This screws can be M2x4 up to M2x8. Buy them in black color if you plan to 3D print the enclose in black color.<br>
+* **Four screws M2x12**: costs 1€. Buy them in black color if you plan to 3D print the enclose in black color.<br>
 ![](screw.jpg)<br>
 * **Silicone**: costs 4€, can be bought on EBay or other shops. The silicone will be used to seal the enclosure and make it water prof. There are silicone that is fast to cure like in two hours but this can not work very well, like not gluing well to the 3D printed plastic PLA. There are small tubes of silicone at shops, that you can use just a few pieces at a time.<br>
 ![](silicone.jpg)<br><br>
@@ -27,69 +31,93 @@ You will need the following components:
 1 - **Flash bootloader on the nrf52840 board** - see the page: [How to Flash the Wireless Bootloader on a Nordic Dongle](bootloader.md).<br>
 In this step you flash the bootloader firmware on your nrf52840 board and check to see if is working as expected - if you can flash, then the board is working.
 
-2 - **Build your board**
+2 - **3D print the enclosure**: 
+* 1.3 inches OLED display: [display_base.amf](3D_print_enclosure/OLED_1.3_display/display_base.amf)
+  and [display_cover.amf](3D_print_enclosure/OLED_1.3_display/display_cover.amf)
+* 0.96 inches OLED display: [display_base.amf](3D_print_enclosure/OLED_0.96_display/display_base.amf)
+  and [display_cover.amf](3D_print_enclosure/OLED_0.96_display/display_cover.amf)
 
-2.1 - Cut your nRF52840 board with a metal saw by hand and this way it will be smaller - here a picture as example:
+3 - **Build your board**
+
+3.1 - Understand the circuit, see the schematic:
+[![](schematic.png)](schematic.png)
+
+### Schematic explanation
+
+* the DC-DC converts the high battery voltage to output 5 volts, which will then be the input for the NRF52840 board.
+
+* the NRF52840 has a regulator that will convert the 5 volts to 3.3 volts out the VDD OUT pin, which will power the OLED display.
+
+* the NRF52840 board communicates with the OLED display using I2C connection: SDA and SCL lines.
+
+* the NRF52840 board reads directly 3 buttons state from the keypad.
+
+* the NRF52840 board controls as ON or OFF state the switch BSP296, which in turn will control the BTS4140N and will then disable or enable the battery voltage to the motor controller - this will effectively turn ON or OFF the TSDZ2 motor controller.
+
+* the NRF52840 board communicates directly with the TSDZ2 motor controller using the UART TX and RX lines.
+
+* the brake signal (wire multiple brake sensors in parallel) goes directly from the brake sensor input of the TSDZ2 motor controller.
+
+NRF52840 board pinout:
+![Pinout](nordic_pinout.png)
+
+3.2 - Cut your nRF52840 board with a metal saw by hand so this way it will be smaller. Check it is ok on the enclosure, if not you can use a file tool to do the final adjustment - here a picture as example:
 
 ![](nrf52_board_cut.png)
 
-2.2 - Solder all the components following the next schematic.
-
-Schematic: Standard Controller (also need to build Wireless Remote)
-[![](TSDZ2_wireless-schematic.png)](TSDZ2_wireless-schematic.png)
-
-Schematic: Wireless Controller with Wired Buttons (Wired Remote)
-[![](TSDZ2_wired-schematic.png)](TSDZ2_wired-schematic.png)
-
-Wire multiple brake sensors in parallel.
-
-nrf52840 board pinout:
-![Pinout](nordic_pinout.png)
-
-**Next steps considers you are using the small DC-DC [XP Power STH0548S05](https://export.rsdelivers.com/product/xp-power/sth0548s05/xp-power-surface-mount-dc-dc-switching-regulator/1883365). If you decided to use the "EBike buck dd7818ta 80", the see instead here: [build using the EBike buck dd7818ta 80](ebike_wireless_controller_big.md)**
-
-A perfboard were cut in a way that is has almost the same area as the 3D printed box:<br>
+3.3 - Start soldering the components on a perfboard. Cut the perfboard in a way that is has almost the same area as the 3D printed box:<br>
 ![](TSDZ2_wireless_board_small-01.jpg)
 
-The nrf52840 board were soldered to the perfboard using six small wires, to connect the needed six pads as you can see on the schematic:<br>
+NOTE: always triple check the connections you did as it is easy for you to do a mistake. For instance, exchanging battery voltage pin with GND pin will most probably result in a burned NRF52840 and/or the DC-DC board.
+
+The NRF52840 board were soldered to the perfboard (but still missing some connections).<br>
+The OLED display connections do not need that pins as they will be soldered on the inverse side directly to the pads of NRF52840 board:<br>
 ![](TSDZ2_wireless_board_small-02.jpg)
 
-Here we can see the perford on the other side and the six small wires soldered:<br>
+Here we can see the perford on the other side and some pins already soldered:<br>
 ![](TSDZ2_wireless_board_small-03.jpg)
 
-Next step were to solder the DC-DC board and the mosfets. Only that three connections of DC-DC are used, the GND on one side and Vin and Vout on the other side. Also I did not have with me the BSP296 mosfet and used another equivalent but smaller. (I also did cut a bit more the perfboard but was a mistake):<br>
+Next step is to solder the DC-DC board. Only that three connections of DC-DC are used, the GND on one side and Vin and Vout on the other side - see next image.<br>
+Then also solder the TSDZ2 wires of VBattery and GND (do not forget to put the connector through the hole on the 3D printed enclosure). Connect to TSDZ2 with battery ON and check with a multimeter the input of DC-DC as also the output and it should be 5 volts. Move to next step only if you have the 5 volts, if not, you probably did something wrong.
+
+Next solder the 4 wires for the OLED display. Connect again to the TSDZ2 with battery ON and you should see the display working, showing some text like "OS Display". If the display is not working, check the voltage on the display pins, you need to have 3.3 volts between the VCC and GND pins. Move to next step only if the display is working.
+
+Next you may want to unsolder the display to be easier for the next steps and solder it again as the last step.
+
+Next solder the BTS4140 and BSP296 (or BSS123, which is smaller):<br>
 ![](TSDZ2_wireless_board_small-04.jpg)
 
-Next, I tested to see if the board did fit on the case (image from old design):<br>
-![](TSDZ2_wireless_board_small-07.jpg)
-
-Next I soldered all the wires including the ones of the cable to connect on the TSDZ2 display connector.<br>
-See that other than the TSDZ2 display connector wires, there is only need for more five wires. And I could use for sure thinner wires, but I used the ones I had at hand:<br>
+Next I soldered most of the wires, including the ones of the cable to connect on the TSDZ2 display connector. On next picture, the wires for the keypad are missing.<br>
+And I could use thinner wires, but I used the ones I had at hand:<br>
 ![](TSDZ2_wireless_board_small-05.jpg)
 
-Assembly:<br>
-![](TSDZ2_wireless_board_small-09.jpg)
+After have everything soldered, you can finally solder the display. Everything should work now and if TSDZ2 motor is working correctly, the motor should initialize correctly after seconds seconds and you should see the main screen:
 
-Use the four M2x6 screws to fix the cover. The hole is for the RGB LED but you can verify you can still click on the board button:<br>
-![](TSDZ2_wireless_board_small-08.jpg)
+![](display-1.jpg)
 
-Download here the files for 3D print the box:
-* [TSDZ2_wireless_small_box.amf](https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/raw/main/TSDZ2_wireless_small_box.amf)
-* [TSDZ2_wireless_small_box_cover.amf](https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/raw/main/TSDZ2_wireless_small_box_cover.amf)
+Next you need to close and make the display water prof. For that I use a large transparent tape and put it on top of the display in a way it will also cover the laterals. Then I put silicone on the lateral and then the cover part/top part/frame of the enclosure, that will squezze the silicone and the tape against the enclosure wall and that way make it water prof:
 
-3 - **Flash firmware on the nrf52840 board** - see the page: [How to Flash the Wireless Remote and Motor Controller Firmware](firmware.md)
+![](display-7.jpg)
 
-4 - **Test** - when the board is powered up and running the firmware, you should see the "TSDZ2" Bluetooth device on your mobile phone.
+You will then need to also put silicone to cover very well the cables hole on the enclosure -- the the white silicone on the next picture:
 
-5 - **Making water prof and install on EBike**
+![](display-6.jpg)
 
-I did fill be box holes with translucid silicone and inserted the board - my objective is to have a water prof device. But I do not put to much silicone because I may need to repair the board later. I put silicone on the cables, to avoid the vibrations on the bicycle to break the wires over the time.
+Next insert and tight the four screws and let the silicone cure for the next twelve or twenty four hours.
 
-After 24 hours waiting for silicone to dry. I did fully cover the hole and it works very well to see the LED light(image from old design):<br>
-![](TSDZ2_wireless_board_small-11.jpg)
+Congratulations, now you should have a nice display!<br>
+You can fix  it to your handle bar using a rubber band (like the ones used by Garmin GPS mounts - you can buy them online).
 
-Checking to see if it still works (image from old design):<br>
-![](TSDZ2_wireless_board_small-12.jpg)
+Some pictures of my display:
 
-Final installation on the frame of my EBike (image from old design):<br>
-![](TSDZ2_wireless_board_small-13.jpg)
+![](display-1.jpg)
+
+![](display-2.jpg)
+
+![](display-3.jpg)
+
+![](display-4.jpg)
+
+![](display-5.jpg)
+
+![](display-6.jpg)

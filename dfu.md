@@ -23,4 +23,3 @@ DFU Procedure
 Here is a video showing a wireless DFU for the TZDZ2 remote control:
 [![video](https://img.youtube.com/vi/va3LJoiosoc/hqdefault.jpg)](https://youtu.be/va3LJoiosoc)
 
-## [back](getting_started.md)
