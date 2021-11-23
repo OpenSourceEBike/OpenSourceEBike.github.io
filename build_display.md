@@ -31,11 +31,14 @@ Buy two units in the case you damage one unit.<br>
 1 - **Flash bootloader on the nrf52840 board** - see the page: [How to Flash the Wireless Bootloader on a Nordic Dongle](bootloader.md).<br>
 In this step you flash the bootloader firmware on your nrf52840 board and check to see if is working as expected - if you can flash, then the board is working.
 
-2 - **3D print the enclosure**: 
+2 - **3D print the enclosure**:
 * 1.3 inches OLED display: [display_base.amf](3D_print_enclosure/OLED_1.3_display/display_base.amf)
   and [display_cover.amf](3D_print_enclosure/OLED_1.3_display/display_cover.amf)
 * 0.96 inches OLED display: [display_base.amf](3D_print_enclosure/OLED_0.96_display/display_base.amf)
   and [display_cover.amf](3D_print_enclosure/OLED_0.96_display/display_cover.amf)
+
+3D printed enclosures, version for the OLED display 1.3 inches at left and 0.96 inches at right:<br>
+[![](display_enclosures.jpg)](display_enclosures.jpg)
 
 3 - **Build your board**
 
