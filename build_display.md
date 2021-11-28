@@ -1,10 +1,12 @@
 # How to build the display
 
+NOTE that this display only works for TSDZ2 motor with our OpenSource [that you can download and see how to install, here](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki).<br>
+
 Some of the following components can bought on online shops like Aliexpress, Ebay or at specialized electronics shops like [www.mouser.com](https://mouser.com/) or [www.farnell.com](https://www.farnell.com/).
 
 You will need the following components:
-* **OLED display I2C 128x64 pixels 1.3 inches or 0.96 inches**: costs 3€. You need to choose the smaller or the bigger version. It is recommended the bigger 1.3 inches version. The smaller version makes impossible to see the numbers on display while riding, you need to stop to be able to read.<br>
-It must be the I2C version, that has 4 pins only. There are SPI version which uses more than 4 pins.<br>
+* **OLED display I2C 128x64 pixels 1.3 inches or 0.96 inches (SPI or I2C connection)**: costs 3€. You need to choose the smaller or the bigger version. It is recommended the bigger 1.3 inches version. The smaller version makes impossible to see the numbers on display while riding, you need to stop to be able to read.<br>
+It can be the SPI or I2C version, although the I2C version needs only 4 wires to be soldered, it is also slower to refresh the display and flickering can be seen.<br>
 ![](oled_display_1.3.png)<br>
 * **nRF52840 Nordic USB Dongle**: costs 11€.<br>
 ![](NRF52840.png)<br>
@@ -28,8 +30,11 @@ Buy two units in the case you damage one unit.<br>
 
 ## Step by step instructions
 
-1 - **Flash bootloader on the nrf52840 board** - see the page: [How to Flash the Wireless Bootloader on a Nordic Dongle](bootloader.md).<br>
-In this step you flash the bootloader firmware on your nrf52840 board and check to see if is working as expected - if you can flash, then the board is working.
+1 - **Flash bootloader and firmware on the nrf52840 board** - see the page:<br>
+1.1 - [How to Flash the Wireless Bootloader on a Nordic Dongle](bootloader.md)<br>
+1.2 - [How to update the firmware](dfu.md)<br>
+
+In the steps 1.1 and 1.2 you flash the bootloader and then update the firmware, if all goes as expected, then the NRF52840 board is working.
 
 2 - **3D print the enclosure**:
 * 1.3 inches OLED display: [display_base.amf](3D_print_enclosure/OLED_1.3_display/display_base.amf)
@@ -42,8 +47,11 @@ In this step you flash the bootloader firmware on your nrf52840 board and check 
 
 3 - **Build your board**
 
-3.1 - Understand the circuit, see the schematic:
-[![](schematic.png)](schematic.png)
+3.1 - Understand the circuit, see the schematic - display with I2C connection:<br>
+[![](schematic/schematic_display_I2C.png)](schematic/schematic_display_I2C.png)
+
+Display with SPI connection:<br>
+[![](schematic/schematic_display_SPI.png)](schematic/schematic_display_SPI.png)
 
 ### Schematic explanation
 
@@ -51,7 +59,7 @@ In this step you flash the bootloader firmware on your nrf52840 board and check 
 
 * the NRF52840 has a regulator that will convert the 5 volts to 3.3 volts out the VDD OUT pin, which will power the OLED display.
 
-* the NRF52840 board communicates with the OLED display using I2C connection: SDA and SCL lines.
+* the NRF52840 board communicates with the OLED display using I2C or SPI connection.
 
 * the NRF52840 board reads directly 3 buttons state from the keypad.
 

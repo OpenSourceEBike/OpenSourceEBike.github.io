@@ -30,7 +30,7 @@ On the last years we developed OpenSource firmware for popular cheap EBike displ
 
 ## How to build
 
-See here [How to build the display](build_display.md).
+See here **[How to build the display](build_display.md)**.
 
 ## Operating Instructions
 
@@ -43,4 +43,4 @@ See here How to use the display (TODO)
 
 # Other projects
 
-* Forum message: [TSDZ2 wireless](tsdz2_wireless/index.md)
+* [TSDZ2 wireless and fully wireless remote](tsdz2_wireless/index.md) (with Garmin Edge integration for page change).

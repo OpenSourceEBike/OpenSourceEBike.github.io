@@ -8,7 +8,7 @@
 For flashing the bootloader, connect the SWDCLK, SWDIO, GND and VBUS pins to the STLinkV2 and follow the flashing instructions below using either Windows or Linux.
 Once the firmware is flashed, the STLinkV2  connection will not longer be required, as all future updates can be done wirelessly over bluetooth. 
 
-The firmware HEX file to flash is the "TSDZ2_bootloader_with_sd.hex" on the folder firmware/EBike_wireless_bootloader/firmware/_build.
+The firmware HEX file to flash is the "bootloader_with_sd.hex" that you can [download from here](https://github.com/OpenSourceEBike/ev_display_bluetooth_ant/releases).
 
 Schematic for connections:
 ![wiring](bootloader-schematic.png)

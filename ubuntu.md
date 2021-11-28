@@ -34,7 +34,7 @@
     $ halt
     $ nrf52.dap apreg 1 0x04 0x01
     $ nrf5 mass_erase
-    $ program (path to hex)/TSDZ2_bootloader_with_sd.hex verify
+    $ program (path to hex)/bootloader_with_sd.hex verify
     $ reset exit 
     ``` 
 
