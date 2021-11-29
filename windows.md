@@ -8,7 +8,7 @@
 6. Enter cd C:/openocd/bin
 7. Enter the following. (All in one line)
 
-```openocd.exe -f ../share/openocd/scripts/interface/stlink.cfg -f ../share/openocd/scripts/target/nrf52.cfg -c "program TSDZ2_wireless-bootloader_with_sd-v0.9.0.hex verify" -c "exit"```
+```openocd.exe -f ../share/openocd/scripts/interface/stlink.cfg -f ../share/openocd/scripts/target/nrf52.cfg -c "program bootloader.hex verify" -c "exit"```
 
 8. This will flash and verify the write. If you see ** Verified OK **, the flashing has been successful.
 
