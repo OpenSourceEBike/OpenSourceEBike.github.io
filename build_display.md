@@ -55,9 +55,7 @@ Display with SPI connection:<br>
 
 ### Schematic explanation
 
-* the DC-DC converts the high battery voltage to output 5 volts, which will then be the input for the NRF52840 board.
-
-* the NRF52840 has a regulator that will convert the 5 volts to 3.3 volts out the VDD OUT pin, which will power the OLED display.
+* the DC-DC converts the high battery voltage to output 5 volts, which will then be the input for the NRF52840 board as also to OLED display.
 
 * the NRF52840 board communicates with the OLED display using I2C or SPI connection.
 
