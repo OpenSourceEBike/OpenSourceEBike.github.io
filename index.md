@@ -39,9 +39,8 @@ See here How to use the display (TODO)
 ## Community help
 
 * Forum message: [DIY OpenSource display for EVs, TSDZ2 EBike motor and Xiaomi scooter](https://endless-sphere.com/forums/viewtopic.php?f=7&t=113971)
-* Developers: see [documentation](https://github.com/OpenSourceEBike/TSDZ2_wireless/blob/master/EBike_wireless_remote/documentation/README.md)
+* Developers: [tools used for development](development/README.md)
 
-# Other projects / relevant links
+# Other projects
 
 * [TSDZ2 wireless and fully wireless remote](tsdz2_wireless/index.md) (with Garmin Edge integration for page change).
-* [For developers: tools used for development](development/README.md)
