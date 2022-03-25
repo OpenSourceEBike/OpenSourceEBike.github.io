@@ -1,6 +1,8 @@
-# TSDZ2 DIY and OpenSource EV display
+# EasyDIY OpenSource Ebike display
 
 [This display is OpenSource](https://github.com/OpenSourceEBike/ev_display_bluetooth_ant) and easy to DIY, and was tested with [EBike TSDZ2 mid drive running our OpenSource firmware](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki).<br>
+
+We are developing a version for Bafang M500/M600 motors!!
 
 Main screen showing battery SOC, speed, motor power and battery power used:<br>
 ![](display-1-small.jpg)
@@ -30,7 +32,9 @@ On the last years we developed OpenSource firmware for popular cheap EBike displ
 
 ## How to build
 
-See here **[How to build the display](build_display.md)**.
+See here **[How to build the display - TSDZ2 version](build_display.md)**.
+
+See here **[How to build the display - Bafang M500/M600 version](build_display-bafang_m500_M600.md)**.
 
 ## Operating Instructions
 
