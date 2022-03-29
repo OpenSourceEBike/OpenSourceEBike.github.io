@@ -6,7 +6,8 @@ This guide assumes you are using Linux Ubuntu (if you are on Windows or MACOS yo
 
 **NOTES:**
 * You can follow this notes both for debug a STM32 or a NRF52 microcontroller.
-* You can, buy on Aliexpress or Ebay, and use, a cheap STLinkV2 or JLINK. The JLINK seems to be more robust and is the recommend one.
+* You can, buy on Aliexpress or Ebay, and use, a cheap JLink or STLinkV2. The JLINK is physically more robust and so is the recommend one.
+* The instructions on this guide were tested on Linux Ubuntu. If you have a Windows or MAC OS, you can search Internet for similar guides and adapt, and take this one as a reference.
 
 ## Software or configurations you need to install / do
 
@@ -14,7 +15,7 @@ This guide assumes you are using Linux Ubuntu (if you are on Windows or MACOS yo
 - install [Visual Studio Code](https://code.visualstudio.com/)
   - install C/C++ extension (to edit C/C++ source files)
   - install Cortex-Debug extension (to be able to debug ARM microcontroller)
-  - install Task Manager extension (to call makefile and other commands)
+  - install Task Manager extension (to call make and other commands)
 - install OpenOCD (to connect to STLinkV2): __sudo apt-get install openocd__
 - install GDB GNU debugger (for debug and connect to OpenOCD): __sudo apt-get install gdb-multiarch__
 - install ARM C/C++ GCC compiler: __sudo apt-get install gcc-arm-none-eabi__
@@ -47,7 +48,7 @@ Start by clicking on the clean to clean the code and then click on the build to 
 
 NOTE: The tasks will only be visible if they are configured on the .vscode/tasks.json.
 
-The clean and build tasks simple call the __make clean__ and __make__ on the terminal. You can call the __make clean__ and __make__ on the terminal to check that they work.
+The clean and build tasks simple call the __make clean__ and __make__ on the terminal. You can call the __make clean__ and __make__ on the terminal to check that they work (make uses the Makefile that you will find on the project source folder).
 
 ## Flash the firmware and debug
 
@@ -75,22 +76,27 @@ Click on the debug icon on the left panel and then click on the small green arro
 
 The NRF52 Flash and Debug configuration is on the file .vscode/launch.json.
 
-If you want to check manually that reset, erase and write firmware works with OpenOCD, first start the task Launch OpenOCD and make sure that OpenOCD started correctly as seen on the preview image. Then, on a terminal, use telnet to connect to OpenOCD and run commands one by one that are called on NRF52 Flash and Debug.
+## Use OpenOCD to unlock / erase / flash the firmware
 
-Connect to OpenOCD by telnet:
+To make sure you can flash the firmware correctly, it always help to make sure a full erase is done first. Sometimes, the flash memory is fully or partially locked (some sectors locked) and must be unlocked first of a full erase.
+
+The idea is that you start OpenOCD (click on the Visual Code Studio task Launch OpenOCD) and then you open a terminal and connect by telnet:
 ```
 sudo telnet localhost 4444
 ```
 
-Once you are connected to OpenOCD, run the following commands.
+You should execute "help" on the OpenOCD terminal to see which are the possible commands of your interest and read the instructions for each command:
+```
+help
+```
 
-The next commands will initialize the microcontroller:
+For instance, here is the sequence to initialize the microcontroller:
 ```
 init
 reset halt
 ```
 
-The next command will erase the microcontroller (not needed on STM32F103):
+Then to erase the microcontroller (not needed on STM32F103):
 ```
 nrf5 mass_erase
 ```
@@ -105,7 +111,7 @@ The next commands will initialize the microcontroller and so you can now start d
 reset halt
 ```
 
-**Unlocking / removing flash protection**
+### Unlocking / removing flash protection
 
 If you are using a STM32F103, the very first time you use it, you may need to unlock it with the following OpenOCD commands:
 ```
