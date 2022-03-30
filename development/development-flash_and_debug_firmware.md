@@ -2,7 +2,7 @@
 
 For the firmware development, flash and debug, you can use the OpenSource and free IDE [Visual Studio Code](https://code.visualstudio.com/). There are others that will work like the Eclipse but are not the focus of this document.
 
-This guide assumes you are using Linux Ubuntu (if you are on Windows or MACOS you may find other guides on Internet but the concept will be the same).
+This guide assumes you are using Linux Ubuntu (if you are on Windows or MACOS you may find other guides on Internet but the concept will be the same). For Windows you may use the [Linux on Windows](https://docs.microsoft.com/en-us/windows/wsl/).
 
 **NOTES:**
 * You can follow this notes both for debug a STM32 or a NRF52 microcontroller.
@@ -21,7 +21,8 @@ This guide assumes you are using Linux Ubuntu (if you are on Windows or MACOS yo
 - install ARM C/C++ GCC compiler: __sudo apt-get install gcc-arm-none-eabi__
 - install ARM binutils: __sudo apt-get install binutils-arm-none-eabi__
 - install ARM newlib: __sudo apt-get install libnewlib-arm-none-eabi__
-- install srec_cat tool: __sudo apt-get install srecord__
+- install srec_cat tool (only needed for NRF52): __sudo apt-get install srecord__
+- install nrfutil tool (only needed for NRF52): __sudo pip3 install nrfutil__
 
 ## Open project folder with Visual Studio Code
 
