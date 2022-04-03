@@ -16,11 +16,16 @@ This guide assumes you are using Linux Ubuntu (if you are on Windows or MACOS yo
   - install C/C++ extension (to edit C/C++ source files)
   - install Cortex-Debug extension (to be able to debug ARM microcontroller)
   - install Task Manager extension (to call make and other commands)
-- install OpenOCD (to connect to STLinkV2): __sudo apt-get install openocd__
+- install OpenOCD (to connect to STLinkV2, note that simply __sudo apt-get install openocd__ will install version 0.10.0 which is old, and will not flash nRF52 dongle):
+  - __sudo apt-get install npm__
+  - __sudo npm install --global xpm@latest__
+  - __xpm install --global @xpack-dev-tools/openocd@latest__
+  - __sudo ln -s ~/.local/xPacks/@xpack-dev-tools/openocd/0.11.0-4.1/.content/bin/openocd /usr/bin/openocd__
 - install GDB GNU debugger (for debug and connect to OpenOCD): __sudo apt-get install gdb-multiarch__
 - install ARM C/C++ GCC compiler: __sudo apt-get install gcc-arm-none-eabi__
 - install ARM binutils: __sudo apt-get install binutils-arm-none-eabi__
 - install ARM newlib: __sudo apt-get install libnewlib-arm-none-eabi__
+- install make tool: __sudo apt-get install make__
 - install srec_cat tool (only needed for NRF52): __sudo apt-get install srecord__
 - install nrfutil tool (only needed for NRF52): __sudo pip3 install nrfutil__
 
@@ -38,6 +43,15 @@ Click on menu File -> Open folder... and select the firmware directory. You shou
 * The hiden folder *.vscode* must also be present inside the project folder, that will contain the *tasks.json* with tasks configurations and *launch.json* with OpenOCD debug session commands:
 
 ![](vscode_folder.png)
+
+## Configure the code for development
+
+In the main.h file there are some settings that need to be updated to match your development hardware. All of them are at the top of the file:
+
+1. uncomment __#define DEVELOPMENT__ line
+2. in the __#ifdef DEVELOPMENT__ section define the hardware you will be using for development:
+- first line is the display type: if you are using 1.3 inch display use __#define DISPLAY_SH1106__, for 0.96 inch display use __#define DISPLAY_SSD1306__
+- second line is the display interfce: __#define DISPLAY_SPI__ or __DISPLAY_I2C__
 
 ## Build the code
 
