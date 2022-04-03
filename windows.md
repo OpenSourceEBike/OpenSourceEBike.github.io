@@ -8,9 +8,15 @@
 6. Enter cd C:/openocd/bin
 7. Enter the following. (All in one line)
 
+```openocd.exe -f ../share/openocd/scripts/interface/stlink.cfg -f ../share/openocd/scripts/target/nrf52.cfg -c "init" -c "halt" -c "nrf5 mass_erase" -c "exit"```
+
+8. This will erase the entire flash. This is necessary, because simply flashing bootloader leaves other flash content unchanged, and that may prevent the software from booting properly.
+
+9. Enter the following. (All in one line)
+
 ```openocd.exe -f ../share/openocd/scripts/interface/stlink.cfg -f ../share/openocd/scripts/target/nrf52.cfg -c "program bootloader.hex verify" -c "exit"```
 
-8. This will flash and verify the write. If you see ** Verified OK **, the flashing has been successful.
+10. This will flash and verify the write. If you see ** Verified OK **, the flashing has been successful.
 
 ### Congratulations!
 
