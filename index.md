@@ -1,8 +1,6 @@
 # EasyDIY OpenSource Ebike display
 
-[This display is OpenSource](https://github.com/OpenSourceEBike/ev_display_bluetooth_ant) and easy to DIY, and was tested with [EBike TSDZ2 mid drive running our OpenSource firmware](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki).<br>
-
-We are developing a version for Bafang M500/M600 motors!!
+[This display is OpenSource](https://github.com/OpenSourceEBike/ev_display_bluetooth_ant) and easy to DIY, and was tested with Bafang **M500/M510/M600** EBike mid drive as also [**TSDZ2** Ebike mid drive motor running our OpenSource firmware](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki).<br>
 
 Main screen showing battery SOC, speed, motor power and battery power used:<br>
 ![](display-1-small.jpg)
@@ -16,10 +14,10 @@ Configurations screen, showing some battery configuration options:<br>
 * easy to build as DIY
 * all the advanced configurations for the motor and battery are done directly on the display
 * supports Bluetooth and ANT wireless communications
-* supports 0.96 and 1.3 inches 128x64 OLED displays
+* supports 1.3 and 0.96 (TSDZ2 only) inches 128x64 OLED displays
 * easy to install our firmware, includes OTA wireless updates
 * easy to repair, can be opened easily and the electronic components are popular ones available worldwide
-* easy to customize with some extra electronics so it can be reused on other devices, like adding CANBUS communication so it can work with more recent Bafang motors
+* easy to customize with some extra electronics so it can be reused on other devices
 * if you decide to stop using it, you can dismantle and reuse the electronic components on other projects
 
 ## Motivation
@@ -34,7 +32,7 @@ On the last years we developed OpenSource firmware for popular cheap EBike displ
 
 See here **[How to build the display - TSDZ2 version](build_display.md)**.
 
-See here **[How to build the display - Bafang M500/M600 version](build_display-bafang_m500_M600.md)**.
+See here **[How to build the display - Bafang M500/M510/M600 version](build_display-bafang_m500_M600.md)**.
 
 ## Operating Instructions
 

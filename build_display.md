@@ -4,6 +4,7 @@ NOTE that this display only works for TSDZ2 motor with our OpenSource [that you 
 
 Some of the following components can bought on online shops like Aliexpress, Ebay or at specialized electronics shops like [www.mouser.com](https://mouser.com/) or [www.farnell.com](https://www.farnell.com/).
 
+## Componentes
 You will need the following components:
 * **OLED display I2C 128x64 pixels 1.3 inches or 0.96 inches (SPI or I2C connection)**: costs 3€. You need to choose the smaller or the bigger version. It is recommended the bigger 1.3 inches version. The smaller version makes impossible to see the numbers on display while riding, you need to stop to be able to read.<br>
 It can be the SPI or I2C version, although the I2C version needs only 4 wires to be soldered, it is also slower to refresh the display and flickering can be seen.<br>
@@ -16,7 +17,8 @@ It can be the SPI or I2C version, although the I2C version needs only 4 wires to
 ![](4140.png)<br>
 * **Transistor BSP296 or BSS123**: costs 2€.<br>
 ![](bsp296.png)<br>
-* **3 buttons remote**: costs 8€. This remote is from the EBike 850C display, that can be bought as a spare part - search on Aliexpress for "850c extension".<br>
+* **3 or 4 buttons remote**: costs 8€. The 3 buttons is from the EBike 850C display, that can be bought as a spare part - search on Aliexpress for "850c extension". The 4 buttons is from the EBike 860C display, that can be bought as a spare part but can be hard to find.<br>
+If you want the ANT+ REMOTE functionalitty (Garmin Edge page change), you will need to use the 4 buttons remote, as this function happens when you press the button number 4.<br>
 ![](850c_keypad.png)<br>
 * **Perf board**: costs 1€.<br>
 ![](perfboard.jpg)<br>
@@ -27,6 +29,11 @@ Buy two units in the case you damage one unit.<br>
 ![](screw.jpg)<br>
 * **Silicone**: costs 4€, can be bought on EBay or other shops. The silicone will be used to seal the enclosure and make it water prof. There are silicone that is fast to cure like in two hours but this can not work very well, like not gluing well to the 3D printed plastic PLA. There are small tubes of silicone at shops, that you can use just a few pieces at a time.<br>
 ![](silicone.jpg)<br><br>
+
+## Tools
+You will need at least the following tools:
+* **Multimeter**: to check the wires connections, voltages and components.
+* **Power supply**: to power the display for testing during the build, where you limit the current to a minimum to avoid burning some component in the case you soldered something wrong. If you do not have one yet, you can buy a cheap digital lab power supply of adjustable voltage up to 30V and adjustbale current up to 10A, on Aliexpress for about 50€.
 
 ## Step by step instructions
 
