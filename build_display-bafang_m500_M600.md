@@ -17,7 +17,7 @@ You will need the following components:
 * **3 or 4 buttons remote**: costs 8€. The 3 buttons is from the EBike 850C display, that can be bought as a spare part - search on Aliexpress for "850c extension". The 4 buttons is from the EBike 860C display, that can be bought as a spare part but can be hard to find.<br>
 If you want the ANT+ REMOTE functionalitty (Garmin Edge page change), you will need to use the 4 buttons remote, as this function happens when you press the button number 4.<br>
 ![](./850c_keypad.png)<br>
-* **Bafang M500/M510/M600 display extension cable**: [costs 8€](https://www.aliexpress.com/item/1005003656557018.html)<br>
+* **Bafang M500/M510/M600 display extension cable (HIGO-B5 connector)**: [costs 8€](https://www.aliexpress.com/item/1005003656557018.html)<br>
 ![](bafang_display/display_cable.png)<br>
 * **2x Diode 1N4148**: can be SMD 0805 size. Costs 0.1€, can be bought on EBay or other shops.<br>
 * **Resistor 470 ohms**: can be SMD 0805 size. Costs 0.1€, can be bought on EBay or other shops.<br>
@@ -51,22 +51,99 @@ In the steps 1.1 and 1.2 you flash the bootloader and then update the firmware, 
 * [cover.amf](3D_print_enclosure/Bafang_M500_M600/cover.amf) (blue in the picture)
 * [clamp.amf](3D_print_enclosure/Bafang_M500_M600/clamp.amf) (orange in the picture).
 
-1 - **Build your board**
+3 - **Build your board**
 
-1.1 - Understand the circuit, see the schematic:<br>
+3.1 - Understand the circuit, see the schematic:<br>
 [![](bafang_display/schematic-Bafang_M500_M600.png)](bafang_display/schematic-Bafang_M500_M600.png)
 
 ### Schematic explanation
 
-* the DC-DC converts the high battery voltage to output 5 volts, which will then be the input for the NRF52840 board as also to the OLED display.
+* the DC-DC converts the high battery voltage and outputs 5 volts, which will then be the input for the NRF52840 board as also to the OLED display.
 
-* the NRF52840 board communicates with the OLED display using SPI connection.
+* the wireless board has the NRF52840 microcontroller that is "the brain" of the display, and communicates with the OLED display and CAN module using SPI lines. It also reads the remote buttons state.<br>
+In the case you are using 4 buttons keypad, connect the button number 4 to the pin P0.17 of the NRF52840 board.
 
-* the NRF52840 board communicates with the CAN module using SPI connection. This CAN module sends and receive data from the Bafang motors.
+* the CAN module sends and receive data to the Bafang motors.
 
-* the NRF52840 board reads the 3 buttons state from the keypad. In the case you are using 4 buttons keypad, connect the button number 4 to the pin P0.17 of the NRF52840 board.
+* the resistors and diodes implement the same circuit as the Bafang M500/M510/M600 original display.
 
+* when the display is off, the CTRL wire has battery voltage and P+ VBAT has 0 volts. Once the user presses ON/OFF button on the remote, the CTRL wire will then have 4.5 volts and if user long press the ON/OFF button, the P+ VBAT will get the battery voltage (to power up the display).<br>
+The DOWN button has a similar circuit and the Bafang motor controller uses it to detect when users wants the walk assist mode.
 
 NRF52840 board pinout:
-![Pinout](./nordic_pinout.png)
+![Pinout](bafang_display/nordic_pinout.png)
 
+3.2 - Cut your nRF52840 board with a metal saw by hand so this way it will be smaller. Check it is ok on the enclosure, if not you can use a file tool to do the final adjustment.<br>
+Also cut the CAN module board, the display board and the perfboard, to the similar sizes / shapes as seen on the picture. All this boards need to go inside the 3D printed enclosure - here a picture as example:
+
+![](bafang_display/build-7.png)
+
+3.3 - Use thin double layer tape to fix the DC-DC to the back of perfboard. Solder thin wires to the GND, Vin and Vout pins (look at the datasheet of the DC-DC to find the pins) that will be used on the front side of perfboard:<br>
+![](bafang_display/build-8.png)
+
+NOTE: always triple check the connections you did as it is easy for you to do a mistake. For instance, exchanging battery voltage pin with GND pin will most probably result in a burned NRF52840 and/or the DC-DC board.
+
+How can use the power supply with 10V and limited current like 50mA, to power up the DC-DC and see if it correctly provides 5V at his output. 
+
+Next, use some tape to insulate the bottom of the wireless board and solder it on the front of perfboard, as seen on the image.<br>
+Also solder the resistors and diodes as seen on the image (this are SMD 0805 size):
+![](bafang_display/build-5.png)
+
+Wire the DC-DC output wires GND and 5V to the wireless board (follow the schematic).
+
+Now you can use the power supply with 10V and limited current like 50mA, to power up the DC-DC and see if LEDs on the wireless board blink (bootloader must be already flashed on this step) when you apply the power. You can also check that wireless board OUT pin is 3.3V.
+
+Continue to wire everything as seen om the schematic but leave the CAN module for the end. See next picture.
+
+![](bafang_display/build-6.png)
+
+Use thin wires when possible. For the wires of display extension cable, you will need to figure out each pin on the HIGO-B5 connector - see next image.
+
+![](bafang_display/Bafang_M500_M600_Display_Cable.png)
+
+Now that you have the display cable wired, giving power to DC-DC, that will then power the wireless board and the OLED display, and the remote buttons wired, you can now connect to your Bafang motor. You can use the power supply with 30V and with current limit to a current like 100mA, to power up your Bafang motor. That way, if you made any mistakes when connecting the cables to the display, hopefully nothing will burn.
+
+Assuming the bootloader and firmware are already flashed on this step, when you long press the ON/OFF button, you should see the OLED display turn on. It should not go to main screen as the motor communications are not yet ready because the CAN module board is not yet connected.
+
+Finally wire the CAN module board:
+
+![](bafang_display/build-4.png)
+
+In the end, the display should show the same way as next picture. Note that I did setup my power supply to 30V, that is why the motor controller sends the battery voltage value as about 30V and battery SOC as empty, since my motor is for a 48V battery.
+
+![](bafang_display/build-3.png)
+
+
+------------------------
+Next step is to solder the DC-DC board. Only that three connections of DC-DC are used, the GND on one side and Vin and Vout on the other side - see next image.<br>
+Then also solder the TSDZ2 wires of VBattery and GND (do not forget to put the connector through the hole on the 3D printed enclosure). Connect to TSDZ2 with battery ON and check with a multimeter the input of DC-DC as also the output and it should be 5 volts. Move to next step only if you have the 5 volts, if not, you probably did something wrong.
+
+Next solder the DC-DC output 5 volts to the VBUS of NRF52840. Connect to TSDZ2 with battery ON and check with a multimeter the input of DC-DC as also the output and it should be 5 volts. Then check the VDD OUT pin of NRF52840 board and it should be 3.3 volts. Move to next step only if you have the 3.3 volts, if not, you probably did something wrong.
+
+Next solder the 4 wires for the OLED display. Connect again to the TSDZ2 with battery ON and you should see the display working, showing some text like "OS Display". If the display is not working, check the voltage on the display pins, you need to have 3.3 volts between the VCC and GND pins. Move to next step only if the display is working.
+
+Next you may want to unsolder the display to be easier for the next steps and solder it again as the last step.
+
+Next solder the BTS4140 and BSP296 (or BSS123, which is smaller):<br>
+![](TSDZ2_wireless_board_small-04.jpg)
+
+Next I soldered most of the wires, including the ones of the cable to connect on the TSDZ2 display connector. On next picture, the wires for the keypad are missing.<br>
+And I could use thinner wires, but I used the ones I had at hand:<br>
+![](TSDZ2_wireless_board_small-05.jpg)
+
+After have everything soldered, you can finally solder the display. Everything should work now and if TSDZ2 motor is working correctly, the motor should initialize correctly after seconds seconds and you should see the main screen:
+
+![](display-1.jpg)
+
+Next you need to close and make the display water prof. For that I use a large transparent tape and put it on top of the display in a way it will also cover the laterals. Then I put silicone on the lateral and then the cover part/top part/frame of the enclosure, that will squezze the silicone and the tape against the enclosure wall and that way make it water prof:
+
+![](display-7.jpg)
+
+You will then need to also put silicone to cover very well the cables hole on the enclosure -- the the white silicone on the next picture:
+
+![](display-6.jpg)
+
+Next insert and tight the four screws and let the silicone cure for the next twelve or twenty four hours.
+
+Congratulations, now you should have a nice display!<br>
+You can fix  it to your handle bar using a rubber band (like the ones used by Garmin GPS mounts - you can buy them online).
