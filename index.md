@@ -2,10 +2,10 @@
 
 [This display is OpenSource](https://github.com/OpenSourceEBike/ev_display_bluetooth_ant) and easy to DIY, and was tested with Bafang **M500/M510/M600** EBike mid drive as also [**TSDZ2** Ebike mid drive motor running our OpenSource firmware](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki).<br>
 
-Main screen showing battery SOC, speed, motor power and battery power used:<br>
+Main screen showing battery SOC, speed, motor power and battery power used (TSDZ2 version):<br>
 ![](display-1-small.jpg)
 
-Configurations screen, showing some battery configuration options:<br>
+Configurations screen, showing some battery configuration options (TSDZ2 version):<br>
 ![](display-2-small.jpg)
 
 
@@ -27,6 +27,13 @@ On the last years we developed OpenSource firmware for popular cheap EBike displ
 * manufacturers makes different versions over the time of the same display and the firmware need to be developed again (at least partially)
 * on some displays is almost impossible to install our advanced firmware
 * it is impossible to use the same display for different devices because sometimes there are small electronics differences on the communications, like some devices using UART, other CANBUS and other UART one wire
+
+## Project philosophy
+* develop a simple display to be easy to build as DIY and repair. Try to use popular and easy to acquire parts
+* small and discrete display
+* show motor data and make motor configurations
+* implement ANT+ LEV EBike wireless standard to send / integrate the motor data to cycling computer displays as Garmin Edge
+* do not implement features as GPS navigation: instead users should use a cycling computer as Garmin Edge that implements navigation, has advanced cycling metrics and integrates natively with ANT+ LEV EBike wireless standard
 
 ## How to build
 
