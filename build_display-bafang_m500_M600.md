@@ -113,37 +113,21 @@ In the end, the display should show the same way as next picture. Note that I di
 
 ![](bafang_display/build-3.png)
 
+Now it is time to put everything inside the 3D printed enclosure. The big hole at back is enough for the two cables to be inserted. Here an example, and after using transparent silione to keep the cables in place and avoid water entrance:
 
-------------------------
-Next step is to solder the DC-DC board. Only that three connections of DC-DC are used, the GND on one side and Vin and Vout on the other side - see next image.<br>
-Then also solder the TSDZ2 wires of VBattery and GND (do not forget to put the connector through the hole on the 3D printed enclosure). Connect to TSDZ2 with battery ON and check with a multimeter the input of DC-DC as also the output and it should be 5 volts. Move to next step only if you have the 5 volts, if not, you probably did something wrong.
+![](bafang_display/build-1.png)
 
-Next solder the DC-DC output 5 volts to the VBUS of NRF52840. Connect to TSDZ2 with battery ON and check with a multimeter the input of DC-DC as also the output and it should be 5 volts. Then check the VDD OUT pin of NRF52840 board and it should be 3.3 volts. Move to next step only if you have the 3.3 volts, if not, you probably did something wrong.
+On the top, to protect the OLED display and avoid watter entrance, you can put large glue tape as seen on the picture. There are enough clearance on the cover 3D printed part to accomodate this tape:
 
-Next solder the 4 wires for the OLED display. Connect again to the TSDZ2 with battery ON and you should see the display working, showing some text like "OS Display". If the display is not working, check the voltage on the display pins, you need to have 3.3 volts between the VCC and GND pins. Move to next step only if the display is working.
+![](bafang_display/build-2.png)
 
-Next you may want to unsolder the display to be easier for the next steps and solder it again as the last step.
+Use the M2x12 screws to tight the cover as also to clamp to the handlebar.
 
-Next solder the BTS4140 and BSP296 (or BSS123, which is smaller):<br>
-![](TSDZ2_wireless_board_small-04.jpg)
+Example of the final result:
 
-Next I soldered most of the wires, including the ones of the cable to connect on the TSDZ2 display connector. On next picture, the wires for the keypad are missing.<br>
-And I could use thinner wires, but I used the ones I had at hand:<br>
-![](TSDZ2_wireless_board_small-05.jpg)
+(On this picture, not glue tape were yet applied on to of the OELD display)
+![](bafang_display/08.png)
 
-After have everything soldered, you can finally solder the display. Everything should work now and if TSDZ2 motor is working correctly, the motor should initialize correctly after seconds seconds and you should see the main screen:
+![](bafang_display/02.png)
 
-![](display-1.jpg)
-
-Next you need to close and make the display water prof. For that I use a large transparent tape and put it on top of the display in a way it will also cover the laterals. Then I put silicone on the lateral and then the cover part/top part/frame of the enclosure, that will squezze the silicone and the tape against the enclosure wall and that way make it water prof:
-
-![](display-7.jpg)
-
-You will then need to also put silicone to cover very well the cables hole on the enclosure -- the the white silicone on the next picture:
-
-![](display-6.jpg)
-
-Next insert and tight the four screws and let the silicone cure for the next twelve or twenty four hours.
-
-Congratulations, now you should have a nice display!<br>
-You can fix  it to your handle bar using a rubber band (like the ones used by Garmin GPS mounts - you can buy them online).
+![](bafang_display/04.png)
