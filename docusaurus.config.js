@@ -27,9 +27,9 @@ const config = {
     locales: ["en"],
     localeConfigs: {
       en: {
-        htmlLang: "en-GB"
-      }
-    }
+        htmlLang: "en-GB",
+      },
+    },
   },
 
   presets: [
@@ -41,27 +41,31 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/tree/master/"
+          editUrl:
+            "https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/tree/master/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      })
-    ]
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      }),
+    ],
   ],
   // https://gabrielcsapo.github.io/docusaurus-plugin-image-zoom/docs/getting-started/
-  plugins: [require.resolve("docusaurus-plugin-image-zoom"), require.resolve("docusaurus-plugin-google-adsense")],
+  plugins: [
+    require.resolve("docusaurus-plugin-image-zoom"),
+    require.resolve("docusaurus-plugin-google-adsense"),
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       googleAdsense: {
-        dataAdClient: "ca-pub-9270569596814796"
+        dataAdClient: "ca-pub-9270569596814796",
       },
       docs: {
         sidebar: {
           autoCollapseCategories: true,
-          hideable: true
-        }
+          hideable: true,
+        },
       },
       zoom: {
         selector: ".markdown :not(em) > img",
@@ -70,78 +74,78 @@ const config = {
           margin: 100,
           background: {
             light: "rgb(255, 255, 255)",
-            dark: "rgb(50, 50, 50)"
-          }
-        }
+            dark: "rgb(50, 50, 50)",
+          },
+        },
       },
       navbar: {
         title: "OpenSource-Ebike",
         logo: {
           alt: "OpenSource-Ebike logo",
-          src: "img/1024.png"
+          src: "img/hotlink-ok/logo/logo.svg",
         },
         items: [
           {
             type: "doc",
             docId: "tsdz2/intro",
             position: "left",
-            label: "TSDZ2"
+            label: "TSDZ2",
           },
           {
             type: "doc",
             docId: "bafang/intro",
             position: "left",
-            label: "Bafang"
+            label: "Bafang",
           },
           {
             type: "doc",
-            docId: "Display/intro",
+            docId: "display/intro",
             position: "left",
-            label: "Display"
+            label: "Display",
           },
           {
             type: "localeDropdown",
-            position: "right"
+            position: "right",
           },
           {
             href: "https://github.com/OpenSourceEBike/OpenSourceEBike.github.io",
             label: "GitHub",
-            position: "right"
-          }
-        ]
+            position: "right",
+          },
+        ],
       },
       footer: {
         style: "dark",
         links: [
-			{
+          {
             title: "Other",
             items: [
-              {
-            //    label: "FAQ",
-            //    href: "/manual/FAQ"
-              }
-            ]
+              //  {
+              //    label: "FAQ",
+              //    href: "/manual/FAQ"
+              //  }
+            ],
           },
           {
             title: "Community",
             items: [
-            //  {
-            //    label: "Twitter",
-            //    href: "https://twitter.com/useTrueCharts"
-            //  },
-            //  {
-            //    label: "Discord",
-            //    href: "https://discord.gg/tVsPTHWTtr"
-            //  },
-            //  {
-            //    label: "Facebook",
-            //    href: "https://www.facebook.com/truecharts",
-            //  },
-            //  {
-            //    label: "Telegram",
-            //    href: "https://t.me/s/truecharts"
-            //  }
-            ]
+              //  {
+              //    label: "Twitter",
+              //    href: "https://twitter.com/useTrueCharts"
+              //  },
+              //  {
+              //    label: "Discord",
+              //    href: "https://discord.gg/tVsPTHWTtr"
+              //  },
+              //  {
+              //    label: "Facebook",
+              //    href: "https://www.facebook.com/truecharts",
+              //  },
+              //  {
+              //    label: "Telegram",
+              //    href: "https://t.me/s/truecharts"
+              //  }
+            ],
           },
           {
             title: "Legal",
@@ -158,27 +162,27 @@ const config = {
               //   label: "Apach2-license",
               //   href: "https://github.com/Apach2-license"
               // }
-            ]
-          }
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} OpenSource-EBike`
+        copyright: `Copyright © ${new Date().getFullYear()} OpenSource-EBike`,
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme
+        darkTheme: darkCodeTheme,
       },
       algolia: {
         // The application ID provided by Algolia
-        appId: "M5JIEOBD9S",
+        appId: "WZ05W1IA1Q",
 
         // Public API key: it is safe to commit it
-        apiKey: "996ff61cece86950829f65416b941711",
+        apiKey: "1f3e66a5e4ee6a3963ac68d432cce0e3",
 
-        indexName: "truecharts"
+        indexName: "opensource-ebike",
 
         //... other Algolia params
-      }
-    })
+      },
+    }),
 };
 
 module.exports = config;

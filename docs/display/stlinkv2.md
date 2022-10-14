@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+# Using the stlinkv2
 STLinkV2 is the programmer to use to flash the TSDZ2 motor firmware and the NRF52840 board bootloader.
 
 ![stlink](stlinkv2.png)

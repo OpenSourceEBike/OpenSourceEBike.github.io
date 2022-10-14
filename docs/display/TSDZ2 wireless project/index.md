@@ -6,32 +6,32 @@ The project utilizes the proven and popular **[TSDZ2 Flexible Open Source firmwa
 
 ## EBike wireless controller
 
-We have developed a **[DIY EBike wireless controller](ebike_wireless_controller.md)** to connect to the motor controller, on the display connector. With it alone, you can power on/off the TSDZ2 motor, increase/decrease assist levels and see the Ebike battery level.<br>
+We have developed a **[DIY EBike wireless controller](ebike_wireless_controller.md)** to connect to the motor controller, on the display connector. With it alone, you can power on/off the TSDZ2 motor, increase/decrease assist levels and see the Ebike battery level.<br/>
 This wireless controller implements Bluetooth and ANT, is easy to build and costs only 25€ in materials.
 
-Picture of our DIY EBike wireless controller:<br>
-![](3d_printed_box.png)<br>
+Picture of our DIY EBike wireless controller:<br/>
+![](3d_printed_box.png)<br/>
 
-![](3d_printed_box-2.png)<br>
+![](3d_printed_box-2.png)<br/>
 
 ## Mobile app
 
 We also developed a **[mobile app](android_app_operation.md)** and with that you can control the TSDZ2 motor as also change his configurations - there are over 100 configuration options that can be customized to fit any user's particular requirements!
 
-Screenshots of our mobile app:<br>
+Screenshots of our mobile app:<br/>
 ![android](android1-small.jpg) ![android](android2-small.jpg)
 
 ## Fully wireless and wired remotes
 
-We have also developed a **[DIY fully wireless remote](remote/build_remotes)**. There is also more simple wired remote if you prefer.<br>
-With this remotes, is possible to power on/off the TSDZ2 motor, increase/decrease assist levels, display Ebike battery level and more.<br>
+We have also developed a **[DIY fully wireless remote](remote/build_remotes)**. There is also more simple wired remote if you prefer.<br/>
+With this remotes, is possible to power on/off the TSDZ2 motor, increase/decrease assist levels, display Ebike battery level and more.<br/>
 
 The wireless remote can also connect to a GPS display like a Garmin Edge to change data pages. It costs only 20€ in materials and uses a coin battery that will work for more than 2 years.
 
-Pictures of our DIY fully wireless remote button with connection for brake sensors:<br>
-![](remote/ebike_wireless_remote-01-350x.jpg)<br>
+Pictures of our DIY fully wireless remote button with connection for brake sensors:<br/>
+![](remote/ebike_wireless_remote-01-350x.jpg)<br/>
 
-![](remote/ebike_wireless_remote-03-350x.jpg)<br>
+![](remote/ebike_wireless_remote-03-350x.jpg)<br/>
 
 ## Garmin Edge / cycling GPS displays
 
@@ -39,10 +39,10 @@ The [EBike wireless controller](ebike_wireless_controller.md) implements the ANT
 * see and change the assist level using the touch screen
 * see other EBike information like the battery SOC, speed, etc
 
-The [wireless remote](remote/build_remotes) implements ANT+ CONTROLS protocol standard and a click on the menu button will change the Garmin Edge page.<br>
+The [wireless remote](remote/build_remotes) implements ANT+ CONTROLS protocol standard and a click on the menu button will change the Garmin Edge page.<br/>
 
-The following image shows a page on Garmin Edge 830, showing EBike battery SOC, assist level and speed. It also shows other information like the graph of the rider heart rate:<br>
-![](garmin_edge_830-01-350x.jpg)<br>
+The following image shows a page on Garmin Edge 830, showing EBike battery SOC, assist level and speed. It also shows other information like the graph of the rider heart rate:<br/>
+![](garmin_edge_830-01-350x.jpg)<br/>
 
 ----
 ## Getting Started

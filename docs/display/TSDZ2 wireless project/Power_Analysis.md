@@ -5,7 +5,7 @@ This tool was used with the remote control to estimate the useful lifetime of a 
 The remote control was powered on the VDD pin with a 3V CR3032 lithium battery following the instructions described in [how to build the wireless remote](./TSDZ2_wireless_remote.md)
 ## Remote Control Power modes 
 The firmware for the remote control has two low power operating modes.
-1. **POWER IDLE MODE** This is the default power mode of the remote when it is not processing any button commands.<br>
+1. **POWER IDLE MODE** This is the default power mode of the remote when it is not processing any button commands.<br/>
 The average current dissipated by the remote in this mode with Ant Lev active is 37.5 uA as shown below:![Figure 1](ant_lev_idle.png)
 (The spikes in the current is caused by the switching voltage regulator used in the nrf52840 board. Essentially, the board power supply uses capacitive charging/discharging to reduce power consumption, and this leads to spiking in the current.) 
 If both Ant Lev and Ant Controls is active in the remote the average idle current jumps to 75.26 uA as shown below:

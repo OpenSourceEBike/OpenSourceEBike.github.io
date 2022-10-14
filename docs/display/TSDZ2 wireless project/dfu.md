@@ -1,4 +1,7 @@
-# The Device Firmware Update (DFU) Process
+---
+sidebar_position: 5
+---
+# Device Firmware Update (DFU)
 The DFU process is done using the [nRF Connect mobile app](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp).
 
 DFU Procedure

@@ -16,7 +16,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <br></br>
         <div className={styles.buttons}>
-          <Link
+		<Link
             className="button button--secondary button--lg"
             to="/docs/tsdz2/intro"
           >
@@ -28,6 +28,7 @@ function HomepageHeader() {
             to="/docs/bafang/intro"
           >
             Bafang
+          </Link>
           <Link
             style={{ marginLeft: 2 + "em" }}
             className="button button--secondary button--lg"
