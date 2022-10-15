@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<TITLE>Generate FrameID</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function testResults (form) {
+    var test = buildHexStringCommand(form.source.value, form.target.value, form.opt.value, form.code.value, form.subcode.value);
+    alert ("Calculated FrameID: " + test);
+     console.log(test)
+}
+
+
+function hexReverse(hexString) {
+    var array = [];
+    if (hexString.length % 2 !== 0) {
+        hexString = '0' + hexString;
+    }
+
+    for (var i = 0; i < hexString.length; i += 2) {
+        array.push(hexString.substr(i, 2));
+    }
+    return array.reverse().join('');
+}
+function hexAllocToBinaryStr(hex, length) {
+    let str = new Array(length + 1).join('0') + parseInt(hex, 16).toString(2);
+    return str.substr(str.length - length, length);
+}
+
+function buildHexStringCommand(source, target, opt, anfn, nfn) {
+    const cmdPrefix = hexAllocToBinaryStr(source, 5) + hexAllocToBinaryStr(target, 5) + hexAllocToBinaryStr(opt, 3);
+    let cmdPrefixHex = parseInt(cmdPrefix, 2).toString(16);
+    if (cmdPrefixHex.length % 2 !== 0) {
+        cmdPrefixHex = '0' + cmdPrefixHex;
+    }
+    let cmdHexString = cmdPrefixHex + anfn + nfn;
+    //return hexReverse(cmdHexString);
+    return cmdHexString;
+};
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="frameform" ACTION="" METHOD="GET">Enter the details to calculate the frameid for: <br><br>
+Source <select type="text" title="Source" size=1 NAME="source">
+	<option value="0x01">Sensor</option>
+	<option value="0x02">Controller</option>
+	<option selected="selected" value="0x03">Display</option>
+	<option value="0x04">Battery</option>
+	<option value="0x05">Besst</option>
+	<option value="0x1F">Advenced</option>
+</select><br><br>
+Taget <select type="text" title="Target" size=1 NAME="target">
+	<option value="0x01">Sensor</option>
+	<option selected="selected" value="0x02">Controller</option>
+	<option value="0x03">Display</option>
+	<option value="0x04">Battery</option>
+	<option value="0x05">Besst</option>
+	<option value="0x1F">Advenced</option>
+</select><br><br>
+Optional <select type="text" title="Optional" size=1 NAME="opt">
+	<option selected="selected" value="0x00">Hardware</option>
+	<option value="0x01">Software</option>
+	<option value="0x02">Model</option>
+	<option value="0x03">Serial</option>
+	<option value="0x04">Client</option>
+</select><br><br>
+<input title="Code" placeholder="Code" type="text" NAME="code" > <input title="Subcode" placeholder="Subcode" type="text" NAME="subcode" >
+<P>
+
+<INPUT TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
+</FORM>
+</BODY>
+</HTML>

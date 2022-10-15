@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 ---
-
 # OpenSource Ebike display
 
 [This display is OpenSource](https://github.com/OpenSourceEBike/ev_display_bluetooth_ant) and easy to DIY, and was tested with Bafang **M500/M510/M600** EBike mid drive as also [**TSDZ2** Ebike mid drive motor running our OpenSource firmware](https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki).<br/>
