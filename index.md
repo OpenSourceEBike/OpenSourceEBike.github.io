@@ -4,9 +4,11 @@ Over the years I did own a few different EBikes / EScooters from different brand
 
 I share here all the information and source codes, about the build I did for my EBike, in the hope it will help others replicate and learn about EBikes / EScooters tecnhology.
 
-Thanks to being modular, DIY and OpenSource, this system is easy to reuse for any different EBike / EScooter brand, so it will be future prof and cheap as will be possible to save money by reusing the materials.
+Because it is modular, DIY and OpenSource, this system is easy to reuse for any different EBike / EScooter brand, so it will be future prof and cheap as will be possible to save money by reusing the materials.
 
 For a user like me, it let me optimize my battery usage, so I can have a smaller and ligher battery, use a smaller motor, and so have a smaller and lighter MTB EBike.
+
+For other users that may want a more powerfull motor, it let go behond the limits that the brands impose on the software.
 
 ## System overview
 
