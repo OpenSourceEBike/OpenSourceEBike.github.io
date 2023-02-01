@@ -22,7 +22,7 @@ And the most important, it is small enough to fit inside the Bafang M500:
 
 I started to connect this VESC to the motor 3 phase wires. Then I connected my 48V EBike battery to the VESC. Finally I connected the VESC to my PC using a USB cable.
 
-On the VESC tool software, I did the motor auto detection, the first motor run and the final configurations -- see [all the details on the **VESC configurations**](VESC_configurations/VESC_configurations.md) page.
+On the VESC tool software, I did the motor auto detection, the first motor run and the final configurations -- see all the details on the [**VESC configurations**](VESC_configurations/VESC_configurations.md) page.
 
 # EBike board
 
