@@ -24,6 +24,8 @@ I started to connect this VESC to the motor 3 phase wires. Then I connected my 4
 
 On the VESC tool software, I did the motor auto detection, the first motor run and the final configurations -- see all the details on the [**VESC configurations**](VESC_configurations/VESC_configurations.md) page.
 
+Note that you can buy on Aliexpress the battery connector XT60 and the motor 3 phase connector MR30.
+
 # EBike board
 
 The DIY EBike board task is to run the EBike software application. This software is high level Pyhton (easy and fast to develop) and is programmed by Wifi wireless from a phone or a PC.

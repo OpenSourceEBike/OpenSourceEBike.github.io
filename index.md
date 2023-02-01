@@ -40,7 +40,7 @@ VESC is able to drive any motor, has a motor auto detection feature and is very 
 
 We control the motor by sending commands to VESC, like the command to set the motor current / torque.
 
-### EBike/EScooter
+### EBike/EScooter board
 
 The EBike/EScooter DIY board runs the application that implements the EBike/EScooter logic, for instance, it reads the throttle value and with it, sets the motor current by sending a command to VESC.
 
