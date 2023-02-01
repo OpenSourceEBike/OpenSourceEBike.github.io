@@ -4,6 +4,10 @@ There are a lot of tutorials on Youtube on how to use VESC Tool to do a motor co
 
 I did control the motor using my keyboard up and down arrows, but I had first to enable this on the VESC Tool.
 
+The idea is to configure the motor FOC parameters is a way the motor startup well, using sensorless (my case) or any other sensors like Hall sensor or a Magnetic encoder sensor.
+It also must be configured the battery limit voltages, battery currents and motor currents.
+Once the configuration is done, the VESC will be able to run your motor, just by sending a command to VESC with the desired motor current.
+
 # General
 
 ## General
@@ -74,3 +78,43 @@ I keep this option disable.
 I keep this options on the default value.
 
 ![](General-Advanced.png)
+
+# FOC
+
+## General
+
+Here I selected Sensor Mode: Sensorless.
+
+That values of motor resistance, Inductance, etc, were all auto detected by VESC, when I did the initial motor auto detection. Still we can make on the bellow buttons of this screen the auto detection and then do the apply / motor save configurations.
+
+![](FOC-General_option_sensorless.png)
+
+## Sensorless
+
+Here I only changed the Openloop ERPM default value to 1000.
+
+![](FOC-Sensorless.png)
+
+## Filters
+
+I kept the filters disable.
+
+![](FOC-Filters.png)
+
+## Offsets
+
+I kept the offsets with the defaul values.
+
+![](FOC-Offsets.png)
+
+## Field Weakening
+
+I kept Field Weakening disabled, with the value Current Max 0A.
+
+![](FOC-Field_weakening_disabled.png)
+
+## Advanced
+
+I kept Field Weakening disabled, with the value Current Max 0A.
+
+![](FOC-Advanced.png)
