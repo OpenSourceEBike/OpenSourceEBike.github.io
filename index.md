@@ -1,4 +1,4 @@
-# EBike / EScooter DIY OpenSource electronics and firmware
+# EBike / EScooter modular DIY OpenSource electronics and firmware
 
 Over the years I did own a few different EBikes / EScooters from different brands, and I always found limitations on all of them, mainly on the software. Knowing that in general, all EBikes and EScooters are equal, I decided to replace the original motor controller electronics and display, from my different EBikes/EScooters, with my own modular DIY version and running my custom software.
 
