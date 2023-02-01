@@ -2,7 +2,7 @@
 
 Over the years I did own a few different EBikes / EScooters from different brands, and I always found limitations on all of them, mainly on the software. Knowing that in general, all EBikes and EScooters are equal, I decided to replace the original motor controller electronics and display, from my different EBikes/EScooters, with my own modular DIY version and running my custom software.
 
-I share here all the information and source codes, about the build I did for my EBike, in the hope it will help others replicate and learn about EBikes / EScooters tecnhology.
+I share here all the information and [source codes](https://github.com/OpenSourceEBike/EBike_EScooter_modular_DIY), about the build I did for my EBike, in the hope it will help others replicate and learn about EBikes / EScooters tecnhology.
 
 Because it is modular, DIY and OpenSource, this system is easy to reuse for any different EBike / EScooter brand, so it will be future prof and cheap as will be possible to save money by reusing the materials.
 
@@ -56,11 +56,13 @@ It uses the popular OLED 1.3inches screen. It also uses the ESP32, so it runs di
 
 # EBike build with Bafang M500 mid drive motor
 
-This was the first build I did. You can take this build details as a reference for your build, as most probably you have a different motor:
+This was the first build I did. You can take this build details as a reference for your build:
 
 **[Build with Bafang M500 mid drive motor](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)**
 
-# Older projects (for historic reasons only)
+# Older projects
+
+ The next links are here for historic reasons only:
 
 * [EasyDIY OpenSource Ebike display](easy_diy_display_ebike_display/index.md) - previous 
 * [TSDZ2 wireless and fully wireless remote](tsdz2_wireless/index.md) - with Garmin Edge integration for page change.
