@@ -12,7 +12,7 @@ There was a logic sequence for the build:
 
 # VESC Motor controller
 
-The VESC motor controller I use is the [FLIPSKY Mini FSESC6.7](https://flipsky.net/products/flipsky-mini-fsesc6-7-pro-70a-base-on-vesc6-6-with-aluminum-anodized-heat-sink). It can handle a continuous current of 70A, while I am looking to use only 12A. Also it supports a 48V battery.
+The VESC motor controller I use is the [FLIPSKY Mini FSESC6.7](https://flipsky.net/products/flipsky-mini-fsesc6-7-pro-70a-base-on-vesc6-6-with-aluminum-anodized-heat-sink). It can handle a continuous current of 70A, while I am looking to use only 12A. Also it supports a battery from 14V up to 48V, and I am using a 48V one.
 
 ![](FLIPSKY_Mini_FSESC6.7-1.png)
 
@@ -25,6 +25,24 @@ I started to connect this VESC to the motor 3 phase wires. Then I connected my 4
 On the VESC tool software, I did the motor auto detection, the first motor run and the final configurations -- see [this page with all details about the **VESC configurations**](VESC_configurations/VESC_configurations.md).
 
 # EBike board
+
+The EBike board task is to run the EBike application. The software on this board is high level Pyhton (easy and fast to develop) and is programmed by Wifi wireless from a phone or a PC.
+
+The EBike application reads the input sensors as the throttle, maps the throttle value to a motor current (motor torque), and finally send this value to VESC motor controller, that will make the motor rotate with this specific current / torque.
+It also sends and receives data to the display.
+
+This is the EBike board schematic, that is very easy to build due to easy to solder boards and connectors:
+[![](build_EBike_board/EBike_board-schematic.png)](build_EBike_board/EBike_board-schematic.png)
+
+See [this page with all details about the **Build EBike board**](build_EBike_board/build_EBike_board.md)
+
+The main component is the ESP32-S3-DevKitC-1 N8R2 board that you can buy in Aliexpress. This is the microcontroller board, that runs the Pyhton software and has Wifi and Bluetooth capabilities.
+
+The only other board is the TJA1050 that is a CANBUS module. This board is needed to make the ESP32-S3 board being able to communicate with the Bafang M500 torque sensor.
+
+
+
+
 
 # Display
 
