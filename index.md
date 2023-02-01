@@ -1,6 +1,6 @@
 # EBike / EScooter DIY OpenSource electronics and firmware
 
-Over the years I did own a few different EBikes / EScooters from different brands, and I always found limitations on all of them, mainly on the software. Knowing that in general, all EBikes and EScooters are equal, I decided to replace the original motor controller electronics and display, with my own modular DIY version, also running my custom software.
+Over the years I did own a few different EBikes / EScooters from different brands, and I always found limitations on all of them, mainly on the software. Knowing that in general, all EBikes and EScooters are equal, I decided to replace the original motor controller electronics and display, from my different EBikes/EScooters, with my own modular DIY version and running my custom software.
 
 I share here all the information and source codes, about the build I did for my EBike, in the hope it will help others replicate and learn about EBikes / EScooters tecnhology.
 
@@ -9,6 +9,8 @@ Because it is modular, DIY and OpenSource, this system is easy to reuse for any 
 For a user like me, it let me optimize my battery usage, so I can have a smaller and ligher battery, use a smaller motor, and so have a smaller and lighter MTB EBike.
 
 For other users that may want a more powerfull motor, it let go behond the limits that the brands impose on the software.
+
+And if you are looking for a more advanced system, with GPS navigation on the display, the best option is to use a popular solution as a Garmin Edge. Similarly, if you are looking to use your EBike for fitness and want a display showing your heart rate, pedal human power, etc, the best option is to use a Garmin Edge.
 
 ## System overview
 
