@@ -67,6 +67,27 @@ And there is only one connector to connect to the VESC (bottom right side on the
 
 ![](EBike_board-2.jpg)
 
+Note that I did a few tests while I was building the board, to make sure everything would fit inside the Bafang M500.
+
+![](EBike_board-3.jpg)
+
+And after I tested that everything was working (I used a software to read all sensors signals), I put silicone on the wires and board 
+
+![](EBike_board-4.jpg)
+
+
+
+
+![](EBike_board-5.jpg)
+![](EBike_board-6.jpg)
+![](EBike_board-7.jpg)
+![](EBike_board-8.jpg)
+![](EBike_board-9.jpg)
+![](EBike_board-10.jpg)
+![](EBike_board-11.jpg)
+
+
+
 
 
 
