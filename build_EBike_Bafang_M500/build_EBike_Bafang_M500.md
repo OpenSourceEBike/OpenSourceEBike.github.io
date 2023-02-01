@@ -26,7 +26,7 @@ On the VESC tool software, I did the motor auto detection, the first motor run a
 
 # EBike board
 
-The DIY EBike board task is to run the EBike application. The software on this board is high level Pyhton (easy and fast to develop) and is programmed by Wifi wireless from a phone or a PC.
+The DIY EBike board task is to run the EBike software application. This software is high level Pyhton (easy and fast to develop) and is programmed by Wifi wireless from a phone or a PC.
 
 The EBike application reads the input sensors as the throttle, maps the throttle value to a motor current (motor torque), and finally send this value to VESC motor controller, that will make the motor rotate with this specific current / torque.
 It also sends and receives data to the display.
@@ -36,12 +36,16 @@ This is the DIY EBike board schematic, that is very easy to build due to easy to
 
 See all the details on the [**Build EBike board**](build_EBike_board/build_EBike_board.md) page.
 
-
-
 # Display
 
+TODO
+
 # Final installation
+
+TODO
 
 # Power management
 
 Smart BMS on/off switch.
+
+TODO
