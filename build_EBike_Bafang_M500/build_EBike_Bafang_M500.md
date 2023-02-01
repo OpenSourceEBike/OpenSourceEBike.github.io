@@ -1,4 +1,4 @@
-[![](ebike-2-small.jpg)](ebike-2.jpg) [![](ebike-1-small.jpg)](ebike-1.jpg)
+[![](ebike-2.jpg)](ebike-2.jpg) [![](ebike-1.jpg)](ebike-1.jpg)
 
 My Ebike has a Bafang M500 motor, on a carbon frame Dengfu E10.
 
@@ -31,16 +31,13 @@ The DIY EBike board task is to run the EBike software application. This software
 The EBike application reads the input sensors as the throttle, maps the throttle value to a motor current (motor torque), and finally send this value to VESC motor controller, that will make the motor rotate with this specific current / torque.
 It also sends and receives data to the display.
 
-This is the DIY EBike board schematic, that is very easy to build due to easy to solder boards and connectors:
-[![](build_EBike_board/EBike_board-schematic.png)](build_EBike_board/EBike_board-schematic.png)
+[![](build_EBike_board/EBike_board-6.jpg)](build_EBike_board/build_EBike_board.md)
+
+[![](build_EBike_board/EBike_board-7.jpg)](build_EBike_board/build_EBike_board.md)
 
 See all the details on the [**Build EBike board**](build_EBike_board/build_EBike_board.md) page.
 
 # Display
-
-TODO
-
-# Final installation
 
 TODO
 

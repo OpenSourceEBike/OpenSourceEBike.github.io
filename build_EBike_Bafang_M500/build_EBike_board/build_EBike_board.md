@@ -71,19 +71,37 @@ Note that I did a few tests while I was building the board, to make sure everyth
 
 ![](EBike_board-3.jpg)
 
-And after I tested that everything was working (I used a software to read all sensors signals), I put silicone on the wires and board 
+And after I tested that everything was working (I used a software to read all sensors signals), I put silicone on the wires and board. This makes all more robust and in long term, avoid possible wires brake due to vibrations while riding.
+Note that I had great care to not put silicone on the USB connectors as I may need to use them again later.
 
 ![](EBike_board-4.jpg)
 
-
-
+Also silicone on the connectors.
 
 ![](EBike_board-5.jpg)
+
+And finally I isolated the board and motor controller with kapton tape, since all this will be in contact with the metal case of the motor.
+
 ![](EBike_board-6.jpg)
+
+And here is the VESC + the EBike board installed inside the Bafang M500.
+
 ![](EBike_board-7.jpg)
+
+As there is more used space compared to original motor controller, I designed and 3D printed in ABS plastic, a new motor cover but with a bit more space to acomodate the wires.
+
+[Download here the motor cover source file for FreeCAD](motor_cover.FCStd) and [the file for 3D print](motor_cover.amf).
+
 ![](EBike_board-8.jpg)
+
+And I put a nice amount of silicone on the cover, to make sure it will keep water prof.
+
 ![](EBike_board-9.jpg)
+
+And the final result.
+
 ![](EBike_board-10.jpg)
+
 ![](EBike_board-11.jpg)
 
 
