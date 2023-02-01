@@ -1,4 +1,4 @@
-![ebike-2.jpg](ebike-2-small.jpg) ![ebike-1.jpg](ebike-1-small.jpg)
+[![](ebike-2-small.jpg)](ebike-2.jpg) [![](ebike-1-small.jpg)](ebike-1.jpg)
 
 My Ebike has a Bafang M500 motor, on a carbon frame Dengfu E10.
 
