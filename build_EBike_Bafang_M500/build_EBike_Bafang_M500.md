@@ -1,4 +1,7 @@
+![ebike-2.jpg](ebike-2-small.jpg) ![ebike-1.jpg](ebike-1-small.jpg)
+
 My Ebike has a Bafang M500 motor, on a carbon frame Dengfu E10.
+
 Here are all the details for my build, in the hope it will help you in your build. [If you have questions, please post on this forum](https://endless-sphere.com/forums/viewtopic.php?f=28&t=100777&start=1650).
 
 There was a logic sequence for the build:
