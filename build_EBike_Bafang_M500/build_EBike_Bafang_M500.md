@@ -12,6 +12,8 @@ There was a logic sequence for the build:
 
 # VESC Motor controller
 
+The main task of VESC Motor controller is to drive the motor, make it rotate with motor current / torque, specified by the EBike board software.
+
 The VESC motor controller I use is the [FLIPSKY Mini FSESC6.7](https://flipsky.net/products/flipsky-mini-fsesc6-7-pro-70a-base-on-vesc6-6-with-aluminum-anodized-heat-sink). It can handle a continuous current of 70A, while I am looking to use only 12A. Also it supports a battery from 14V up to 48V, and I am using a 48V one.
 
 ![](FLIPSKY_Mini_FSESC6.7-1.png)
@@ -41,7 +43,13 @@ See all the details on the [**Build EBike board**](build_EBike_board/build_EBike
 
 # Display
 
-TODO
+The DIY display main tasks are showing information to user, like what is the battery state of charge, what motor power is being used, and also let user select the motor assist level.
+
+[![](build_display/display-1.jpg)](build_display/build_display.md)
+
+[![](build_display/02.png)](build_display/build_display.md)
+
+See all the details on the [**Build DIY display**](build_display/build_display.md) page.
 
 # Power management
 
