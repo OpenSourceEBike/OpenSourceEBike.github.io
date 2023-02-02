@@ -1,6 +1,6 @@
-[![](ebike-2.jpg)](ebike-2.jpg) [![](ebike-1.jpg)](ebike-1.jpg)
+[<img src="ebike-2.jpg" width="400"/>](ebike-2.jpg) [<img src="ebike-1.jpg" width="400"/>](ebike-1.jpg)
 
-My Ebike has a Bafang M500 motor, on a carbon frame Dengfu E10.
+My Ebike has a carbon frame Dengfu E10, with a Bafang M500 motor (as seen on the pictures above).
 
 Here are all the details for my build, in the hope it will help you in your build. [If you have questions, please post on this forum](https://endless-sphere.com/forums/viewtopic.php?f=28&t=100777&start=1650).
 
@@ -16,11 +16,11 @@ The main task of VESC Motor controller is to drive the motor, make it rotate wit
 
 The VESC motor controller I use is the [FLIPSKY Mini FSESC6.7](https://flipsky.net/products/flipsky-mini-fsesc6-7-pro-70a-base-on-vesc6-6-with-aluminum-anodized-heat-sink). It can handle a continuous current of 70A, while I am looking to use only 12A. Also it supports a battery from 14V up to 48V, and I am using a 48V one.
 
-![](FLIPSKY_Mini_FSESC6.7-1.png)
+[<img src="FLIPSKY_Mini_FSESC6.7-1.png" width="250"/>](FLIPSKY_Mini_FSESC6.7-1.png)
 
 And the most important, it is small enough to fit inside the Bafang M500:
 
-![](FLIPSKY_Mini_FSESC6.7-2.png)
+[<img src="FLIPSKY_Mini_FSESC6.7-2.png" width="500"/>](FLIPSKY_Mini_FSESC6.7-2.png)
 
 I started to connect this VESC to the motor 3 phase wires. Then I connected my 48V EBike battery to the VESC. Finally I connected the VESC to my PC using a USB cable.
 
@@ -35,9 +35,9 @@ The DIY EBike board task is to run the EBike software application. This software
 The EBike application reads the input sensors as the throttle, maps the throttle value to a motor current (motor torque), and finally send this value to VESC motor controller, that will make the motor rotate with this specific current / torque.
 It also sends and receives data to the display.
 
-[![](build_EBike_board/EBike_board-6.jpg)](build_EBike_board/build_EBike_board.md)
+[<img src="build_EBike_board/EBike_board-6.jpg" width="500"/>](build_EBike_board/build_EBike_board.md)
 
-[![](build_EBike_board/EBike_board-7.jpg)](build_EBike_board/build_EBike_board.md)
+[<img src="build_EBike_board/EBike_board-7.jpg" width="500"/>](build_EBike_board/build_EBike_board.md)
 
 See all the details on the [**Build EBike board**](build_EBike_board/build_EBike_board.md) page.
 
