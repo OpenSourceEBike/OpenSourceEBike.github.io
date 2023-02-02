@@ -60,7 +60,7 @@ Now it is time to put everything inside the 3D printed enclosure. The big hole a
 
 On the top, to protect the OLED display and avoid watter entrance, you can put large glue tape as seen on the picture. There are enough clearance on the cover 3D printed part to accomodate this tape:
 
-[<img src="display-2.jpg" width="500"/><br>](display-2.jpg)
+[<img src="build-2.png" width="500"/><br>](build-2.png)
 
 Use the M2x12 screws to tight the cover as also to clamp to the handlebar.
 
