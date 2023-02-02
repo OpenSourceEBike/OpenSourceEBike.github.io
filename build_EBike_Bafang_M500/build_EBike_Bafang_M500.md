@@ -1,4 +1,6 @@
-[<img src="ebike-2.jpg" width="400"/>](ebike-2.jpg) [<img src="ebike-1.jpg" width="400"/>](ebike-1.jpg)
+[<img src="ebike-2.jpg" width="400"/>](ebike-2.jpg)
+
+[<img src="ebike-1.jpg" width="400"/>](ebike-1.jpg)
 
 My Ebike has a carbon frame Dengfu E10, with a Bafang M500 motor (as seen on the pictures above).
 

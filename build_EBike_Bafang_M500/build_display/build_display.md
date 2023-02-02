@@ -25,7 +25,7 @@ Buy them in black color if you plan to 3D print the enclose in black color.<br>
 
 1 - **3D print the enclosure**:
 
-<img src="enclosure_3d.png" width="500"/><br>
+[<img src="enclosure_3d.png" width="500"/><br>](enclosure_3d.png)
 3D files for 3D printing:
 * [base.amf](base.amf) (purple in the picture) - source file for FreeCAD: [base.FCStd](base.FCStd) 
 * [cover.amf](cover.amf) (blue in the picture) - source file for FreeCAD: [cover.FCStd](cover.FCStd)
@@ -43,30 +43,30 @@ Solder the display to the ESP32-S2 board.<br>
 You will see that you can insert directly the display pins SPI_CLK, SPI_MOSI, RESET and DATA_COMMAND - this will simplify a lot. But you also need to cut the +5V and GND pins. You can uses wires for this pins.
 
 Here is the final result, with all wires soldered:<br>
-<img src="display-3.jpg" width="500"/><br>
+[<img src="display-3.jpg" width="500"/><br>](display-3.jpg)
 
 Here showing the cables with the connectors. One is to connect to the original Bafang M500 cable and the other to connect to the 3 buttons remote keypad:<br>
-<img src="display-2.jpg" width="500"/><br>
+[<img src="display-2.jpg" width="500"/><br>](display-2.jpg)
 
-<img src="display-1.jpg" width="500"/><br>
+[<img src="display-1.jpg" width="500"/><br>](display-1.jpg)
 
 And here is the display already inserted on the 3D printed enclosure.<br>
 NOTE that you will need to cut one side of the display so it can be inserted on the 3D printed enclosure:<br>
-<img src="display-4.jpg" width="500"/><br>
+[<img src="display-4.jpg" width="500"/><br>](display-4.jpg)
 
 Now it is time to put everything inside the 3D printed enclosure. The big hole at back is enough for the two cables to be inserted. Here an example, and after using transparent silione to keep the cables in place and avoid water entrance:
 
-<img src="display-5.jpg" width="500"/><br>
+[<img src="display-5.jpg" width="500"/><br>](display-5.jpg)
 
 On the top, to protect the OLED display and avoid watter entrance, you can put large glue tape as seen on the picture. There are enough clearance on the cover 3D printed part to accomodate this tape:
 
-<img src="display-2.jpg" width="500"/><br>
+[<img src="display-2.jpg" width="500"/><br>](display-2.jpg)
 
 Use the M2x12 screws to tight the cover as also to clamp to the handlebar.
 
 Example of the final result:
 
 (On this picture, not glue tape were yet applied on to of the OELD display)
-<img src="display-8.jpg" width="500"/><br>
+[<img src="display-8.jpg" width="500"/><br>](display-8.jpg)
 
-<img src="02.png" width="500"/><br>
+[<img src="02.png" width="500"/><br>](02.png)
