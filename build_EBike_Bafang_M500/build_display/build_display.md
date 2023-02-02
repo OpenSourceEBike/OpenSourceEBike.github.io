@@ -1,116 +1,68 @@
-# DIY EBike board
+# How to build the display
 
-The DIY EBike board task is to run the EBike software application. This software is high level Pyhton (easy and fast to develop) and is programmed by Wifi wireless from a phone or a PC.
+The following components can be bought in Aliexpress.
 
-The EBike application reads the input sensors as the throttle, maps the throttle value to a motor current (motor torque), and finally send this value to VESC motor controller, that will make the motor rotate with this specific current / torque.
-It also sends and receives data to the display.
+## Componentes
+You will need the following components:
+* ESP32-S2 Mini Lolin<br>
+![](./ESP32-S2.png)<br>
+* OLED display SPI 128x64 pixels 1.3 inches (I2C display version will not work).<br>
+![](./oled_display_1.3-spi.png)<br>
+* 3 buttons remote: The 3 buttons is from the EBike 850C display, that can be bought as a spare part - search on Aliexpress for "850c extension".<br>
+![](./850c_keypad.png)<br>
+* **Bafang M500/M510/M600 display extension cable ([HIGO-B5 connector](https://www.aliexpress.com/item/1005003656557018.html))**:<br>
+![](display_cable.png)<br>
+* **Four screws M2x12**:Buy them in black color if you plan to 3D print the enclose in black color.<br>
+![](./screw.jpg)<br>
+* **Silicone**: can be bought on EBay or other shops. The silicone will be used to seal the enclosure and make it water prof. There are silicone that is fast to cure like in two hours but this can not work very well, like not gluing well to the 3D printed plastic PLA. There are small tubes of silicone at shops, that you can use just a few pieces at a time.<br>
+![](./silicone.jpg)<br><br>
 
-There are 4 sensors on Bafang M500:
-* **Torque sensor:** has a CANBUS connection and outputs the pedal torque and pedal cadence values.
-* **Throttle:** is a simple analog signal between 0 and 3.3V that represents the throttle position.
-* **Brake:** is a simple digital signal between 0 and 3.3V, that stays at 3.3V while the brakes are not pressed.
-* **Motor temperature:** is a simple analog signal between 0 and 3.3V that represents the motor temperature.
+## Step by step instructions
 
-The communication between the EBike board and VESC is digital UART.
+1 - **3D print the enclosure**:
 
-The communication between the EBike board and display is also digital UART.
+![](enclosure_3d.png)
+3D files for 3D printing:
+* [base.amf](base.amf) (purple in the picture) - source file for FreeCAD: [base.FCStd](base.FCStd) 
+* [cover.amf](cover.amf) (blue in the picture) - source file for FreeCAD: [cover.FCStd](cover.FCStd)
+* [clamp.amf](clamp.amf) (orange in the picture) - source file for FreeCAD: [clamp.FCStd](clamp.FCStd)
 
-This is the EBike board schematic, that is very easy to build due to easy to solder boards and connectors:
-[![](EBike_board-schematic.png)](EBike_board-schematic.png)
+2 - **Build the display**
 
-The main component is the ESP32-S3-DevKitC-1 N8R2 board. This is the microcontroller board, that runs the high level Pyhton software, has Wifi and Bluetooth.
+Schematic:<br>
+[![](schematic.png)](schematic.png)
 
-The connection to VESC is by the 4 wires: 2 wires for UART TX and UART RX that provides the comunication. The other 2 wires and GND and +5V, as the power to the EBike board comes from the VESC.
+The ESP32-S2 is the microcontroller that runs the high level Python software and has Wifi. It can be programmed by wireless Wifi.
+This ESP32-S2 communicates with the OLED display using SPI lines. It also reads the remote buttons state.<br>
 
-The throttle wire needs to have a 47K resistor connected to ground. This is a must for the case the throttle disconnects by accident, and this resistor will force the throttle signal to be zero.
+Solder the display to the ESP
+![](display-3.jpg)
 
-The only other board is the TJA1050 (you can buy in Aliexpress), is small and is a CANBUS module. This board is needed to make the ESP32-S3 board being able to communicate with the Bafang M500 torque sensor.
-The torque sensor needs also to be powered from 5V.
+![](display-2.jpg)
 
-The brake signal needs to have a 47K resistor connected to +3.3V otherwise it will not work.
+![](display-1.jpg)
 
-The temperature sensor signal needs to have a 1K resistor connected to GND.
 
-You can buy all the boards, components, connectors and even wires, on Aliexpress.
-Note that the connectors are:
-* big connector with various signals: PHB connector 2.0mm 2x11P
-* torque sensor connector: PHB connector 2.0mm 2x3P
-* motor temperature sensor connector: PHB connector 2.0mm 2x3P
 
-Here are the connectors pins:
+![](display-4.jpg)
 
-The 2x11P connector:
-![](Bafang_M500-big_connector.png)
+![](display-5.jpg)
 
-The 2x3P connector for motor temperature sensor:
-![](Bafang_M500-torque_sensor_connector.png)
+Now it is time to put everything inside the 3D printed enclosure. The big hole at back is enough for the two cables to be inserted. Here an example, and after using transparent silione to keep the cables in place and avoid water entrance:
 
-## Pictures with details
+![](build-1.png)
 
-The purple board is the ESP32-S3-DevKitC-1 N8R2 board. I used kapton tape, that is a yellow, strong plastic tape that can withstand high temperatures, under the ESP32 board, to isolate it from the VESC board.
+On the top, to protect the OLED display and avoid watter entrance, you can put large glue tape as seen on the picture. There are enough clearance on the cover 3D printed part to accomodate this tape:
 
-![](EBike_board-12.jpg)
+![](build-2.png)
 
-The ESP32-S3-DevKitC-1 N8R2 board from the top side. Bellow is the VESC motor controller.
+Use the M2x12 screws to tight the cover as also to clamp to the handlebar.
 
-Basically, the ESP32 board is just the righ size to be placed on top of that VESC and even keep free the VESC connectors.
+Example of the final result:
 
-![](EBike_board-1.jpg)
+(On this picture, not glue tape were yet applied on to of the OELD display)
+![](08.png)
 
-The next pictures were taken on a previous prototype I did, not on the final version. But you can take as example to see how I solder that small blue board, that is the TJA1050 CANBUS module.
+![](02.png)
 
-I used a little of a perforated board to hold the TJA1050 board and solder some wires there, like a dedicated line for GND and +5V, as I will need to solder a few wires to each of them.
-
-![](EBike_board-13.jpg)
-
-And here the example how I solder the wires to each pad of the ESP32 board.
-
-![](EBike_board-14.jpg)
-
-But here is the final EBike board fully built. That small blue board is the TJA1050 CANBUS module.
-I used a little of a perforated board to hold the TJA1050 board and solder some wires there, like the GND, +5V and 3.3V. Also the resistors, I used a SMD 0805 resistors, that are small but not to much.
-
-I used double face tape to fix the boards between them. And I also use Kapton tape a lot for isolation.
-
-That wires are kind of big, but at least they are resistant but also soft, as the exterior seems to be silicone. I bought them on Aliexpress.
-
-And there is only one connector to connect to the VESC (bottom right side on the picture). That connector came with the VESC and as you can see, I am using the black and red wires for GND and +5V. The yellow and white wires for UART TX and UART RX.
-
-![](EBike_board-2.jpg)
-
-Note that I did a few tests while I was building the board, to make sure everything would fit inside the Bafang M500.
-
-![](EBike_board-3.jpg)
-
-And after I tested that everything was working (I used a software to read all sensors signals), I put silicone on the wires and board. This makes all more robust and in long term, avoid possible wires brake due to vibrations while riding.
-Note that I had great care to not put silicone on the USB connectors as I may need to use them again later.
-
-![](EBike_board-4.jpg)
-
-Also silicone on the connectors.
-
-![](EBike_board-5.jpg)
-
-And finally I isolated the board and motor controller with kapton tape, since all this will be in contact with the metal case of the motor.
-
-![](EBike_board-6.jpg)
-
-And here is the VESC + the EBike board installed inside the Bafang M500.
-
-![](EBike_board-7.jpg)
-
-As there is more used space compared to original motor controller, I designed and 3D printed in ABS plastic, a new motor cover but with a bit more space to acomodate the wires.
-
-[Download here the motor cover source file for FreeCAD](motor_cover.FCStd) and [the file for 3D print](motor_cover.amf).
-
-![](EBike_board-8.jpg)
-
-And I put a nice amount of silicone on the cover, to make sure it will keep water prof.
-
-![](EBike_board-9.jpg)
-
-And the final result.
-
-![](EBike_board-10.jpg)
-
-![](EBike_board-11.jpg)
+![](04.png)
