@@ -4,15 +4,15 @@ Over the years I did own a few different EBikes / EScooters from different brand
 
 I share here all the information and [source codes](https://github.com/OpenSourceEBike/EBike_EScooter_modular_DIY), about the build I did for my EBike, in the hope it will help others replicate and learn about EBikes / EScooters tecnhology.
 
-Because it is modular, DIY and OpenSource, this system is easy to reuse for any different EBike / EScooter brand, so it will be future prof and cheap as will be possible to save money by reusing the materials.
+Because it is modular, DIY and OpenSource, this system is easy to adapt for any different EBike / EScooter brand, so it will be future prof and cheap as will be possible to save money by reusing the materials.
 
-For a user like me, it let me optimize my battery usage, so I can have a smaller and ligher battery, use a smaller motor, and so have a smaller and lighter MTB EBike.
+For a user like me, it let me optimize my battery usage, so I can have a smaller and ligher battery, use a smaller motor, and so have a smaller and lighter MTB EBike with focus on my fitness.
 
 For other users that may want a more powerfull motor, it let go behond the limits that the brands impose on the software.
 
-And if you are looking for a more advanced system, with GPS navigation on the display, the best option is to use a popular solution as a Garmin Edge. Similarly, if you are looking to use your EBike for fitness and want a display showing your heart rate, pedal human power, etc, the best option is to use a Garmin Edge.
+And if you are looking for a more advanced system, with GPS navigation on the display, display showing your heart rate, pedal human power, etc, the best option is to use the popular Garmin Edge or similar.
 
-## System overview
+## EBike / EScooter overview
 
 In general, all EBikes and EScooters are equal - they have a battery, a motor, a motor controller electronics and a display.
 
@@ -22,9 +22,9 @@ In general, all EBikes and EScooters are equal - they have a battery, a motor, a
 
 * **Motor controller electronics:** the main task is to use the battery voltage and drive the motor coils, to make the motor rotate, using the lowest energy possible and be silent. It also reads input sensors like the throttle, pedal torque sensor or brake sensor, as also sends and receive information to the display.
 
-* **Display:** the basis of the display is to show information to user, like what is the battery state of charge, what motor power is being used, and to let user select the motor assist level.
+* **Display:** the main tasks of the display are showing information to user, like what is the battery state of charge, what motor power is being used, and also let user select the motor assist level.
 
-## System details 
+## Modular DIY electronics and firmware details 
 
 This modular and DIY system, replace the original motor controller and display, keeping the original battery.
 It is composed of three different modular parts:
