@@ -51,8 +51,12 @@ The DIY display main tasks are showing information to user, like what is the bat
 
 See all the details on the [**Build DIY display**](build_display/build_display.md) page.
 
-# Power management
+# ON/OFF switch
 
-Smart BMS on/off switch.
+I am using a battery that has a JDB BMS. This BMS is very good because it has a on/off switch feature.<break>
 
-TODO
+My EBike frame Dengfu E10 has a specific switch to turn on/off the EBike, as also a specific BIG connector to the battery (battery is removable), that also includes the 2 pins for the on/off switch. I then connected this switch pins to the JDB BMS on/off pins. So, I can turn on/off all the EBike electronics using the button on the frame, that will make the battery BMS turn on/off the battery power.
+
+One extra note: this JDB BMS has Bluetooth and a mobile app, where we can also turn on/off the battery power, a historic graph of each cell voltage, battery current, etc. It is a very complete BMS that I strongly recomend.
+
+![](jdb_bms.png)
