@@ -36,6 +36,7 @@ The EBike application reads the input sensors as the throttle, maps the throttle
 It also sends and receives data to the display.
 
 [<img src="build_EBike_board/EBike_board-6.jpg" width="500"/>](build_EBike_board/build_EBike_board.md)
+
 [<img src="build_EBike_board/EBike_board-7.jpg" width="500"/>](build_EBike_board/build_EBike_board.md)
 
 See all the details on the [**Build EBike board**](build_EBike_board/build_EBike_board.md) page.
