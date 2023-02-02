@@ -67,6 +67,6 @@ Use the M2x12 screws to tight the cover as also to clamp to the handlebar.
 Example of the final result:
 
 (On this picture, not glue tape were yet applied on to of the OELD display)
-[<img src="display-8.jpg" width="500"/><br>](display-8.jpg)
+[<img src="08.png" width="500"/><br>](08.png)
 
 [<img src="02.png" width="500"/><br>](02.png)
