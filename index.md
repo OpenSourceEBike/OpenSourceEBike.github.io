@@ -1,4 +1,4 @@
-# EBike / EScooter modular DIY OpenSource electronics and firmware
+# EBike / EScooter modular DIY OpenSource electronics and software
 
 [<img src="build_EBike_Bafang_M500/ebike-1.jpg" width="600"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)
 
@@ -18,19 +18,19 @@ And if you are looking for a more advanced system, with GPS navigation on the di
 
 In general, all EBikes and EScooters are equal - they have a battery, a motor, a motor controller electronics and a display.
 
-* **Battery:** most of the time is a standalone system, with an output voltage of like 36V or 48V, with only one connector with 2 wires: - and +<br>
+* **Battery:** most of the time is a standalone system, with an output voltage of like 36V or 48V, with only one connector with 2 wires: black (-) and red (+)<br>
 [<img src="battery-rotated.png" width="300"/>](battery.png)
 
-* **Motor:** motors are in general very similar. They have 3 input phase wires that will power the motor coils. They may also have a small connector with 5 wires to output the hall sensors signals, to provide the rotor position information.<br>
+* **Motor:** are in general very similar. To power the motor, they have 3 input phase wires connected to the coils. They may also have a small connector with 5 wires to output the hall sensors signals, to provide the rotor position information.<br>
 [<img src="bafang_m510.png" width="300"/>](bafang_m510.png)
 
-* **Motor controller electronics:** the main task is to use the battery voltage and drive the motor coils, to make the motor rotate, using the lowest energy possible and be silent. It also reads input sensors like the throttle, pedal torque sensor or brake sensor, as also sends and receive information to the display.<br>
+* **Motor controller electronics:** use the battery voltage and drive the motor coils, to make the motor rotate, using the lowest energy possible and be silent. It also reads input sensors like the throttle, pedal torque sensor or brake sensor, as also sends and receive information to the display.<br>
 [<img src="bafang_motor_controller.png" width="300"/>](bafang_motor_controller.png)
 
-* **Display:** the main tasks of the display are showing information to user, like what is the battery state of charge, what motor power is being used, and also let user select the motor assist level.<br>
-[<img src="display_original.png" width="00"/>](FLIPSKY_Mini_FSESC6.7-1.png)"/>](display_original.png)
+* **Display:** shows information to user, like what is the battery state of charge, what motor power is being used, and also let user select the motor assist level.<br>
+[<img src="display_original.png" width="300"/>](display_original.png)
 
-## Modular DIY electronics and firmware details 
+## Modular DIY electronics and software details 
 
 This modular and DIY system, replace the original motor controller and display, keeping the original battery.
 It is composed of three different modular parts:
@@ -52,9 +52,9 @@ We control the motor by sending commands to VESC, like the command to set the mo
 
 [<img src="build_EBike_Bafang_M500/build_EBike_board/EBike_board-6.jpg" width="400"/>](build_EBike_Bafang_M500/build_EBike_board/EBike_board-6.jpg)
 
-The EBike/EScooter DIY board runs the application that implements the EBike/EScooter logic, for instance, it reads the throttle value and with it, sets the motor current by sending a command to VESC.
+The EBike/EScooter DIY board runs the application that implements the EBike/EScooter logic, for instance, it reads the throttle value and with it, sets the motor current by sending a command to the motor controller.
 
-The microcontroller used is the popular ESP32, that has Wifi and Bluetooth. This ESP32 has a lot of memory and high speed processing, so it runs directly Pyhton firmware and we can edit/program this firmware wirelessly using our phone or computer.
+The microcontroller used is the popular ESP32, that has Wifi and Bluetooth. This ESP32 has a lot of memory and high speed processing, so it runs directly Pyhton software and we can edit/program this software wirelessly using our phone or computer.
 
 This board needs to have a specific circuit for each EBike/EScooters sensors, for instance, a Bafang M500/M600 motor has a CANBUS torque sensor as input while an EScooter has only throttle as input.
 
@@ -64,7 +64,7 @@ This board needs to have a specific circuit for each EBike/EScooters sensors, fo
 
 This DIY display is small and shows basic information as EBike/EScooter speed, battery SOC and motor power. It uses a 3 buttons remote to let user change the motor assistance level as also set other features.
 
-It uses the popular OLED 1.3inches screen. It also uses the ESP32, so it runs directly Pyhton firmware and we can edit/program this firmware wirelessly using our phone or computer.
+It uses the popular OLED 1.3inches screen. It also uses the ESP32, so it runs directly Pyhton software and we can edit/program this software wirelessly using our phone or computer.
 
 # EBike build with Bafang M500 mid drive motor
 
