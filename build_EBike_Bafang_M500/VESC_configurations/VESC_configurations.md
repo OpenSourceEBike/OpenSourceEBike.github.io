@@ -43,12 +43,6 @@ Select the voltages values that apply to your case. NOTE that voltages on the fo
 
 ![](General-Voltage.png)
 
-## Voltage
-
-Select the voltages values that apply to your case. NOTE that voltages on the following image are not correct for a 48V / 13S battery.
-
-![](General-Voltage.png)
-
 ## RPM
 
 I left the default values but I am almost sure my motor never get up to that limit.
