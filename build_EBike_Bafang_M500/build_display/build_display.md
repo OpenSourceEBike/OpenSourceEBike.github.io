@@ -36,8 +36,10 @@ Buy them in black color if you plan to 3D print the enclose in black color.<br>
 Schematic:<br>
 [<img src="schematic.png" width="1200"/><br>](schematic.png)
 
-The ESP32-S2 is the microcontroller that runs the high level Python software and has Wifi. It can be programmed by wireless Wifi.
-This ESP32-S2 communicates with the OLED display using SPI lines. It also reads the remote buttons state.<br>
+The ESP32-S2 is the microcontroller that runs the high level Pyhton (easy and fast to develop) and we can edit/program the Pyhton software text files wirelessly, using our phone or computer.
+
+This ESP32-S2 get his power from the EBike/EScooter board, on the GND and +5V wires. It communicates with that board using the UART TX and UART RX wires.
+It also communicates with the OLED display using SPI lines, as also it reads the remote buttons state.<br>
 
 Solder the display to the ESP32-S2 board.<br>
 You will see that you can insert directly the display pins SPI_CLK, SPI_MOSI, RESET and DATA_COMMAND - this will simplify a lot. But you also need to cut the +5V and GND pins. You can uses wires for this pins.
@@ -64,9 +66,9 @@ On the top, to protect the OLED display and avoid watter entrance, you can put l
 
 Use the M2x12 screws to tight the cover as also to clamp to the handlebar.
 
-Example of the final result:
+Example of the final result:<br>
+(On this picture, not glue tape were yet applied on to of the OELD display).
 
-(On this picture, not glue tape were yet applied on to of the OELD display)
 [<img src="08.png" width="500"/><br>](08.png)
 
 [<img src="02.png" width="500"/><br>](02.png)

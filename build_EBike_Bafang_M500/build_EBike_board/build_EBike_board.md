@@ -82,7 +82,15 @@ Note that I did a few tests while I was building the board, to make sure everyth
 
 [<img src="EBike_board-3.jpg" width="500"/>](EBike_board-3.jpg)
 
-And after I tested that everything was working (I used a software to read all sensors signals), I put silicone on the wires and board. This makes all more robust and in long term, avoid possible wires brake due to vibrations while riding.
+Detail of the VESC (the EBike/EScooter board is placed on the top).
+
+[<img src="EBike_board-15.jpg" width="500"/>](EBike_board-15.jpg)
+
+I built the board following the schematic and I were testing it as I was progressing. I used a simple specific software to read the sensors (available on the software repository) and make sure they were working.
+
+[<img src="testing_sensors.png" width="500"/>](testing_sensors.png)
+
+And after I tested that everything was working, I put silicone on the wires and board. This makes all more robust and in long term, avoid possible wires brake due to vibrations while riding.<br>
 Note that I had great care to not put silicone on the USB connectors as I may need to use them again later.
 
 [<img src="EBike_board-4.jpg" width="500"/>](EBike_board-4.jpg)
