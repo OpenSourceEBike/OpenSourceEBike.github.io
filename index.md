@@ -71,7 +71,7 @@ This DIY display is small and shows basic information as EBike/EScooter speed, b
 
 It uses the popular OLED 1.3inches screen. It also uses the ESP32, so it runs directly Pyhton software and we can edit/program this software wirelessly using our phone or computer.
 
-# EBike build with Bafang M500 mid drive motor
+# EBike build with Bafang M500 motor
 
 This was the first build I did. You can take this build details as a reference for your build:
 
