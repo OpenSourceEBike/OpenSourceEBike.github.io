@@ -1,6 +1,6 @@
 # DIY EBike board
 
-The DIY EBike board task is to run the EBike software application. This software is high level Pyhton (easy and fast to develop) and is programmed by Wifi wireless from a phone or a PC.
+The DIY EBike board task is to run the EBike software application. This software is high level Pyhton (easy and fast to develop) and we can edit/program the Pyhton software text files wirelessly, using our phone or computer.
 
 The EBike application reads the input sensors as the throttle, maps the throttle value to a motor current (motor torque), and finally send this value to VESC motor controller, that will make the motor rotate with this specific current / torque.
 It also sends and receives data to the display.

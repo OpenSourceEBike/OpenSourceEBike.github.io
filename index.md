@@ -59,7 +59,7 @@ We control the motor by sending commands to VESC, like the command to set the mo
 
 The EBike/EScooter DIY board runs the application that implements the EBike/EScooter logic, for instance, it reads the throttle value and with it, sets the motor current by sending a command to the motor controller.
 
-The microcontroller used is the popular ESP32, that has Wifi and Bluetooth. This ESP32 has a lot of memory and high speed processing, so it runs directly Pyhton software and we can edit/program this software wirelessly using our phone or computer.
+The microcontroller used is the popular ESP32, that has Wifi and Bluetooth. This ESP32 has a lot of memory and high speed processing, so it runs directly Pyhton software and we can edit/program the Pyhton software text files wirelessly, using our phone or computer.
 
 This board needs to have a specific circuit for each EBike/EScooters sensors, for instance, a Bafang M500/M600 motor has a CANBUS torque sensor as input while an EScooter has only throttle as input.
 

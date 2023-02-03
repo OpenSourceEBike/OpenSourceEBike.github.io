@@ -6,7 +6,7 @@ My Ebike has a carbon frame Dengfu E10, with a Bafang M500 motor (as seen on the
 
 Here are all the details for my build, in the hope it will help you in your build. [If you have questions, please post on this forum](https://endless-sphere.com/forums/viewtopic.php?f=28&t=100777&start=1650).
 
-There was a logic sequence for the build:
+This is the logic sequence I did for the build:
 1. Connect the VESC to the motor, make the motor rotate and configure the VESC
 2. Build the EBike board, connect to the VESC and to the torque sensor and other sensors
 3. Build the display and connect to the EBike board
@@ -32,7 +32,7 @@ Note that you can buy on Aliexpress the battery connector XT60 and the motor 3 p
 
 # EBike board
 
-The DIY EBike board task is to run the EBike software application. This software is high level Pyhton (easy and fast to develop) and is programmed by Wifi wireless from a phone or a PC.
+The DIY EBike board task is to run the EBike software application. This software is high level Pyhton (easy and fast to develop) and we can edit/program the Pyhton software text files wirelessly, using our phone or computer.
 
 The EBike application reads the input sensors as the throttle, maps the throttle value to a motor current (motor torque), and finally send this value to VESC motor controller, that will make the motor rotate with this specific current / torque.
 It also sends and receives data to the display.
@@ -53,7 +53,13 @@ The DIY display main tasks are showing information to user, like what is the bat
 
 See all the details on the [**Build DIY display**](build_display/build_display.md) page.
 
-# ON/OFF switch
+# Final installation
+
+The final instalation were done only when I had tested almost all the system. For instance, when building the EBike/EScooter board, I tested the sensorone by one at a time, so when I did the final installation I was sure they were working.
+
+I had a great care, by using a multimeter to tripple check every wire connection and voltages.
+
+## ON/OFF switch
 
 I am using a battery that has a JDB BMS. This BMS is very good because it has a on/off switch feature.<break>
 
