@@ -27,6 +27,9 @@ In general, all EBikes and EScooters are equal - they have a battery, a motor, a
 * **Motor controller electronics:** use the battery voltage and drive the motor coils, to make the motor rotate, using the lowest energy possible and be silent. It also reads input sensors like the throttle, pedal torque sensor or brake sensor, as also sends and receive information to the display.<br>
 [<img src="bafang_motor_controller.png" width="300"/>](bafang_motor_controller.png)
 
+* **Sensors:** can be like a throttle, brake sensor or a pedal torque sensor. Throttle outputs a electronic signal that represents his position, and with that the motor controller makes the motor rotate with more or less torque. The brake sensor, when pressed, will stop the motor.<br>
+[<img src="sensors.png" width="400"/>](sensors.png)
+
 * **Display:** shows information to user, like what is the battery state of charge, what motor power is being used, and also let user select the motor assist level.<br>
 [<img src="display_original.png" width="300"/>](display_original.png)
 
