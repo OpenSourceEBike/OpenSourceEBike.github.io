@@ -35,11 +35,13 @@ In general, all EBikes and EScooters are equal - they have a battery, a motor, a
 
 ## Modular DIY electronics and software details 
 
-This modular and DIY system, replace the original motor controller and display, keeping the original battery.
+This modular and DIY system, replace the original motor controller and display, keeping the original battery and sensors.
 It is composed of three different modular parts:
 - Motor controller
 - EBike/EScooter board
 - Display
+
+The motor controller and the EBike/EScooter board, togheter, replace the original motor controller.
 
 ### Motor controller
 
