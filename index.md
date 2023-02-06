@@ -82,4 +82,4 @@ This was the first build I did. You can take this build details as a reference f
  The next links are here for historic reasons only:
 
 * [EasyDIY OpenSource Ebike display](easy_diy_display_ebike_display/index.md) - previous 
-* [TSDZ2 wireless and fully wireless remote](tsdz2_wireless/index.md) - with Garmin Edge integration for page change.
+* [TSDZ2 wireless and fully wireless remote](easy_diy_display_ebike_display/tsdz2_wireless/index.md) - with Garmin Edge integration for page change.
