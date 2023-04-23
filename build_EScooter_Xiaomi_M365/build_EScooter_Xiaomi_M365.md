@@ -1,4 +1,4 @@
-I did build on my Xiaomi M365 Pro 2.
+I did this build with my Xiaomi M365 Pro 2.
 
 As a complement, see my **[Build with Bafang M500 mid drive motor](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)** that has a more detailed notes.
 
@@ -6,8 +6,8 @@ I bought all the components on Aliexpress (VESC motor controller, ESP32 board, c
 
 This is the logic sequence I did for the build:
 1. Connect the VESC to the motor, make the motor rotate and configure the VESC.
-2. Build the EScooter board, connect to the VESC, to the Xaomi M365 dash board and eral lights.
-3. Do the final installation, protect the various cables and protect the connections to make sure they do not get loose.
+2. Build the EScooter board, connect to the VESC, to the Xaomi M365 dash board and rear lights.
+3. Do the final installation, protect the various cables and protect the connections to make sure they do not get loose or break.
 
 # VESC Motor controller
 
@@ -21,7 +21,7 @@ It is a cheap VESC and fit well inside the Xiaomi M365.
 
 I started to connect this VESC to the motor 3 phase wires. Then I connected to the Xiaomi M365 battery. Finally I connected the VESC to my PC using a USB cable (later I installed the VESC Bluetooth module on UART2 port and so the USB connection is not needed anymore).
 
-On the VESC tool software, I did the motor auto detection, the first motor run and the final configurations -- see all the details on the [**VESC configurations**](VESC_configurations/VESC_configurations.md) page.
+On the VESC tool software, I did the motor auto detection, the first motor run and the final configurations -- see the details on the pictures inside the [**VESC_configurations folder**](VESC_configurations/) page.
 
 # EScooter board
 
@@ -35,7 +35,7 @@ Also controls the rear light state.
 
 [<img src="build_EScooter_board/xiaomi_m365_pro_2-2023.04.23-02.jpg" width="500"/>](build_EScooter_board/xiaomi_m365_pro_2-2023.04.23-02.jpg)
 
-See all the details on the [**Build EBike board**](build_EBike_board/build_EBike_board.md) page.
+See all the details on the [**Build EScooter board**](build_EScooter_board/build_EScooter_board.md) page.
 
 # Final installation
 
