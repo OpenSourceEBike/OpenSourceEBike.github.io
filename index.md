@@ -88,4 +88,4 @@ See: **[Build with Bafang M500 mid drive motor](build_EBike_Bafang_M500/build_EB
  The next links are here for historic reasons only:
 
 * [EasyDIY OpenSource Ebike display](easy_diy_display_ebike_display/index.md) - previous 
-* [TSDZ2 wireless and fully wireless remote](tsdz2_wireless/index.md) - with Garmin Edge integration for page change.
+* [TSDZ2 wireless and fully wireless remote](easy_diy_display_ebike_display/tsdz2_wireless/index.md) - with Garmin Edge integration for page change.
