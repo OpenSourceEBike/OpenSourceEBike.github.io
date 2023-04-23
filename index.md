@@ -1,6 +1,6 @@
 # EBike / EScooter modular DIY OpenSource electronics and software
 
-[<img src="build_EBike_Bafang_M500/ebike-1.jpg" width="400"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md) [<img src="build_EScooter_Xiaomi_M365/build_EScooter_board/xiaomi_m365_pro_2-2023.04.23-04.jpg" width="400"/>](build_EScooter_Xiaomi_M365/build_EScooter_Xiaomi_M365.md)
+[<img src="build_EBike_Bafang_M500/ebike-1.jpg" width="300"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md) [<img src="build_EScooter_Xiaomi_M365/build_EScooter_board/xiaomi_m365_pro_2-2023.04.23-04.jpg" width="300"/>](build_EScooter_Xiaomi_M365/build_EScooter_Xiaomi_M365.md)
 
 Over the years I did own a few different EBikes / EScooters from different brands, and I always found limitations on all of them, mainly on the software. Knowing that in general, all EBikes and EScooters are equal, I decided to replace the original motor controller electronics and display of all my EBikes/EScooters, with my own modular DIY version and running my software.
 
@@ -81,7 +81,7 @@ See **[Build with Xiaomi M365](build_EScooter_Xiaomi_M365/build_EScooter_Xiaomi_
 
 See: **[Build with Bafang M500 mid drive motor](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)**.
 
-[<img src="build_EBike_Bafang_M500/ebike-1.jpg" width="350"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md) [<img src="build_EBike_Bafang_M500/ebike-2.jpg" width="350"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)
+[<img src="build_EBike_Bafang_M500/ebike-1.jpg" width="250"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md) [<img src="build_EBike_Bafang_M500/ebike-2.jpg" width="250"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)
 
 # Older projects
 
