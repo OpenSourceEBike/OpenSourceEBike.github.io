@@ -53,10 +53,11 @@ In the end I put tape on all the connectors and cables to make sure they do not 
 
 ## ON/OFF switch
 
-I am using a battery that has a JDB BMS. This BMS is very good because it has a on/off switch feature.<break>
+The quickest and cheap way I found, was to use a ["loop key"](https://forum.esk8.news/t/how-to-make-a-xt90-loop-key/17664).
 
-My EBike frame Dengfu E10 has a specific switch to turn on/off the EBike, as also a specific BIG connector to the battery (battery is removable), that also includes the 2 pins for the on/off switch. I then connected this switch pins to the JDB BMS on/off pins. So, I can turn on/off all the EBike electronics using the button on the frame, that will make the battery BMS turn on/off the battery power.
+I bought the a pair of XT90 Amass connector that is anti-spark (this is a must!!) and then I connect the battery negative in series with this connector. So, everytime I want to ride my Xiaomi M365, I will connect the "loop key" and I remove the "loop key" when I finish my ride.
 
-One extra note: this JDB BMS has Bluetooth and a mobile app, where we can also turn on/off the battery power, a historic graph of each cell voltage, battery current, etc. It is a very complete BMS that I strongly recomend.
+The loop key on my Xiaomi M365 Pro 2:<br>
+[<img src="loop_key.jpg" width="400"/>](loop_key.jpg)
 
-[<img src="jdb_bms.png" width="250"/>](jdb_bms.png)
+There are other solutions, like a dedicated Anti-spart ON/OFF switch, that could be controlled by the ESCooter board.
