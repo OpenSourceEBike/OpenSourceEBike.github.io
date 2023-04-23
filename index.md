@@ -81,7 +81,7 @@ See **[Build with Xiaomi M365](build_EScooter_Xiaomi_M365/build_EScooter_Xiaomi_
 
 See: **[Build with Bafang M500 mid drive motor](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)**.
 
-[<img src="build_EBike_Bafang_M500/ebike-1.jpg" width="320"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md) [<img src="build_EBike_Bafang_M500/ebike-2.jpg" width="320"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)
+[<img src="build_EBike_Bafang_M500/ebike-1.jpg" width="310"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md) [<img src="build_EBike_Bafang_M500/ebike-2.jpg" width="310"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)
 
 # Older projects
 
