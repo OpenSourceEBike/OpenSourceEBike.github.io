@@ -75,7 +75,7 @@ It uses the popular OLED 1.3inches screen. It also uses the ESP32, so it runs di
 
 See **[Build with Xiaomi M365](build_EScooter_Xiaomi_M365/build_EScooter_Xiaomi_M365.md)**.
 
-[<img src="build_EScooter_Xiaomi_M365/build_EScooter_board/xiaomi_m365_pro_2-2023.04.23-04.jpg" width="320"/>](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)
+[<img src="build_EScooter_Xiaomi_M365/build_EScooter_board/xiaomi_m365_pro_2-2023.04.23-04.jpg" width="320"/>](build_EScooter_Xiaomi_M365/build_EScooter_Xiaomi_M365.md)
 
 # EBike build with Bafang M500 motor
 

@@ -1,6 +1,6 @@
 I did this build with my Xiaomi M365 Pro 2.
 
-As a complement, see my **[Build with Bafang M500 mid drive motor](build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)** that has a more detailed notes.
+As a complement, see my **[Build with Bafang M500 mid drive motor](../build_EBike_Bafang_M500/build_EBike_Bafang_M500.md)** that has a more detailed notes.
 
 I bought all the components on Aliexpress (VESC motor controller, ESP32 board, connectors, wires, etc).
 
@@ -21,7 +21,7 @@ It is a cheap VESC and fit well inside the Xiaomi M365.
 
 I started to connect this VESC to the motor 3 phase wires. Then I connected to the Xiaomi M365 battery. Finally I connected the VESC to my PC using a USB cable (later I installed the VESC Bluetooth module on UART2 port and so the USB connection is not needed anymore).
 
-On the VESC tool software, I did the motor auto detection, the first motor run and the final configurations -- see the details on the pictures inside the [**VESC_configurations folder**](VESC_configurations/) page.
+On the VESC tool software, I did the motor auto detection, the first motor run and the final configurations -- see the details on the pictures at the [**VESC configurations**](VESC_configurations/VESC_configurations.md) page.
 
 # EScooter board
 
