@@ -25,7 +25,7 @@ On the VESC tool software, I did the motor auto detection, the first motor run a
 
 # EScooter board
 
-The DIY EScooter board task is to run the EScooter software application. This software is high level Pyhton (easy and fast to develop) and we can edit/program the Pyhton software text files wirelessly, using our phone or computer.
+The DIY EScooter board task is to run the [EScooter software application (OpenSource, download here)](https://github.com/OpenSourceEBike/EBike_EScooter_modular_DIY/tree/main/diy_main_board/firmware). This software is high level Pyhton (easy and fast to develop) and we can edit/program the Pyhton software text files wirelessly, using our phone or computer.
 
 The EScooter application reads the throttle, maps the throttle value to a motor current, and finally send this value to VESC motor controller, that will make the motor rotate with this specific current / torque.
 

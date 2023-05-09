@@ -32,7 +32,7 @@ Note that you can buy on Aliexpress the battery connector XT60 and the motor 3 p
 
 # EBike board
 
-The DIY EBike board task is to run the EBike software application. This software is high level Pyhton (easy and fast to develop) and we can edit/program the Pyhton software text files wirelessly, using our phone or computer.
+The DIY EBike board task is to run the [EBike software application (OpenSource, download here)](https://github.com/OpenSourceEBike/EBike_EScooter_modular_DIY/tree/main/diy_main_board/firmware). This software is high level Pyhton (easy and fast to develop) and we can edit/program the Pyhton software text files wirelessly, using our phone or computer.
 
 The EBike application reads the input sensors as the throttle, maps the throttle value to a motor current (motor torque), and finally send this value to VESC motor controller, that will make the motor rotate with this specific current / torque.
 It also sends and receives data to the display.
